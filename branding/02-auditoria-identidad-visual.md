@@ -92,11 +92,13 @@ No hay en todo el documento:
 - **Ícono de app** — versión cuadrada, monograma aislado, prueba a 60 px y a 1024 px.
 - **Reglas de contraste y accesibilidad.**
 
-## Hallazgo 8 — La paleta no tiene jerarquía declarada
+## Hallazgo 8 — La paleta no tenía jerarquía · **resuelto el 3 de septiembre**
 
-Tres colores de marca compiten sin orden: naranja `#FF5A00`, cian `#079CB5`, petróleo `#00677E`. En las aplicaciones a veces manda el naranja (pósters, mural), a veces el cian (UI de smartwatch, valla del corredor). Falta declarar cuál es primario, cuál es de apoyo y en qué proporción se usan.
+El manual definía seis colores sin decir cuál manda: en las aplicaciones a veces pesaba el naranja (pósters, mural) y a veces el cian (UI de smartwatch). Además el naranja de Kenia queda muy cerca del de Strava, la marca de referencia de la categoría.
 
-Además hay que fijar reglas de contraste pensando en el uso real: pantalla pequeña, en movimiento, con sudor y con sol directo.
+**El equipo lo resolvió moviendo el peso al azul.** La jerarquía por función está en `08-brief-moodboard.md`: *el azul es la marca, el naranja es el momento*, con el naranja por debajo del 10 % de superficie.
+
+Queda pendiente para el diseñador: aplicar esa jerarquía al logotipo y al ícono de app, que hoy son naranjas.
 
 ## Hallazgo 9 — Legibilidad del monograma
 

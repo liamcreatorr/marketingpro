@@ -53,20 +53,31 @@ Grupo corriendo junto, gente esperando en la salida, alguien acompañando a otro
 
 ---
 
-## Jerarquía de color — **propuesta para cerrar un hallazgo abierto**
+## Jerarquía de color — **actualizada el 3 de septiembre: manda el azul**
 
-El manual define seis colores pero no dice cuál manda. Propuesta: **asignarles función**, no solo valor.
+El equipo decidió mover el peso de la paleta hacia el azul, porque el naranja acerca demasiado a Kenia al territorio de Strava. Es el hallazgo 8 de la auditoría, confirmado y resuelto.
+
+**La decisión es buena y además encaja con el arquetipo.** El mentor es azul: método, medición, calma, criterio. El naranja pasa a ser el color del **esfuerzo del héroe** — el momento de correr. Que aparezca poco es lo que le da fuerza.
 
 | Color | Función | Dónde |
 |---|---|---|
-| **Naranja `#FF5A00`** | **Acción y marca.** El color del momento de correr | Logo, botones, titulares, el CTA. Es el primario, sin discusión |
-| **Negro `#1B1B1B`** | **El suelo.** La madrugada, el asfalto, el fondo | Base del sistema. La marca es oscura por defecto |
-| **Cian `#079CB5` y petróleo `#00677E`** | **El dato.** Medición, rutas, zonas, información | Gráficos, trazos de ruta, UI de datos. Nunca compiten con el naranja por la atención |
-| **Blanco `#F4F4F4`** | **Respiración y texto** | Tipografía sobre negro, aire |
+| **Cian `#079CB5`** | **Primario. La marca y el método.** | Superficies de marca, fondos de datos, gráficos, UI |
+| **Petróleo `#00677E`** | **Profundidad.** Fondos, degradados con el cian, capas | Fondos de sección, sombras de color |
+| **Negro `#1B1B1B`** | **El suelo.** La madrugada, el asfalto | Base del sistema; la marca sigue siendo oscura por defecto |
+| **Naranja `#FF5A00`** | **Acento de acción.** El momento de correr, el CTA, el dato que importa ahora | Botones, el kilómetro en curso, el estado activo. **Poco y potente** |
+| **Blanco `#F4F4F4`** | Texto y aire | Tipografía sobre oscuro |
 
-La regla en una línea: **el naranja actúa, el cian informa, el negro sostiene.** Si en una pieza el cian pesa más que el naranja, es una pieza de datos; si al revés, es una pieza de marca. Que no haya una tercera opción.
+**La regla en una línea:** *el azul es la marca, el naranja es el momento.*
 
----
+**Proporción sugerida:** naranja por debajo del 10 % de la superficie de cualquier pieza. Si una pieza es mayoritariamente naranja, o es el logo aislado o está mal.
+
+### Tres cosas que hay que saber antes de ejecutarlo
+
+1. **No es un ajuste, es un cambio de identidad.** El logotipo hoy es naranja y todo el manual está construido sobre él. Si el azul pasa a primario, cambian el lockup, las aplicaciones y el ícono de tienda. Es decisión del diseñador y de Ninro, no nuestra — pero conviene que sepan el tamaño de lo que están aprobando.
+
+2. **Alejarse de Strava por el naranja no sirve si se cae en otro cliché.** Azul + naranja es de las combinaciones más repetidas en apps de deporte y de datos. Lo que diferencia no es el tono: es la **proporción** —naranja mínimo— y el tratamiento. Antes de cerrarlo, poner las fichas de tienda de Strava, Runna, RunMotion, Nike Run Club y Garmin una al lado de otra y comprobar en qué se distingue Kenia.
+
+3. **Donde más se gana es en el ícono de la tienda.** En una pantalla llena de apps de fitness naranjas y rojas, un ícono azul con la K se ve antes. Ese es el argumento más fuerte a favor del cambio, y vale la pena probarlo a 60 px antes de decidir.
 
 ## Fotografía — reglas
 

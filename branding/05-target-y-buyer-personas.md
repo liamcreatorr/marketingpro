@@ -155,15 +155,36 @@ Ocho conversaciones de quince minutos con gente del box que ya corre. Dos horas 
 8. ¿Qué usas hoy: reloj, app, nada? ¿Qué te falta de lo que usas?
 9. **¿Cuánto cobra un entrenador de running aquí al mes?** ¿Y cuánto pagarías por un plan que se ajuste solo a tu semana?
 
-### Qué buscar en las respuestas
+### Para qué sirve exactamente cada pregunta
 
-| Pregunta | Qué confirma o tumba |
-|---|---|
-| **6** | El **enemigo B**. Si todos responden «corredor» sin dudar, la creencia de «tú no eres corredor» no existe en este grupo y el relato hay que replantearlo. Si varios dicen «alguien que corre», el enemigo está vivo y Andrés existe. |
-| **7** | El **valor 1 y el beneficio E2**. Si la mayoría dice «pensaría que estoy perdiendo forma», *descansar también entrena* es el diferencial más grande que tienen y debe liderar la comunicación. |
-| **4 y 5** | El **diferencial 1 y el 5**. Las respuestas a estas dos son el copy de la campaña, literal. Anotar palabra por palabra. |
-| **3** | Si nadie sigue plan, confirma que el mercado está sin atender. Si todos siguen uno, hay que saber cuál y por qué no les basta. |
-| **9** | Desbloquea **R5**, el beneficio racional más potente y el único sin prueba: convierte los 19,99 $ en una comparación ganadora. |
+No son preguntas de relleno: cada una alimenta un entregable concreto y puede cambiar una decisión ya tomada.
+
+| # | Pregunta | Qué alimenta | Qué decisión puede cambiar |
+|---|---|---|---|
+| **1** | Cuántas veces corres y desde cuándo | Tamaño real del target dentro del box | Si la mayoría corre poco o nada, **la comunidad semilla no es el público** y el plan de lanzamiento cambia de raíz: habría que buscar audiencia fuera del box |
+| **2** | ¿Preparas alguna carrera? | Persona 3 (Daniel) + calendario de campaña | Si medio box va a una carrera concreta en noviembre, **esa carrera es el gancho del lanzamiento** y toda la campaña se cuelga de ella |
+| **3** | ¿Sigues algún plan? ¿De dónde salió? | Quién es el competidor **real** | Si dicen «Garmin», el rival es gratis y hay que justificar precio. Si dicen «el coach del box», el rival es humano y el argumento es otro. Si dicen «ninguno», el mercado está sin atender y se vende categoría, no comparación |
+| **4** | La última semana que no pudiste entrenar | **Copy literal** + valida el diferencial 1 | Es la escena que va en el anuncio. Si nadie tiene esa historia, la adaptación diaria no es tan valiosa como creemos |
+| **5** | ¿Te has lesionado? ¿Qué hacías antes? | Persona 4 (Patricia) + valida el diferencial 5 | Si casi nadie se ha lesionado, **la prevención baja de prioridad** en el mensaje y sube la progresión |
+| **6** | ¿Corredor, o alguien que corre? | El **enemigo B** | Si todos dicen «corredor» sin dudar, la creencia «tú no eres corredor» no existe aquí y **el relato de marca hay que replantearlo** |
+| **7** | Si te dice «descansa», ¿caso o culpa? | El **valor 1** y el beneficio E2 | Si la mayoría dice «pensaría que estoy perdiendo forma», *descansar también entrena* **lidera toda la comunicación**. Si les da igual, pasa a mensaje secundario |
+| **8** | Qué usas hoy y qué te falta | La lista de beneficios **en palabras del usuario** | El «qué te falta» va directo a la ficha de tienda, a los anuncios y a los titulares |
+| **9** | Cuánto cobra un entrenador / cuánto pagarías | Desbloquea **R5** y valida el pricing | Si la mediana de lo que pagarían baja de 15 $, hay **problema de precio**, no de marca, y eso se sabe antes de lanzar |
+
+### Qué sale de las ocho conversaciones, en concreto
+
+1. **Frases textuales para el copy** — de las preguntas 4, 5 y 8. Es el material más valioso: nadie escribe mejor un anuncio que el propio usuario describiendo su problema.
+2. **Las cuatro personas confirmadas o corregidas** — dejan de ser hipótesis mías.
+3. **Qué mensaje lidera la marca** — de las preguntas 6 y 7.
+4. **El gancho del lanzamiento** — de la 2.
+5. **El competidor real contra el que se compite** — de la 3.
+6. **El dato de precio del entrenador** — de la 9, que desbloquea el argumento de precio de toda la campaña.
+
+### Si no da el tiempo
+
+**Cuatro conversaciones sirven** — una por persona. Y no hace falta llamada: una nota de voz por WhatsApp con las preguntas 4, 6, 7 y 9 recoge lo esencial.
+
+Lo que **no** funciona es saltárselo del todo: significaría escribir la campaña sobre mis hipótesis, y ustedes tienen a la gente real a una cuadra.
 
 ## Lo que estas cuatro personas implican
 
