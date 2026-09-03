@@ -32,11 +32,17 @@ La bisagra que los une, y que puede funcionar como declaración de marca:
 2. **Explica el porqué de cada sesión.** No «hoy 6 × 3 min», sino «hoy 6 × 3 min porque tu objetivo es el 10K, y como dormiste mal quitamos una repetición».
 3. **Aprende de ti.** El perfil adaptativo y el cuerpo digital: cómo respondes a la carga, cuánto tardas en recuperar, cuándo te sobrecargas, qué días te saltas.
 4. **Optimiza que sigas, no que el plan sea perfecto.** El mejor plan es inútil si abandonas a las cuatro semanas.
-5. **Método de autor, ejecución de máquina.** El método viene de un corredor real —Ninro, más de seis maratones, entrenado con método keniano—; la IA lo aplica a cada persona. No es un algoritmo genérico: es un método con autor, ejecutado a escala.
+5. **Método de autor, vigilancia de equipo, ejecución de máquina.** La fórmula de entrenamiento la diseña Ninro a partir de su experiencia; la IA la aplica persona a persona; el equipo vigila el conjunto de los planes desde un dashboard. Nadie de Kenia habla con un usuario sobre su plan — pero nadie de Kenia deja los planes sin mirar.
 
-> **Corregido el 3 de septiembre.** Aquí decía «firma humana: el método está respaldado por el equipo Kenia, la IA no anda sola». **Era falso** y venía de una respuesta anterior del bloque 00. La versión real: **ningún humano interviene en el plan del usuario**. Kenia es un coach virtual — la IA analiza el perfil, arma la rutina y la acompaña con vídeos de ejecución. A futuro se contempla que Ninro aparezca en cámara.
->
-> El diferencial se sostiene igual, pero se enuncia distinto: lo humano está en **el método**, no en la atención. Decirlo de otra forma rompe el valor 4.
+> **Historial de esta pieza.** Primero se dijo «firma humana, la IA no anda sola» (falso: nadie interviene en el plan individual). Luego se corrigió a «método de autor» a secas. La versión definitiva del 3 de septiembre añade el matiz que faltaba: **sí hay monitoreo humano, pero agregado y por dashboard**, no atención individual. Las tres cosas se pueden decir; la que no se puede decir es que alguien revisa *tu* plan.
+
+> **Advertencia de caducidad.** «Monitoreamos todos los planes» es cierto con 40 suscriptores y deja de serlo con 1.200. No se construye la marca sobre esa frase: se usa como prueba de rigor hoy, no como promesa permanente.
+
+### El corolario que cambia la venta
+
+Ninro lo describió así: *«es bastante fácil dar un plan, es más como una fórmula»*. Tiene razón, y es la observación más útil de toda la ronda: **el plan está comoditizado.** Garmin Coach lo regala, Nike Run Club lo regala, cualquier PDF de internet lo tiene.
+
+Por lo tanto **el plan no es el producto**. Lo que Kenia vende empieza justo después: qué pasa el martes que dormiste cuatro horas, el jueves que te duele el gemelo, la semana que el trabajo te comió. **Vendemos la adaptación, no la planificación.** Cualquier pieza que ponga «plan personalizado» como titular principal está vendiendo la parte regalada del producto.
 
 ### QUÉ
 
@@ -120,7 +126,7 @@ Los tres planes no venden más entrenamientos: venden tres transformaciones dist
 | Plan | Precio | Promesa en una línea | Qué transformación vende |
 |---|---|---|---|
 | **KENIA STARTER** | 9,99 $/mes · 101,90 $/año | *Tu camino comienza aquí.* | **Te da dirección.** Plan personalizado, entrenamientos diarios, seguimiento, explicación básica, comunidad. |
-| **KENIA COACH** ⭐ | 20,99 $/mes · 214,10 $/año | *Un entrenador que se adapta a ti.* | **Te acompaña.** Adaptación diaria según sueño, fatiga, dolor, estrés y tiempo; perfil adaptativo; coach conversacional; explicación avanzada; prevención inteligente. |
+| **KENIA COACH** ⭐ | 19,99 $/mes · 203,90 $/año | *Un entrenador que se adapta a ti.* | **Te acompaña.** Adaptación diaria según sueño, fatiga, dolor, estrés y tiempo; perfil adaptativo; coach conversacional; explicación avanzada; prevención inteligente. |
 | **KENIA ELITE** | 29,99 $/mes · 305,90 $/año | *La experiencia Kenia más avanzada.* | **Te conoce y anticipa.** Cuerpo digital, planificación predictiva, preparación y estrategia de competición, picos de rendimiento y recuperación post-carrera. |
 
 > **Corregido el 3 de septiembre.** ELITE ya no incluye «supervisión humana Kenia»: **no hay intervención humana en ningún plan**. Todo lo que diferencia a ELITE es capacidad del modelo —cuerpo digital, predicción, estrategia de competición—, no atención de una persona. Cualquier pieza que insinúe lo contrario incumple el valor 4.
@@ -129,13 +135,11 @@ Los tres planes no venden más entrenamientos: venden tres transformaciones dist
 
 ### Cerrado el 3 de septiembre
 
-1. **Precios definitivos:** 9,99 $ / 20,99 $ / 29,99 $. Anuales recalculados con el 15 %: 101,90 $ / 214,10 $ / 305,90 $. *(El 203 $ que circulaba para COACH salía de los 19,99 $ anteriores y ya no aplica.)*
+1. **Precios definitivos:** 9,99 $ / 19,99 $ / 29,99 $. Anuales recalculados con el 15 %: 101,90 $ / 203,90 $ / 305,90 $. *(El 203 $ que circulaba para COACH salía de los 19,99 $ anteriores y ya no aplica.)*
 2. **Nombre del primer plan: KENIA STARTER.** «START» queda descartado.
 3. **«Supervisión humana»: no existe.** Kenia es coach virtual. Ver la corrección de la tabla.
 
-### Una observación sobre el precio de COACH
-
-COACH pasó de 19,99 $ a **20,99 $** y con eso cruza la barrera de los 20. Es el único de los tres que cambia de decena, y es justo el plan que quieren vender a la mayoría. La diferencia de ingreso es de 1 $ al mes; la diferencia de percepción es «veinte y pico» frente a «diecinueve». Si el número no responde a un cálculo de márgenes que yo no conozco, **19,99 $ sostiene mejor la conversión del plan estrella**. Decisión de Ninro; lo dejo señalado y sigo con lo que me den.
+*El precio de COACH volvió a 19,99 $ el 3 de septiembre: el 20,99 $ que circulaba era un error de transcripción. Anual recalculado: 203,90 $.*
 
 ## 7 · Lo que queda abierto
 
@@ -143,8 +147,6 @@ COACH pasó de 19,99 $ a **20,99 $** y con eso cruza la barrera de los 20. Es el
 |---|---|---|
 | 1 | Target prioritario del año 1 | **Se decide después de las 4 buyer personas** (acordado 3 sep) |
 | 2 | Meta de negocio a 3 años | Ninro |
-| 3 | Confirmar que el método sí tiene autor (Ninro / equipo) para poder decir «método de autor» | Ninro + Kurt |
-| 4 | Precio de COACH: 20,99 $ o 19,99 $ | Ninro |
 | 5 | Descriptor fijo del nombre | Liam + Alonzo |
 | 6 | Protocolo ante señales de trastorno alimentario | Ninro + Kurt |
 | 7 | Dominio, handles y registro de marca | Ninro |

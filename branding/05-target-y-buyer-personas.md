@@ -3,10 +3,12 @@
 > **Estatus: hipótesis fundamentadas, no investigación.** No hay entrevistas ni encuestas todavía. Cada persona está construida desde lo que sí sabemos —producto, precios, mercado, comunidad semilla— y cada una trae al final **cómo validarla o matarla esta semana**. Con la comunidad del box a mano, eso se resuelve en dos días.
 >
 > Las cuatro se diferencian en los dos ejes acordados. Si dos coincidieran en ambos, serían la misma persona.
+>
+> **Pendiente de profundizar (3 sep).** El equipo las considera demasiado simples y tiene razón: les falta el detalle que solo sale de hablar con gente real — frases textuales, rutinas concretas, objeciones tal como se dicen. Se decidió seguir con el resto del branding y volver sobre esto con datos. Esta versión sirve para desbloquear arquetipo, tono y beneficios; **no sirve para segmentar pauta** todavía.
 
 ## La restricción que atraviesa a las cuatro
 
-Kenia cobra **9,99 / 20,99 / 29,99 $ al mes** en Venezuela. Eso significa que el público objetivo **no es «runners de Venezuela»**: es el runner venezolano con **capacidad de pago en dólares** — ingreso remoto o freelance en divisas, profesional independiente, negocio propio, o remesa familiar estable.
+Kenia cobra **9,99 / 19,99 / 29,99 $ al mes** en Venezuela. Eso significa que el público objetivo **no es «runners de Venezuela»**: es el runner venezolano con **capacidad de pago en dólares** — ingreso remoto o freelance en divisas, profesional independiente, negocio propio, o remesa familiar estable.
 
 Decirlo explícito no reduce el mercado: evita que la campaña le hable a quien no puede pagar y reviente el CAC. Y define el tono: esta gente **ya paga suscripciones** (Netflix, Spotify, el box). No hay que educarlas sobre pagar en dólares, hay que convencerlas de que esto vale más que la alternativa gratis.
 

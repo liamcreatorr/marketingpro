@@ -30,10 +30,10 @@ Suscripción, tres planes:
 | Plan | Mensual | Anual s/desc. | Anual con 15 % |
 |---|---|---|---|
 | **KENIA STARTER** | 9,99 $ | 119,88 $ | **101,90 $** |
-| **KENIA COACH** ⭐ | 20,99 $ | 251,88 $ | **214,10 $** |
+| **KENIA COACH** ⭐ | 19,99 $ | 239,88 $ | **203,90 $** |
 | **KENIA ELITE** | 29,99 $ | 359,88 $ | **305,90 $** |
 
-*Precios confirmados el 3 de septiembre. Sustituyen a la primera versión (9,97 / 19,99 / 29,98). Los anuales están recalculados: el 214,10 $ de COACH corrige el 203 $ que venía de los 19,99 $ anteriores.*
+*Precios confirmados el 3 de septiembre. Sustituyen a la primera versión (9,97 / 19,99 / 29,98). Los anuales están recalculados: el 203,90 $ de COACH corrige el 203 $ que venía de los 19,99 $ anteriores.*
 
 La estructura de los tres niveles está definida (ver `04-nucleo-estrategico.md`).
 
