@@ -2,68 +2,46 @@
 
 > Fuente: `Propuesta Ninro — Estrategia y Gestión de Contenido` (Organic Club, 30 ago 2026) + confirmaciones de Liam y Alonzo del 3 sep.
 
-## El dato que manda todo
+## Cronograma real (corregido el 3 de septiembre)
+
+El cronograma de la propuesta quedó superado por la realidad. Estas son las fechas que mandan:
 
 | | |
 |---|---|
-| Propuesta fechada | domingo 30 de agosto de 2026 |
-| Sprint Fase 1 | **1 – 14 de septiembre** |
-| Viaje de Ninro a Buenos Aires | **15 – 20 de septiembre** |
-| **Hoy** | **jueves 3 de septiembre — día 3 de 14** |
+| **Hoy** | jueves 3 de septiembre |
+| **Entrega de Branding + Análisis de marketing + Estrategia de contenido** | **antes del 13 de septiembre** |
+| **Primera grabación con Ninro** | **13 de septiembre** |
+| Viaje de Ninro a Buenos Aires | 15 – 20 de septiembre |
+| **Lanzamiento de la app en tiendas** | **mediados de octubre** |
 
-Según el cronograma firmado:
+Quedan **10 días** para los tres documentos. La grabación ya no es «hoy o mañana»: es el 13, y llega después de la estrategia, que es el orden correcto — se graba sabiendo qué se está diciendo.
 
-| Días | Qué toca | Estado |
-|---|---|---|
-| 1–2 | Inmersión, mensajes clave, guionización | debería estar cerrado |
-| **3–4** | **Sesión de grabación (requiere a Ninro presente)** | **es hoy y mañana** |
-| 5–8 | Documento de estrategia de marca, entorno, embudos, narrativa | 5 – 8 sep |
-| 9–11 | ASO, canales, Notion, edición | 9 – 11 sep |
-| 12–14 | Lanzamiento, primeras campañas, entrega del documento | 12 – 14 sep |
+### La consecuencia que hay que diseñar: el mes sin app
 
-**La sesión de grabación es lo único que no se puede hacer a distancia** y la propia propuesta la señala como la pieza crítica. Toca ahora.
+Entre la grabación del **13 de septiembre** y el lanzamiento de **mediados de octubre** hay aproximadamente **un mes en el que se puede publicar contenido pero no se puede descargar la app**.
 
-## Desviación 1 — «No hay fecha de entrega»
+Eso no es un problema si se diseña; es un problema si se descubre. Ese mes tiene que tener una función explícita en la estrategia de contenido:
 
-En la entrevista del bloque 00 la respuesta fue: *«No hay fecha de entrega porque el cliente podrá acceder a la aplicación una vez esté en la tienda»*, y el lanzamiento se ubicó en **octubre**.
+- Construir audiencia y lista de espera, no pedir descargas.
+- Capturar correos o WhatsApp de la comunidad del box y de quien llegue por contenido.
+- Llegar al día de lanzamiento con una base que descargue el primer día, que es lo que decide el arranque en tiendas.
+- El contenido grabado el 13 debe servir para las dos fases: pre-lanzamiento y lanzamiento. Hay que guionizarlo pensando en eso.
 
-La propuesta firmada dice lo contrario: hay una fecha dura (el viaje del 15) y el **lanzamiento queda operativo el día 14 de septiembre**.
+### Desviación documentada: la propuesta ya no coincide con la operación
 
-Hay que reconciliar las dos cosas, porque cambian el plan:
+La propuesta que tiene Ninro dice que el sprint va del 1 al 14 de septiembre y que **el lanzamiento queda operativo el día 14**. La realidad es que el lanzamiento es en octubre. Conviene mandarle a Ninro una nota corta con el cronograma actualizado: el documento que él tiene es el que va a usar para evaluar si se cumplió.
 
-- **Si la app entra a tienda en octubre** y la campaña arranca el 14 de septiembre, durante casi un mes el contenido no tiene a dónde mandar a la gente. Eso no es necesariamente malo —se puede correr una fase de lista de espera y construcción de audiencia— pero hay que diseñarlo a propósito, no descubrirlo.
-- **Si el lanzamiento de tienda también es en septiembre**, la ficha, el ícono y las capturas son urgentes hoy, no opcionales.
+## ASO — fuera de alcance, con una nota
 
-**Pendiente de confirmar con Ninro y Kurt: fecha real de publicación en App Store y Play Store.**
+El equipo confirma que **el ASO no está incluido en el costo** y que así se le comunicó a Ninro: nunca lo han hecho, pueden hacerlo, pero se cotiza aparte.
 
-## Desviación 2 — El ASO está vendido, no es opcional
+**Riesgo documentado:** la Fase 1 de la propuesta escrita sí lo lista, textual — *«Optimización del título y subtítulo con palabras clave de búsqueda · Redacción de la descripción orientada a conversión · Estrategia de capturas y video de vista previa · Investigación de palabras clave en App Store y Play Store»*. Si el acuerdo verbal dice una cosa y el documento firmado dice otra, conviene dejarlo por escrito con Ninro —un mensaje basta— antes de que sea un desacuerdo en octubre.
 
-El equipo indicó que la ficha de tienda y el ASO son «opcionales de momento». La Fase 1 de la propuesta los incluye explícitamente:
+**Lo que sí se mantiene dentro del branding, aunque el ASO salga:** el **descriptor fijo del nombre**. No es ASO, es el lockup de la marca — el par «Kenia + qué es esto» que va en la bio de Instagram, el header de la web, la firma de campaña y la portada del brandbook. Que además sirva para la tienda es una consecuencia, no su motivo.
 
-> Optimización del título y subtítulo con palabras clave de búsqueda · Redacción de la descripción orientada a conversión · Estrategia de capturas y video de vista previa · Investigación de palabras clave en App Store y Play Store
+## Análisis de marketing — flujo de trabajo aparte
 
-Es un entregable comprometido. Y arrastra una decisión de marca —el **descriptor fijo** del nombre— que no se puede posponer: el título y el subtítulo de la ficha *son* el descriptor.
-
-## Desviación 3 — El documento de marca vendido es más grande que los 12 bloques
-
-La propuesta compromete un «Documento de Estrategia de Marca» con esta tabla de contenidos. Marcado lo que la entrevista cubre y lo que falta:
-
-| Sección comprometida | ¿Cubierta por los bloques 00–11? |
-|---|---|
-| Misión, visión y círculo dorado | ✅ bloques 03–04 |
-| Valores, personalidad y arquetipo | ✅ bloques 05, 07, 09 |
-| Tono de voz y lineamientos | ✅ bloque 08 |
-| Beneficios racionales e irracionales | ✅ bloque 06 |
-| Profundización del naming y moodboard | ✅ bloques 10–11 |
-| Público objetivo y buyer persona | ✅ bloques 01–02 |
-| **Análisis PESTEL, macro y microentorno** | ❌ **falta** |
-| **Tendencias del sector fitness y apps de running** | ❌ **falta** |
-| **Matriz FODA + estrategias cruzadas FO, DO, FA, DA** | ❌ **falta** |
-| **Benchmark de competencia directa e indirecta** | ⚠️ hay borrador crudo, falta formalizar |
-| **Análisis de pricing de los tres planes** | ⚠️ hay estructura, falta análisis |
-| **Objetivos SMART de negocio y marketing** | ❌ **falta** (la tabla de métricas de la propuesta es la base) |
-
-Hay que añadir un **bloque 12 — Análisis de entorno y objetivos** que cubra PESTEL, tendencias, FODA cruzada, benchmark formal, análisis de pricing y objetivos SMART. Sin eso el documento entregado queda corto contra lo firmado.
+PESTEL, macro y microentorno, tendencias del sector, matriz FODA con estrategias cruzadas, benchmark formal y análisis de pricing y objetivos SMART **no son branding**: son el documento de *análisis de marketing*, que se entrega también antes del 13 pero como pieza separada. No entran en los bloques 00–11.
 
 ## Alcance confirmado (3 sep)
 
@@ -71,12 +49,13 @@ Hay que añadir un **bloque 12 — Análisis de entorno y objetivos** que cubra 
 - Plataforma de marca completa
 - Campaña de lanzamiento
 - Estrategia de contenido de redes
-- ASO y ficha de tienda *(está en la propuesta; el equipo lo daba por opcional)*
+- Descriptor fijo del nombre *(lockup de marca, no ASO)*
 - Tagline y frases de campaña — **las desarrolla Organic Club**, no el diseñador
 
 **Fuera:**
 - Copy interno de la app
 - Guion de onboarding de la app *(el cliente ya lo tiene)*
+- ASO y optimización de ficha de tienda *(se cotiza aparte — ver nota)*
 - Rediseño de la identidad visual *(la hizo un tercero; nosotros integramos y pasamos feedback)*
 - Presupuesto de pauta *(lo paga Ninro directo a Meta)*
 

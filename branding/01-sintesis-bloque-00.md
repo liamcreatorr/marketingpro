@@ -27,13 +27,15 @@ Viene del **país Kenia** y del gentilicio *kenianos*, por su peso en el mundo d
 
 Suscripción, tres planes:
 
-| Plan | Mensual | Anual s/desc. | Anual con 15% |
+| Plan | Mensual | Anual s/desc. | Anual con 15 % |
 |---|---|---|---|
-| 1 | 9,97 $ | 119,64 $ | ~101 $ |
-| 2 | 19,99 $ | 239,88 $ | ~203 $ |
-| 3 | 29,98 $ | 359,00 $ | ~305 $ |
+| **KENIA STARTER** | 9,99 $ | 119,88 $ | **101,90 $** |
+| **KENIA COACH** ⭐ | 20,99 $ | 251,88 $ | **214,10 $** |
+| **KENIA ELITE** | 29,99 $ | 359,88 $ | **305,90 $** |
 
-**Hueco:** no está definido qué diferencia a un plan de otro. Sin eso no se puede escribir la promesa de cada nivel.
+*Precios confirmados el 3 de septiembre. Sustituyen a la primera versión (9,97 / 19,99 / 29,98). Los anuales están recalculados: el 214,10 $ de COACH corrige el 203 $ que venía de los 19,99 $ anteriores.*
+
+La estructura de los tres niveles está definida (ver `04-nucleo-estrategico.md`).
 
 ## El corazón del producto
 
@@ -49,7 +51,9 @@ Suscripción, tres planes:
 4. **Optimiza adherencia, no perfección.** «Llevas tres semanas sin completar los martes. ¿Cambiamos tu planificación?» En vez de culpar, el sistema aprende del comportamiento real.
 5. **Prevención de lesiones como producto central**, no como aviso genérico: «Tu carga subió 32 % en dos semanas y tu rendimiento empeora. Modifiquemos los próximos cuatro días» — con alternativas automáticas.
 
-**Quién firma los planes:** humano + IA, con aprobación del equipo Kenia. Importa para el arquetipo: la marca no puede presentarse como algoritmo.
+**Quién firma los planes — corregido el 3 de septiembre.** En la primera respuesta se dijo «humano + IA con aprobación del equipo Kenia». La versión definitiva es otra: **no interviene ningún humano en el plan del usuario**. Kenia es un coach virtual: la IA analiza el perfil de cada persona, arma la rutina y la acompaña con vídeos de ejecución de cada ejercicio. A futuro se contempla que Ninro aparezca en cámara, pero hoy no.
+
+Esto tiene consecuencias directas de marca y están aplicadas en `04-nucleo-estrategico.md`: **no se puede prometer supervisión ni revisión humana en ningún plan**, ELITE incluido.
 
 ## Competencia — dos círculos distintos
 
@@ -65,9 +69,9 @@ Suscripción, tres planes:
 
 Esta respuesta es sólida y **debe convertirse en el párrafo oficial de posicionamiento**, no quedarse como respuesta de inversores.
 
-## Los cuatro huecos abiertos
+## Huecos abiertos
 
-1. **Qué diferencia a los tres planes de precio.**
-2. **Precio contra mercado.** 9,97–29,98 $/mes es precio de Runna (mercado US/UK) aplicado al mercado con menor poder adquisitivo de la región. O el mercado inicial real no es Venezuela residente, o el precio no cierra.
-3. **Dominio, handles y registro de marca** — pendiente de consultar con Ninro. Con lanzamiento en octubre es urgente.
-4. **Qué querían que el nombre evocara y si lo lograron** (pregunta 14, sin responder).
+1. **Precio contra mercado.** 9,99–29,99 $/mes es precio de Runna (mercado US/UK) aplicado al mercado con menor poder adquisitivo de la región. El target no es «runners de Venezuela»: es **el runner venezolano con ingreso en dólares**. Hay que decirlo explícito en las buyer personas o la campaña le hablará a quien no puede pagar.
+2. **Dominio, handles y registro de marca** — pendiente de consultar con Ninro.
+3. **Qué querían que el nombre evocara y si lo lograron** (pregunta 14, sin responder).
+4. **Meta de negocio a 3 años** — depende de Ninro.

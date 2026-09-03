@@ -32,7 +32,11 @@ La bisagra que los une, y que puede funcionar como declaración de marca:
 2. **Explica el porqué de cada sesión.** No «hoy 6 × 3 min», sino «hoy 6 × 3 min porque tu objetivo es el 10K, y como dormiste mal quitamos una repetición».
 3. **Aprende de ti.** El perfil adaptativo y el cuerpo digital: cómo respondes a la carga, cuánto tardas en recuperar, cuándo te sobrecargas, qué días te saltas.
 4. **Optimiza que sigas, no que el plan sea perfecto.** El mejor plan es inútil si abandonas a las cuatro semanas.
-5. **Firma humana.** El método está respaldado por el equipo Kenia. La IA no anda sola.
+5. **Método de autor, ejecución de máquina.** El método viene de un corredor real —Ninro, más de seis maratones, entrenado con método keniano—; la IA lo aplica a cada persona. No es un algoritmo genérico: es un método con autor, ejecutado a escala.
+
+> **Corregido el 3 de septiembre.** Aquí decía «firma humana: el método está respaldado por el equipo Kenia, la IA no anda sola». **Era falso** y venía de una respuesta anterior del bloque 00. La versión real: **ningún humano interviene en el plan del usuario**. Kenia es un coach virtual — la IA analiza el perfil, arma la rutina y la acompaña con vídeos de ejecución. A futuro se contempla que Ninro aparezca en cámara.
+>
+> El diferencial se sostiene igual, pero se enuncia distinto: lo humano está en **el método**, no en la atención. Decirlo de otra forma rompe el valor 4.
 
 ### QUÉ
 
@@ -115,28 +119,32 @@ Los tres planes no venden más entrenamientos: venden tres transformaciones dist
 
 | Plan | Precio | Promesa en una línea | Qué transformación vende |
 |---|---|---|---|
-| **KENIA START** | $9,97 /mes · $101 /año | *Tu camino comienza aquí.* | **Te da dirección.** Plan personalizado, entrenamientos diarios, seguimiento, explicación básica, comunidad. |
-| **KENIA COACH** ⭐ | $19,99 /mes · $203 /año | *Un entrenador que se adapta a ti.* | **Te acompaña.** Adaptación diaria según sueño, fatiga, dolor, estrés y tiempo; perfil adaptativo; coach conversacional; explicación avanzada; prevención inteligente. |
-| **KENIA ELITE** | $29,98 /mes · $305 /año | *La experiencia Kenia más avanzada.* | **Te conoce y anticipa.** Cuerpo digital, planificación predictiva, supervisión humana del método, preparación y estrategia de competición. |
+| **KENIA STARTER** | 9,99 $/mes · 101,90 $/año | *Tu camino comienza aquí.* | **Te da dirección.** Plan personalizado, entrenamientos diarios, seguimiento, explicación básica, comunidad. |
+| **KENIA COACH** ⭐ | 20,99 $/mes · 214,10 $/año | *Un entrenador que se adapta a ti.* | **Te acompaña.** Adaptación diaria según sueño, fatiga, dolor, estrés y tiempo; perfil adaptativo; coach conversacional; explicación avanzada; prevención inteligente. |
+| **KENIA ELITE** | 29,99 $/mes · 305,90 $/año | *La experiencia Kenia más avanzada.* | **Te conoce y anticipa.** Cuerpo digital, planificación predictiva, preparación y estrategia de competición, picos de rendimiento y recuperación post-carrera. |
+
+> **Corregido el 3 de septiembre.** ELITE ya no incluye «supervisión humana Kenia»: **no hay intervención humana en ningún plan**. Todo lo que diferencia a ELITE es capacidad del modelo —cuerpo digital, predicción, estrategia de competición—, no atención de una persona. Cualquier pieza que insinúe lo contrario incumple el valor 4.
 
 **COACH es el plan estrella.** Es el que encarna la promesa central de la marca y el que hay que vender a la mayoría. START baja la barrera de entrada; ELITE es aspiracional y ancla el precio.
 
-### Tres cosas que hay que cerrar antes de comunicar precios
+### Cerrado el 3 de septiembre
 
-1. **Fijar el precio exacto.** Circulan dos versiones: $9,97 / $29,98 y $9,99 / $29,99. En tienda, web y campaña tiene que ser el mismo número.
-2. **Fijar el nombre del primer plan.** Aparecen «KENIA STARTER» y «KENIA START». Uno solo.
-3. **Definir qué es exactamente la «supervisión humana» de ELITE.** Es el punto donde la marca puede prometer de más y romper el valor 4. Opciones que sí se pueden sostener: revisión periódica del programa, ajustes para objetivos importantes, validación humana en situaciones concretas, consultas limitadas con expertos. Lo que **no** se puede prometer: un entrenador humano personal.
+1. **Precios definitivos:** 9,99 $ / 20,99 $ / 29,99 $. Anuales recalculados con el 15 %: 101,90 $ / 214,10 $ / 305,90 $. *(El 203 $ que circulaba para COACH salía de los 19,99 $ anteriores y ya no aplica.)*
+2. **Nombre del primer plan: KENIA STARTER.** «START» queda descartado.
+3. **«Supervisión humana»: no existe.** Kenia es coach virtual. Ver la corrección de la tabla.
 
----
+### Una observación sobre el precio de COACH
+
+COACH pasó de 19,99 $ a **20,99 $** y con eso cruza la barrera de los 20. Es el único de los tres que cambia de decena, y es justo el plan que quieren vender a la mayoría. La diferencia de ingreso es de 1 $ al mes; la diferencia de percepción es «veinte y pico» frente a «diecinueve». Si el número no responde a un cálculo de márgenes que yo no conozco, **19,99 $ sostiene mejor la conversión del plan estrella**. Decisión de Ninro; lo dejo señalado y sigo con lo que me den.
 
 ## 7 · Lo que queda abierto
 
 | # | Pendiente | De quién depende |
 |---|---|---|
-| 1 | Target prioritario del año 1 (competitivo vs. vida real) | Liam + Alonzo |
+| 1 | Target prioritario del año 1 | **Se decide después de las 4 buyer personas** (acordado 3 sep) |
 | 2 | Meta de negocio a 3 años | Ninro |
-| 3 | Fecha real de publicación en tiendas | Ninro + Kurt |
-| 4 | Definición de «supervisión humana» en ELITE | Ninro + Kurt |
-| 5 | Precio y nombre de plan definitivos | Ninro |
-| 6 | Descriptor fijo del nombre para tienda y bio | Liam + Alonzo |
-| 7 | Protocolo ante señales de trastorno alimentario | Ninro + Kurt |
+| 3 | Confirmar que el método sí tiene autor (Ninro / equipo) para poder decir «método de autor» | Ninro + Kurt |
+| 4 | Precio de COACH: 20,99 $ o 19,99 $ | Ninro |
+| 5 | Descriptor fijo del nombre | Liam + Alonzo |
+| 6 | Protocolo ante señales de trastorno alimentario | Ninro + Kurt |
+| 7 | Dominio, handles y registro de marca | Ninro |
