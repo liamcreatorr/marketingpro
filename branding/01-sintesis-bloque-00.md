@@ -13,9 +13,11 @@ Plataforma de entrenamiento para **corredores**, con planes personalizados que s
 
 ## El fundador y el origen
 
-**Ninro**, CEO. Perfil de CrossFit, tres años de preparación profesional, **más de seis maratones** corridos junto a especialistas y atletas. Historia personal fuerte: **era obeso y hoy compite**.
+**Ninro Libre**, CEO. Perfil de CrossFit, tres años de preparación profesional, **más de seis maratones** corridos junto a especialistas y atletas. Ha entrenado con **método keniano** — ese es el vínculo real con el país que da nombre a la marca.
 
 Su cruzada declarada: **romper la creencia de que quien hace CrossFit no corre**. De ahí que el producto se adapte a cualquier usuario que quiera armar un plan, no solo al corredor puro.
+
+> **Tema vetado.** La historia de transformación física personal del fundador **no se usa** en ningún contenido, campaña ni documento. Es un tema sensible para él y la decisión no se reabre. El relato de marca se construye sobre la cruzada («no eres corredor» → sí lo eres) y sobre el método, nunca sobre su cuerpo.
 
 ## El nombre
 

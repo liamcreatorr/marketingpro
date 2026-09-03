@@ -69,19 +69,18 @@ Consecuencia operativa, no opinión: el nombre solo **no puede** cargar el signi
 
 > **Corrección a la auditoría anterior:** advertí que el nombre prometía *menos* que el producto (running vs. multideporte). Con las respuestas del bloque 00 eso se cae: el producto **es** running-first y el nombre está alineado con la estrategia. El riesgo real es el inverso y está documentado arriba: en español el nombre no evoca running en absoluto.
 
-## Hallazgo 5 — Marcas de terceros dentro del manual oficial
+## Hallazgo 5 — Marcas de terceros (corregido a la baja)
 
-- La portada usa fotografía de stock con **logos de adidas y Nike visibles** en la ropa de los modelos.
-- Hay un póster de aplicación titulado **«42.195 KM · MARATÓN NIKE MELBOURNE»** con el swoosh de Nike incluido.
-- La lámina de contexto competitivo muestra los logos de **Reebok, adidas y Under Armour**.
+> **Corrección.** En la primera versión marqué esto como gravedad Alta. El equipo aclaró que la lámina que muestra el logo de Kenia junto a Reebok, adidas, Under Armour, Strava, Runkeeper y komoot es una **prueba de contexto**: sirve para demostrar que el logotipo aguanta al lado de marcas consolidadas. Es una convención legítima de presentación de identidad y yo la leí mal, como si fuera un análisis competitivo. **Baja a gravedad Baja** y no requiere acción sobre la identidad.
 
-Un manual de marca oficial que se comparte con inversores, tiendas o socios no debería contener marcas ajenas en sus piezas de aplicación. Hay que sustituir las fotos y rehacer ese póster con un evento propio o genérico.
+Lo que sí se mantiene, separado en dos cosas distintas:
 
-## Hallazgo 6 — El set competitivo cuenta una categoría falsa
+- **Gravedad media — el póster «42.195 KM · MARATÓN NIKE MELBOURNE» con el swoosh.** Esto no es una prueba de contexto: es una **pieza de aplicación de Kenia** construida sobre un evento y una marca ajenos. Como lámina de portafolio es defendible; publicada sería un problema. No usar en canales.
+- **Gravedad baja — fotografía de stock con ropa adidas y Nike visible en la portada.** Tolerable dentro de un manual; hay que sustituirla en cualquier pieza que se publique.
 
-La lámina agrupa a Kenia con **Reebok, Runkeeper, Under Armour, Strava, adidas y komoot**: mezcla fabricantes de ropa con apps de tracking y con una app de rutas de ciclismo/senderismo. Y **no aparecen ni Runna ni RunMotion Coach**, que son los competidores funcionales reales según el propio benchmark del equipo.
+## Hallazgo 6 — El set competitivo no sirve como benchmark
 
-Esa lámina le dice al lector que Kenia compite con adidas. No compite con adidas.
+Aclarado el punto anterior, queda una consecuencia real: **esa lámina no puede reutilizarse como el benchmark competitivo** del documento de estrategia. Ahí faltan **Runna** y **RunMotion Coach**, que son los rivales funcionales según el propio benchmark del equipo, y sobran los fabricantes de ropa. El benchmark competitivo se construye aparte.
 
 ## Hallazgo 7 — Faltan piezas básicas del manual
 
@@ -126,3 +125,23 @@ El diagnóstico es de **desalineación**, no de mala calidad. Lo que funciona y 
 - El **monograma-flecha**: tiene carácter, dirección y velocidad. Es el activo más fuerte.
 - El **naranja `#FF5A00` sobre negro**: potente y visible. Con una salvedad a verificar: el naranja de Strava es muy cercano al de Kenia, y Strava es la marca de referencia de la categoría. Hay que comparar los dos valores lado a lado y decidir si conviene desplazar el tono para no leerse como derivado.
 - El **oficio de las aplicaciones**: los pósters, el mural, la UI de reloj y los mapas de ruta están bien resueltos y muestran un sistema con recorrido.
+
+
+---
+
+## Nota de propiedad
+
+La identidad visual **la desarrolló un tercero** (el diseñador del cliente), no Organic Club. Nuestro encargo es **integrarla**, no rehacerla. Por tanto estos hallazgos se dividen en dos:
+
+**Se le pasan al diseñador como feedback** (no los ejecutamos nosotros):
+- Tipografía, área de resguardo, usos incorrectos, ícono de app y prueba a 60 px (hallazgo 7).
+- Jerarquía de paleta y reglas de contraste (hallazgo 8).
+- Proximidad del naranja con el de Strava (hallazgo 8).
+- Legibilidad del monograma a tamaño ícono (hallazgo 9).
+
+**Los resolvemos nosotros dentro de la plataforma de marca** (son estrategia, no diseño):
+- Las cuatro frases de campaña y el tagline (hallazgos 1 y 3).
+- El target al que le habla la marca (hallazgo 2).
+- El significado y el descriptor del nombre (hallazgos 4 y 10).
+- Los valores reales, en sustitución de los cuatro atributos cromáticos (hallazgo 12).
+- El alcance geográfico declarado (hallazgo 11).
