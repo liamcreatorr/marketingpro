@@ -12,31 +12,35 @@ Kenia cobra **9,99 / 19,99 / 29,99 $ al mes** en Venezuela. Eso significa que el
 
 Decirlo explícito no reduce el mercado: evita que la campaña le hable a quien no puede pagar y reviente el CAC. Y define el tono: esta gente **ya paga suscripciones** (Netflix, Spotify, el box). No hay que educarlas sobre pagar en dólares, hay que convencerlas de que esto vale más que la alternativa gratis.
 
-## Declaración de público objetivo (borrador)
+## Declaración de público objetivo — **cerrada el 3 de septiembre**
 
-> Adultos de 25 a 45 años en Caracas y principales ciudades de Venezuela, con ingresos en dólares, que quieren correr en serio —no solamente salir a trotar— pero que no tienen ni un entrenador ni la certeza de estar haciéndolo bien. Ya entrenan algo: gimnasio, box, o carreras sueltas. Han probado planes genéricos de internet y los han abandonado, no por falta de ganas, sino porque ningún plan sabía nada de su semana. Pagan por suscripciones digitales, valoran no lesionarse tanto como mejorar, y quieren que alguien les diga qué hacer hoy y por qué.
+> **Kenia es para quien ya corre.** Personas de 25 a 45 años en Caracas y principales ciudades de Venezuela, con ingresos en dólares, que ya tienen el hábito de correr —tres o más veces por semana, o de forma irregular pero sostenida— y que están **en el proceso**: preparando una carrera, intentando bajar una marca, volviendo después de una lesión, o queriendo dejar de correr siempre lo mismo. Entrenan sin plan o con un plan genérico que no sabe nada de su semana. Ya pagan por entrenar —box, gimnasio, carreras, reloj— y valoran no lesionarse tanto como mejorar.
+>
+> **No es para quien no corre y no tiene el hábito.** Esa persona necesita otra cosa antes de necesitar a Kenia.
 
----
+> **Corrección de la versión anterior.** El primer borrador incluía a alguien sin hábito de correr —«la que empieza cada enero»— y describía el target como «quiere correr en serio». El equipo lo corrigió: el producto prepara para carreras, no crea el hábito. Esa persona salió y entró una que sí está dentro del target (persona 2).
 
 ## Mapa de las cuatro
 
 | | Motivación dominante (eje A) | Relación con la constancia (eje B) | Plan probable |
 |---|---|---|---|
-| **1 · Andrés** — el del box que quiere correr | Pertenencia + rendimiento | Constante en el gym, estancado en running | COACH |
-| **2 · Mariana** — la que empieza cada enero | Salud + estética | Arranca y abandona | STARTER |
+| **1 · Andrés** — el del box que corre mal | Pertenencia + rendimiento | Constante en el gym, sin estructura corriendo | COACH |
+| **2 · Rebeca** — la que corre desde hace años y está estancada | Superación personal | Constante pero sin plan | COACH |
 | **3 · Daniel** — el que ya se inscribió | Rendimiento | Obsesivo con el dato | ELITE |
-| **4 · Patricia** — la que vuelve | Salud + disciplina | Vuelve tras una pausa larga | COACH |
+| **4 · Patricia** — la que vuelve tras la lesión | Salud + seguridad | Vuelve tras una pausa larga | COACH |
+
+**Las cuatro corren ya.** Se diferencian en por qué corren y en qué relación tienen con la estructura.
 
 ---
 
-## 1 · Andrés, 32 — «el del box que quiere correr»
+## 1 · Andrés, 32 — «el del box que corre mal»
 
 **La persona semilla.** Es literalmente la comunidad que ya está esperando el lanzamiento.
 
 | | |
 |---|---|
 | Ocupación | Desarrollador remoto para una empresa de afuera. Cobra en dólares. |
-| Semana | Box 5 días. Corre "cuando puede", sin plan. |
+| Semana | Box 5 días. Corre una o dos veces por semana, sin plan y sin progresión. |
 | Motivación | No quiere ser el que se ahoga en los 5K. Es pertenencia antes que marca. |
 | Constancia | Disciplinadísimo en el gimnasio, errático corriendo. |
 | Disparador | Un WOD con carrera donde quedó último. O un amigo del box que hizo un 10K. |
@@ -53,29 +57,27 @@ Decirlo explícito no reduce el mercado: evita que la campaña le hable a quien 
 
 ---
 
-## 2 · Mariana, 36 — «la que empieza cada enero»
+## 2 · Rebeca, 34 — «la que corre desde hace años y está estancada»
 
-**La prueba de fuego del producto.** Si Kenia la retiene, el producto hace lo que promete.
+**El segmento más grande y el menos atendido.** Corre de verdad, pero nunca ha entrenado.
 
 | | |
 |---|---|
-| Ocupación | Emprendimiento propio o cargo administrativo. Ingresos mixtos, algo en dólares. |
-| Semana | Impredecible. Hijos, trabajo, imprevistos. |
-| Motivación | Salud primero, verse bien después. No quiere competir con nadie. |
-| Constancia | Arranca con todo y abandona a las 3-4 semanas. Lleva años en ese ciclo. |
-| Disparador | Enero, un cumpleaños, un chequeo médico, una foto. |
-| Frase al descargar | *«Esta vez quiero terminar algo que empiezo.»* |
-| Frase al cancelar | *«No la estoy usando, mejor la quito.»* |
-| Objeción | *«Otra app más de las que voy a abandonar.»* |
-| Paga | Dudosa. Entra por STARTER y solo sube si siente que funcionó. |
-| Dónde vive | Instagram y TikTok. Grupos de WhatsApp de amigas. |
-| Quién influye | Una amiga que sí lo logró. |
+| Ocupación | Profesional o negocio propio. Ingreso en dólares. |
+| Semana | Corre 3 veces por semana desde hace años. Siempre la misma ruta, siempre el mismo ritmo. |
+| Motivación | Superación personal. Quiere su primer 21K, o bajar de una marca que lleva dos años igual. |
+| Constancia | Constantísima. El problema no es que falte: es que no progresa. |
+| Disparador | Ver a alguien de su nivel correr un 21K. O mirar sus tiempos del año pasado y ver que son iguales. |
+| Frase al descargar | *«Corro tres veces por semana y sigo igual que hace dos años.»* |
+| Frase al cancelar | *«Es mucha estructura para mí.»* |
+| Objeción | *«¿No es demasiado complicado? Yo solo quiero correr.»* |
+| Paga | Sí. Ya invierte en zapatos y carreras; le falta convencerse de que un plan cambia algo. |
+| Dónde vive | Instagram, grupos de corredoras, la carrera del domingo. |
+| Quién influye | Otras corredoras de su grupo. |
 
-**Por qué Kenia le sirve:** es la destinataria natural del diferencial 4 —optimizar adherencia— y del valor «nunca con culpa». Toda su historia con el fitness es una historia de culpa.
+**Por qué Kenia le sirve:** es la destinataria pura del diferencial 2 —explicar el porqué— porque nunca nadie le explicó que correr siempre igual no mejora nada. Y del diferencial 3: el perfil adaptativo le muestra progresión donde antes solo veía kilómetros.
 
-**Riesgo comercial:** es la de menor disposición a pagar y mayor churn. **No debe liderar la campaña de lanzamiento**, aunque sea a quien más ayuda el producto: sale más caro adquirirla que retenerla. Es persona de contenido orgánico, no de pauta.
-
----
+**Riesgo:** puede percibir el plan como una carga. El onboarding tiene que demostrarle valor en la primera semana, no en la sexta.
 
 ## 3 · Daniel, 29 — «el que ya se inscribió»
 
@@ -129,40 +131,47 @@ Decirlo explícito no reduce el mercado: evita que la campaña le hable a quien 
 
 | Quién | Por qué no |
 |---|---|
-| **El corredor de élite con entrenador humano** | Ya tiene lo que Kenia simula, y mejor. Además contamina la comunidad: convierte el feed en una competencia donde los demás pierden. |
-| **El que solo quiere un tracker gratis** | Su necesidad la cubre Strava sin pagar. Adquirirlo cuesta lo mismo y no convierte. |
-| **El que busca bajar de peso rápido** | Choca de frente con la política de cuerpo. No se le comunica, y si llega, el producto no lo optimiza para eso. |
-| **Quien no puede pagar en dólares** | No es un juicio sobre nadie: es que el producto hoy no tiene una vía para servirle. Cuando exista un plan local, se reabre. |
-
----
+| **Quien no corre y no tiene el hábito** | Kenia prepara para carreras; no crea el hábito de correr. Esa persona necesita otra cosa antes. Es la anti-persona principal y define el límite del target. |
+| **El corredor de élite con entrenador humano** | Ya tiene lo que Kenia simula, y mejor. Además contamina la comunidad. |
+| **El que solo quiere un tracker gratis** | Su necesidad la cubre Strava sin pagar. |
+| **El que busca bajar de peso rápido** | Choca de frente con la política de cuerpo. No se le comunica. |
+| **Quien no puede pagar en dólares** | El producto hoy no tiene una vía para servirle. Cuando exista un plan local, se reabre. |
 
 ## Cómo validar esto antes del 13 de septiembre
 
-Tienen la comunidad del box a mano. Con **8 conversaciones de 15 minutos** —dos por persona— se confirma o se tumba todo esto.
+Ocho conversaciones de quince minutos con gente del box que ya corre. Dos horas de trabajo entre los dos. Se anota **textual**, no se resume.
 
-**Preguntas, en este orden y sin sugerir la respuesta:**
+> **Actualizado con el target cerrado.** La versión anterior preguntaba a gente que podía no correr. Estas nueve preguntas están escritas para quien ya corre, y la número 9 además desbloquea un dato que hace falta para la campaña.
 
-1. ¿Cuándo fue la última vez que intentaste seguir un plan de running? ¿Qué pasó?
-2. ¿Qué usas hoy para saber qué entrenar? *(Callarse y anotar textual.)*
-3. Cuéntame la última semana en que no entrenaste lo que tocaba. ¿Qué pasó ese día?
-4. ¿Cuánto pagas hoy por entrenar —box, gym, coach, apps?
-5. Si una app te dijera hoy «descansa», ¿le harías caso o pensarías que estás fallando?
-6. ¿Te consideras corredor? ¿Por qué sí o por qué no? ← **esta valida el enemigo B**
-7. ¿Cuánto pagarías al mes por un plan que se ajuste solo a tu semana?
+### Las nueve preguntas
 
-**Qué buscar:**
+1. ¿Cuántas veces a la semana corres, y desde cuándo?
+2. ¿Estás preparando alguna carrera? ¿Cuál y para cuándo?
+3. ¿Sigues algún plan? ¿De dónde salió? *(Preguntar y callarse. Anotar la respuesta tal cual.)*
+4. Cuéntame la última semana en que no pudiste entrenar lo que tocaba. ¿Qué pasó ese día?
+5. ¿Te has lesionado corriendo? ¿Qué estabas haciendo las semanas antes de la lesión?
+6. **¿Te consideras corredor, o alguien que corre?** ¿Por qué?
+7. **Si un plan te dijera hoy «descansa», ¿le harías caso o pensarías que estás perdiendo forma?**
+8. ¿Qué usas hoy: reloj, app, nada? ¿Qué te falta de lo que usas?
+9. **¿Cuánto cobra un entrenador de running aquí al mes?** ¿Y cuánto pagarías por un plan que se ajuste solo a tu semana?
 
-- Si nadie responde que no a la 6, **el enemigo B no existe** y hay que replantear el relato.
-- Si en la 5 la mayoría dice «pensaría que estoy fallando», **el valor «nunca con culpa» es el diferencial más grande** y debe liderar la comunicación.
-- Si en la 7 el número mediano queda por debajo de 15 $, **hay un problema de precio**, no de marca.
+### Qué buscar en las respuestas
 
-## Lo que estas cuatro personas implican para la decisión de target
+| Pregunta | Qué confirma o tumba |
+|---|---|
+| **6** | El **enemigo B**. Si todos responden «corredor» sin dudar, la creencia de «tú no eres corredor» no existe en este grupo y el relato hay que replantearlo. Si varios dicen «alguien que corre», el enemigo está vivo y Andrés existe. |
+| **7** | El **valor 1 y el beneficio E2**. Si la mayoría dice «pensaría que estoy perdiendo forma», *descansar también entrena* es el diferencial más grande que tienen y debe liderar la comunicación. |
+| **4 y 5** | El **diferencial 1 y el 5**. Las respuestas a estas dos son el copy de la campaña, literal. Anotar palabra por palabra. |
+| **3** | Si nadie sigue plan, confirma que el mercado está sin atender. Si todos siguen uno, hay que saber cuál y por qué no les basta. |
+| **9** | Desbloquea **R5**, el beneficio racional más potente y el único sin prueba: convierte los 19,99 $ en una comparación ganadora. |
 
-La decisión se toma después de validarlas, pero la lógica ya se ve:
+## Lo que estas cuatro personas implican
 
-- **Andrés** es la semilla, el enemigo B en persona y el que paga sin fricción. Es el candidato natural para liderar el lanzamiento.
-- **Daniel** es el de conversión más rápida y mejor CAC — el mejor objetivo para la pauta.
-- **Patricia** es la de mayor valor a largo plazo y menor sensibilidad al precio.
-- **Mariana** es a quien más ayuda el producto y la peor para adquirir con dinero.
+Con el target cerrado en «quien ya corre», la jerarquía queda así:
 
-Ninguna de las cuatro es el «corredor competitivo» al que le habla el manual visual actual. Eso, si se confirma, es la respuesta a la decisión de target.
+- **Andrés** es la comunidad semilla y el enemigo B en persona. Candidato natural para liderar el lanzamiento, porque ya está ahí y ya dijo que paga.
+- **Daniel** es el de conversión más rápida —tiene fecha de carrera— y por tanto el mejor objetivo para la pauta.
+- **Rebeca** es el segmento más grande y el menos atendido: nadie le está hablando al que corre bien pero entrena mal.
+- **Patricia** es la de mayor valor a largo plazo y menor sensibilidad al precio, porque compra seguridad.
+
+Ninguna de las cuatro es un corredor de élite, y ninguna es una persona sin hábito. **El target vive exactamente en el medio: gente que ya corre y todavía no entrena.**

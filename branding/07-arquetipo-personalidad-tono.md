@@ -1,33 +1,51 @@
 # Arquetipo, personalidad y tono de voz — Kenia
 
-> **Supuesto de trabajo.** El target prioritario aún no está decidido; se decidirá con las personas profundizadas. Para no bloquear, este documento asume que **lidera Andrés** —el del box que quiere correr— porque es la comunidad semilla real, es el enemigo B en persona y paga sin fricción. Si el target cambia, lo que se mueve es la temperatura del tono, no el arquetipo.
+> **Target cerrado el 3 de septiembre.** Kenia es para **quien ya corre**: el que está en el proceso, el que se prepara para carreras, el que quiere mejorar. **No es para quien no corre y no tiene el hábito.** Esa decisión la tomó el equipo y ordena todo lo que sigue.
 
 ---
 
 # 1 · Arquetipo
 
-## Dominante: **SABIO** · Secundario: **CUIDADOR**
+## El usuario es el HÉROE. La marca es su MENTOR — **Sabio**, con **Cuidador** de apoyo.
 
-### Por qué Sabio
+### La discusión, resuelta
 
-El acto más distintivo de Kenia no es motivar: es **explicar**. «Hoy 6 × 3 minutos porque tu objetivo es el 10K, y como dormiste mal quitamos una repetición.» Ninguna otra app de la categoría hace eso. El Sabio no te empuja: te hace entender, y quien entiende obedece más que quien es regañado.
+El equipo planteó que a Kenia le queda mejor el **Héroe**, porque le habla a quien ya corre y se prepara para maratones, no a quien empieza de cero. **Tienen razón en el territorio y yo me pasé de frenada en la conclusión.**
 
-Además, el producto entero es una máquina de conocimiento: el gemelo digital, la planificación predictiva, el aviso de sobrecarga. Todo eso es saber aplicado, no arenga.
+Lo que faltaba era separar dos cosas que se estaban mezclando:
 
-### Por qué Cuidador de secundario
+| | Quién es el Héroe | Qué implica |
+|---|---|---|
+| **El universo de la marca** | **Héroe** — carreras, kilómetros, meta, esfuerzo, madrugada, línea de salida | La estética oscura, intensa y de alto rendimiento **es correcta y se conserva** |
+| **El rol de la marca** | **Sabio / mentor** — el que prepara al héroe | La voz explica, adapta y protege; no arenga ni avergüenza |
 
-Porque el Sabio solo sería frío. Lo que impide que Kenia se vuelva un manual de fisiología es el cuidado: pregunta antes de mandar, protege de la lesión, no castiga cuando fallas. El Cuidador es lo que hace que «descansa» no suene a rendición.
+**El usuario es el héroe de la historia. Kenia es quien lo entrena.** En el esquema de Jung, el mentor del héroe no es otro héroe: es el Sabio. Por eso el instinto del equipo (Héroe) y el comportamiento del producto (explicar, adaptar, frenar) no se contradicen — describen a dos personajes distintos de la misma historia.
 
-### Qué NO es Kenia
+### Por qué la marca no puede ser Héroe ella misma
 
-**No es Héroe.** Y esto importa porque **la identidad visual actual es Héroe puro**: negra, agresiva, «el asfalto no miente», «tu único rival te mira en el espejo», atletas en zancada bajo luz dura. El Héroe le habla al que ya está en la batalla y desprecia al que duda. Kenia existe justamente para el que duda.
+Una sola razón, y es decisiva: **el Héroe nunca te dice que pares.** Su mensaje raíz es «empuja más». Y el comportamiento más distintivo de Kenia —el que ningún competidor tiene— es decirte **«hoy no entrenas»** cuando tu cuerpo lo pide.
 
-Es la consecuencia más concreta de todo el branding, y es la que hay que pasarle al diseñador: **el sistema visual está construido sobre el arquetipo equivocado.**
+Si la marca se para en Héroe, esa función se vuelve incoherente con su propia voz y el producto pierde justo lo que lo separa de Runna, de Garmin y de Strava.
 
-| Arquetipo | Por qué se descarta |
+### Lo que esto conserva del sistema visual actual
+
+**Corrijo lo que dije antes.** Escribí que *«el sistema visual está construido sobre el arquetipo equivocado»* y que había que ablandarlo. Con el target cerrado, eso es falso: el mundo visual —negro, naranja, cuerpos en esfuerzo, asfalto, velocidad— **es el correcto**, porque es el mundo del héroe al que la marca acompaña.
+
+Lo que sí hay que corregir es mucho más quirúrgico: **el copy.** Las cuatro frases del manual no fallan por ser intensas; fallan porque hablan **como el héroe** en lugar de hablarle al héroe, y una de ellas lo avergüenza.
+
+| | |
 |---|---|
-| **Héroe** | Le habla al que ya se cree corredor. Choca de frente con el enemigo B. |
-| **Rebelde** | Kenia discute con una creencia, no con el sistema. No hay a quién derrocar. |
+| **Se conserva** | Paleta, monograma, fotografía de esfuerzo, luz dura, contraste, energía |
+| **Se corrige** | Las cuatro frases de campaña y la voz en producto |
+
+Eso es lo que hay que pasarle al diseñador — y es una nota bastante más corta de la que le iba a mandar.
+
+### Los otros arquetipos, descartados
+
+| Arquetipo | Por qué no |
+|---|---|
+| **Héroe (como voz de marca)** | No puede decir «descansa». Pierde el diferencial. |
+| **Rebelde** | Kenia discute con una creencia, no con un sistema. No hay a quién derrocar. |
 | **Amigo** | Demasiado horizontal: Kenia sabe algo que tú no sabes, y esa asimetría es el producto. |
 | **Mago** | Prometería transformación mágica. Choca con el valor 4. |
 | **Gobernante** | Ordena desde arriba. Es lo contrario a «pregunta antes de mandar». |
@@ -36,13 +54,9 @@ Es la consecuencia más concreta de todo el branding, y es la que hay que pasarl
 
 | Situación | Qué hace Kenia |
 |---|---|
-| **Ve a alguien a punto de rendirse** | Le pregunta qué está pasando y le baja el entreno. No le grita que siga. |
-| **Celebra un logro** | Reconoce el proceso antes que la marca: doce semanas sostenidas pesan más que un PR. |
+| **Ve a alguien a punto de romperse** | Pregunta qué pasa y baja la carga. No le grita que siga. |
+| **Celebra un logro** | Reconoce el proceso además de la marca: doce semanas sostenidas pesan tanto como el PR. |
 | **El usuario rompe una racha** | Recalcula y explica el nuevo plan. No menciona la racha rota. |
-
-**Coherencia con el enemigo declarado:** el enemigo B es *«tú no eres corredor»*. El Sabio lo desarma enseñando —te conviertes en corredor porque entiendes lo que haces— y el Cuidador lo desarma acogiendo. Un Héroe lo reforzaría.
-
----
 
 # 2 · Personalidad
 
@@ -58,7 +72,7 @@ Tiene entre 35 y 40 años y ya no tiene nada que demostrar. Corrió lo suficient
 
 **Agresivo · Motivacional · Culposo · Épico · Condescendiente**
 
-> *Motivacional* está en la lista negra a propósito. Kenia no motiva: organiza, explica y acompaña. La motivación es consecuencia, no producto.
+> *Motivacional* está en la lista negra a propósito. Al corredor que ya está en el proceso no le falta motivación: le falta criterio. Kenia no motiva — organiza, explica y protege. La motivación es consecuencia, no producto.
 
 ## Modelo Aaker
 
@@ -125,7 +139,7 @@ El tono no es uno solo: cambia según lo que le está pasando a la persona.
 | «no pain no gain» | Contradice la política de prevención |
 | «fallaste», «perdiste tu racha», «otra vez no entrenaste» | Culpa explícita |
 | «quemar grasa», «cuerpo perfecto», «bikini», «verano» | Política de cuerpo |
-| «bestia», «modo bestia», «guerrero», «máquina» | Arquetipo Héroe, no es Kenia |
+| «bestia», «modo bestia», «guerrero», «máquina» | No por intensas: por vacías. Son clichés de categoría que cualquier box firma, y ponen a la marca a arengar en vez de a entrenar |
 | «deberías» | Juicio moral disfrazado de consejo |
 | «solo tú puedes» | Le pone toda la carga a quien ya se siente culpable |
 
@@ -155,14 +169,14 @@ Traducido a tres reglas operativas:
 
 # 5 · Las cuatro frases del manual actual
 
-Las cuatro se retiran. Tres son genéricas de categoría —las firmaría Nike o cualquier box— y una contradice el producto de frente.
+Las cuatro se retiran. **No por intensas** —la intensidad es correcta para este target— sino porque **hablan como el héroe en lugar de hablarle al héroe**, y una de ellas además lo avergüenza.
 
 | Frase actual | Veredicto |
 |---|---|
-| «El asfalto no miente.» | Genérica. Arquetipo Héroe. |
-| «Tu único rival te mira en el espejo.» | Genérica. Además falsa en un producto con ligas y comunidad. |
+| «El asfalto no miente.» | Genérica de categoría. Voz de héroe, no de mentor. |
+| «Tu único rival te mira en el espejo.» | Genérica, y además falsa en un producto con ligas y comunidad. |
 | «La meta es solo el principio.» | Genérica y vacía. |
-| **«Donde termina tu excusa, empieza tu carrera.»** | **Incompatible.** Es el enemigo declarado dicho con la voz de la marca. |
+| **«Donde termina tu excusa, empieza tu carrera.»** | **Incompatible.** Avergüenza al usuario, y «excusa» es el enemigo declarado dicho con la voz de la marca. |
 
 **La redacción de las nuevas queda de parte de Organic Club**, según lo acordado. Este documento entrega el criterio, no el copy. Un solo ejemplo de calibración, para fijar la altura:
 

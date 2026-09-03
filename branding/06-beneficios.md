@@ -47,11 +47,16 @@ Toda pieza que ponga *«plan personalizado»* como titular principal está vendi
 
 **E2, el permiso.** Sin *«descansar no es fallar»*, Kenia es otra app de planes con IA. Con eso, es la única app de running que no te castiga por tener vida. Es el beneficio que nace directo del valor 1 y del enemigo A, y es el que ningún competidor está reclamando.
 
-### El más difícil de comunicar sin sonar blando
+### Cómo se dice E2 sin sonar blando
 
-También E2. Decir «descansa» en una categoría construida sobre «no excuses» suena a permiso para no entrenar. La forma de decirlo sin ablandar la marca está en el manual de tono: **la exigencia se le pone al plan, no a la persona.**
+Era la duda razonable: decir «descansa» en una categoría construida sobre *no excuses* puede sonar a permiso para no entrenar. **Con el target cerrado en corredores que ya están en el proceso, el problema desaparece** — y de hecho se invierte.
 
----
+El que se prepara para un 21K o un maratón no necesita permiso para ser flojo: **necesita permiso para no romperse.** Es la población que se sobreentrena, que corre lesionada, que suma kilómetros de más por miedo a llegar corta. Para ella, «descansar también entrena» no es un mimo: **es doctrina de entrenamiento de verdad**, la misma que aplica cualquier entrenador serio.
+
+Regla de redacción: **el descanso se comunica como método, nunca como concesión.**
+
+- ✅ «Hoy descansas. Llevas dos semanas subiendo carga y tu rendimiento bajó. Esto es parte del plan.»
+- ❌ «Está bien si hoy no puedes, no pasa nada.»
 
 ## Qué beneficio va primero en cada canal
 
