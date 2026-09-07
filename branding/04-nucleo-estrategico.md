@@ -85,6 +85,12 @@ Kenia no usa la vergüenza como motor. Ni en una notificación, ni en un post, n
 - **En la app:** cuando rompes una racha, Kenia recalcula. No te lo reprocha.
 - **En marketing:** ningún contenido que insinúe que quien no entrenó es flojo.
 
+> **Reencuadre tras las 12 entrevistas (sep 2026).** Este valor se escribió apuntando al descanso, y ahí no hacía falta: **10 de 12 entrevistados descansan sin conflicto** y ya manejan la idea de que el descanso es parte del entrenamiento.
+>
+> **La culpa está en fallar, no en descansar.** Aparece el día que la vida gana —lluvia, fiebre, un hijo enfermo, quedarse dormido— y sobre todo en **lo que cuesta retomar después**: *«tardé bastante en retomar la rutina»*, *«me siento muy incómoda cuando no hago lo que está pautado ese día»*.
+>
+> El valor se mantiene íntegro; lo que cambia es dónde se aplica. **El momento crítico de este valor no es el día de descanso programado: es el primer día después del fallo.**
+
 ### 2. Explicamos siempre el porqué
 Ninguna instrucción sin su razón.
 

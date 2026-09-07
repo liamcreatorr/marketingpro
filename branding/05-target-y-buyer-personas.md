@@ -1,10 +1,10 @@
 # Público objetivo y buyer personas — Kenia
 
-> **Estatus: hipótesis fundamentadas, no investigación.** No hay entrevistas ni encuestas todavía. Cada persona está construida desde lo que sí sabemos —producto, precios, mercado, comunidad semilla— y cada una trae al final **cómo validarla o matarla esta semana**. Con la comunidad del box a mano, eso se resuelve en dos días.
+> **Estatus: validadas con 12 entrevistas reales (7 de septiembre de 2026).** Dejan de ser hipótesis mías. El análisis completo, con citas textuales, está en `09-hallazgos-entrevistas.md`; aquí queda el resultado.
+>
+> **Qué cambió:** la prioridad. **Daniel —el que ya se inscribió en una carrera— pasa a ser la persona nº 1**, porque 7 de 12 entrevistados están preparando una carrera con fecha y la fecha es el disparador de pago. Andrés baja a cuarta y se ensancha: el patrón real no es «el del box», es **quien combina running con fuerza y se pasa de carga**.
 >
 > Las cuatro se diferencian en los dos ejes acordados. Si dos coincidieran en ambos, serían la misma persona.
->
-> **Pendiente de profundizar (3 sep).** El equipo las considera demasiado simples y tiene razón: les falta el detalle que solo sale de hablar con gente real — frases textuales, rutinas concretas, objeciones tal como se dicen. Se decidió seguir con el resto del branding y volver sobre esto con datos. Esta versión sirve para desbloquear arquetipo, tono y beneficios; **no sirve para segmentar pauta** todavía.
 
 ## La restricción que atraviesa a las cuatro
 
@@ -30,6 +30,8 @@ Decirlo explícito no reduce el mercado: evita que la campaña le hable a quien 
 | **4 · Patricia** — la que vuelve tras la lesión | Salud + seguridad | Vuelve tras una pausa larga | COACH |
 
 **Las cuatro corren ya.** Se diferencian en por qué corren y en qué relación tienen con la estructura.
+
+**Prioridad validada:** 1º **Daniel** *(7 de 12 preparan carrera)* · 2º **Patricia** *(3 de 12 lesionados, todas por carga combinada)* · 3º **Rebeca** *(confirmada: P6 lleva 13 años corriendo una vez por semana sin plan)* · 4º **Andrés** *(patrón real, etiqueta imprecisa)*.
 
 ---
 
@@ -186,13 +188,16 @@ No son preguntas de relleno: cada una alimenta un entregable concreto y puede ca
 
 Lo que **no** funciona es saltárselo del todo: significaría escribir la campaña sobre mis hipótesis, y ustedes tienen a la gente real a una cuadra.
 
-## Lo que estas cuatro personas implican
+## Lo que estas cuatro personas implican — **actualizado con datos**
 
-Con el target cerrado en «quien ya corre», la jerarquía queda así:
+- **Daniel** es la persona nº 1. Siete de doce entrevistados preparan una carrera con fecha: Caracas Rock del 4 de octubre y la **Media Maratón de Hipereventos de noviembre**. La fecha es lo que convierte, y es la única que trae urgencia propia.
+- **Patricia** es la de mayor valor a largo plazo y menor sensibilidad al precio. Confirmada casi literal por P7: lesión patelar tras un 21K preparado con alto volumen **combinado con CrossFit**.
+- **Rebeca** es el segmento más desatendido y el dato que lo prueba es P6: **trece años corriendo, una vez por semana, sin plan y sin que nadie le haya explicado nunca por qué no progresa.**
+- **Andrés** existe como patrón —correr + fuerza subiendo carga, que es lo que lesiona a 3 de 12— pero la etiqueta «el del box» es demasiado estrecha.
 
-- **Andrés** es la comunidad semilla y el enemigo B en persona. Candidato natural para liderar el lanzamiento, porque ya está ahí y ya dijo que paga.
-- **Daniel** es el de conversión más rápida —tiene fecha de carrera— y por tanto el mejor objetivo para la pauta.
-- **Rebeca** es el segmento más grande y el menos atendido: nadie le está hablando al que corre bien pero entrena mal.
-- **Patricia** es la de mayor valor a largo plazo y menor sensibilidad al precio, porque compra seguridad.
+**El target vive exactamente en el medio: gente que ya corre y todavía no entrena.** Eso queda confirmado — y con una precisión que no teníamos: **solo 1 de 12 se llama corredor sin ponerle un pero.**
 
-Ninguna de las cuatro es un corredor de élite, y ninguna es una persona sin hábito. **El target vive exactamente en el medio: gente que ya corre y todavía no entrena.**
+## Dos cosas que la investigación dejó abiertas
+
+1. **La persona que la carrera creó de golpe.** P9 solo ha corrido una vez en su vida, no usa nada —*«¿qué te falta? Todo»*— y está inscrita en Caracas Rock. Pagaría $50–80. Está fuera del target cerrado, pero es de las disposiciones a pagar más altas de la muestra. **La inscripción a una carrera, no el hábito, es lo que mete a la gente en el embudo.** Decisión para tomar con datos de conversión reales, no ahora.
+2. **La muestra es la red del box.** No dice nada sobre quien no conoce a Ninro — que es exactamente a quien va a llegar la pauta. Antes de escalar inversión conviene repetir el ejercicio con desconocidos.

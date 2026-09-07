@@ -55,13 +55,24 @@ La estructura de los tres niveles está definida (ver `04-nucleo-estrategico.md`
 
 Esto tiene consecuencias directas de marca y están aplicadas en `04-nucleo-estrategico.md`: **no se puede prometer supervisión ni revisión humana en ningún plan**, ELITE incluido.
 
-## Competencia — dos círculos distintos
+## Competencia — corregida con las entrevistas
 
-**Rival de categoría (percepción):** Strava, la número uno. No entrena a nadie: es tracker + comunidad. No sabe acompañar a quien empieza.
+**Rival de percepción:** Strava, la número uno. No entrena a nadie: es tracker + comunidad. No sabe acompañar a quien empieza.
 
-**Rival de producto (funcional):** **RunMotion Coach** (17,99 €/mes; 99 €/año) y **Runna** (19,99 $/mes; 119,99 $/año). Son los que sí hacen planes adaptativos. RunMotion está enfocado en público francés. Gratuitos relevantes: Nike Run Club y Garmin Coach.
+**Rival funcional real — corregido el 7 de septiembre.** El benchmark inicial apuntaba a **RunMotion Coach** (17,99 €/mes) y **Runna** (19,99 $/mes) como competidores directos. Las 12 entrevistas dicen otra cosa: **nadie los nombró**. Lo que la gente sigue de verdad es:
 
-**Wedge real:** entrenamiento adaptativo, en español, para la vida latinoamericana. Nadie lo está haciendo bien en ese mercado.
+| De dónde sale el plan | Personas |
+|---|---|
+| **De un amigo o familiar** | 4 de 12 |
+| Se lo armó uno mismo / consejos de internet | 3 de 12 |
+| App o **IA generalista** («Peca Run y Gemini») | 1 de 12 |
+| Ninguno | 2 de 12 |
+
+**El rival dominante en este mercado es el plan informal que te pasa un conocido.** Runna y RunMotion son el referente de producto —lo que Kenia quiere ser de mayor— pero no son contra quién compite hoy por un usuario en Caracas.
+
+Y aparece un frente nuevo: **la IA generalista**. La gente ya le pide planes de running a Gemini y a ChatGPT. Kenia no compite contra la idea de un plan hecho por IA: compite contra **una IA que no te conoce**.
+
+**Wedge real:** entrenamiento adaptativo, en español, para la vida caraqueña — contra un plan de WhatsApp que no sabe que hoy llovió.
 
 ## Respuesta oficial a «¿pero no son solo running?»
 
