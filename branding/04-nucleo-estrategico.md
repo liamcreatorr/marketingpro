@@ -46,9 +46,11 @@ Por lo tanto **el plan no es el producto**. Lo que Kenia vende empieza justo des
 
 ### QUÉ
 
-App de suscripción para entrenar running con planes que se recalculan a diario, más comunidad, ligas, ranking y rutas compartidas. Tres niveles: **START · COACH · ELITE**.
+App de suscripción que **lleva tus marcas y te entrena con ellas**: registra tu historial, ritmos, distancias y carga, y sobre eso arma un plan que se recalcula a diario. Más comunidad, ligas, ranking y rutas compartidas. Tres niveles: **Kenia Starter · Kenia Coach · Kenia Elite**.
 
 Cinco palabras para la tienda: *entrenador de running que se adapta*.
+
+> **El orden importa.** Llevar las marcas es la **higiene** del producto —sin eso no hay coach, porque el coach decide con esos datos— pero **no es el argumento de venta**: 11 de 12 entrevistados ya miden con reloj o app. Lo que se vende es lo que Kenia hace con lo medido. Desarrollado en `06-beneficios.md`.
 
 ---
 
@@ -104,10 +106,17 @@ Descansar es parte del plan, no una falla del plan.
 - **Lo que cuesta:** aceptamos que un usuario entrene menos si su cuerpo lo pide, aunque «menos uso» se vea peor en las métricas de engagement.
 - **En la app:** el descanso recomendado no rompe la racha ni penaliza en la liga.
 
+> **Matiz añadido el 8 de septiembre — adaptarse no es esquivar.** Ninro planteó que Kenia debe preparar para **entrenar bajo cualquier circunstancia**: calor, lluvia, humedad. Tiene razón, y no contradice este valor, porque son dos cosas distintas:
+>
+> - **La condición climática se entrena**, a propósito y con su porqué, porque el día de la carrera no se elige el clima.
+> - **La vida real se adapta.** Fiebre, un hijo enfermo, cuatro horas de sueño, una tormenta con rayos: ahí el plan se mueve.
+>
+> **El clima se entrena, el riesgo se esquiva, y a la persona no se la juzga nunca.** El guardarraíl de copy está en `06-beneficios.md` (R9) y el desarrollo completo en `09-hallazgos-entrevistas.md` §3.
+
 ### 4. Prometemos solo lo que sostenemos
 No vendemos «un entrenador humano personal» si lo que hay es supervisión humana del método. No inflamos lo que hace la IA.
 
-- **Lo que cuesta:** el plan ELITE se vende con menos épica de la que podríamos.
+- **Lo que cuesta:** el plan Elite se vende con menos épica de la que podríamos.
 - **De dónde sale:** del propio equipo técnico, que advirtió *«no prometería un entrenador humano personal por $29,98 salvo que económicamente podáis sostenerlo»*. Ese aviso se convierte en valor de marca.
 
 ---
@@ -131,18 +140,18 @@ Los tres planes no venden más entrenamientos: venden tres transformaciones dist
 
 | Plan | Precio | Promesa en una línea | Qué transformación vende |
 |---|---|---|---|
-| **KENIA STARTER** | 9,99 $/mes · 101,90 $/año | *Tu camino comienza aquí.* | **Te da dirección.** Plan personalizado, entrenamientos diarios, seguimiento, explicación básica, comunidad. |
-| **KENIA COACH** ⭐ | 19,99 $/mes · 203,90 $/año | *Un entrenador que se adapta a ti.* | **Te acompaña.** Adaptación diaria según sueño, fatiga, dolor, estrés y tiempo; perfil adaptativo; coach conversacional; explicación avanzada; prevención inteligente. |
-| **KENIA ELITE** | 29,99 $/mes · 305,90 $/año | *La experiencia Kenia más avanzada.* | **Te conoce y anticipa.** Cuerpo digital, planificación predictiva, preparación y estrategia de competición, picos de rendimiento y recuperación post-carrera. |
+| **Kenia Starter** | 9,99 $/mes · 101,90 $/año | *Tu camino comienza aquí.* | **Te da dirección.** Plan personalizado, entrenamientos diarios, seguimiento, explicación básica, comunidad. |
+| **Kenia Coach** ⭐ | 19,99 $/mes · 203,90 $/año | *Un entrenador que se adapta a ti.* | **Te acompaña.** Adaptación diaria según sueño, fatiga, dolor, estrés y tiempo; perfil adaptativo; coach conversacional; explicación avanzada; prevención inteligente. |
+| **Kenia Elite** | 29,99 $/mes · 305,90 $/año | *La experiencia Kenia más avanzada.* | **Te conoce y anticipa.** Cuerpo digital, planificación predictiva, preparación y estrategia de competición, picos de rendimiento y recuperación post-carrera. |
 
-> **Corregido el 3 de septiembre.** ELITE ya no incluye «supervisión humana Kenia»: **no hay intervención humana en ningún plan**. Todo lo que diferencia a ELITE es capacidad del modelo —cuerpo digital, predicción, estrategia de competición—, no atención de una persona. Cualquier pieza que insinúe lo contrario incumple el valor 4.
+> **Corregido el 3 de septiembre.** Kenia Elite ya no incluye «supervisión humana Kenia»: **no hay intervención humana en ningún plan**. Todo lo que diferencia a Elite es capacidad del modelo —cuerpo digital, predicción, estrategia de competición—, no atención de una persona. Cualquier pieza que insinúe lo contrario incumple el valor 4.
 
-**COACH es el plan estrella.** Es el que encarna la promesa central de la marca y el que hay que vender a la mayoría. START baja la barrera de entrada; ELITE es aspiracional y ancla el precio.
+**Kenia Coach es el plan estrella.** Es el que encarna la promesa central de la marca y el que hay que vender a la mayoría. Starter baja la barrera de entrada; Elite es aspiracional, ancla el precio y —desde la persona 5— ya tiene comprador definido.
 
 ### Cerrado el 3 de septiembre
 
 1. **Precios definitivos:** 9,99 $ / 19,99 $ / 29,99 $. Anuales recalculados con el 15 %: 101,90 $ / 203,90 $ / 305,90 $. *(El 203 $ que circulaba para COACH salía de los 19,99 $ anteriores y ya no aplica.)*
-2. **Nombre del primer plan: KENIA STARTER.** «START» queda descartado.
+2. **Nombre del primer plan: Kenia Starter.** «Start» queda descartado. *(Escritura unificada el 8 de septiembre: `Kenia Starter`, `Kenia Coach`, `Kenia Elite` — no en mayúsculas. Ver `11-naming-y-descriptor.md`. Falta aplicarlo dentro de la app: es tarea de Kurt.)*
 3. **«Supervisión humana»: no existe.** Kenia es coach virtual. Ver la corrección de la tabla.
 
 *El precio de COACH volvió a 19,99 $ el 3 de septiembre: el 20,99 $ que circulaba era un error de transcripción. Anual recalculado: 203,90 $.*
@@ -151,7 +160,7 @@ Los tres planes no venden más entrenamientos: venden tres transformaciones dist
 
 | # | Pendiente | De quién depende |
 |---|---|---|
-| 1 | Target prioritario del año 1 | **Se decide después de las 4 buyer personas** (acordado 3 sep) |
+| 1 | ~~Target prioritario del año 1~~ | ✅ **Cerrado.** *Quien ya corre y no tiene quien le diga qué hacer mañana.* Cinco buyer personas, prioridad 1º Daniel · 2º Patricia. Ver `05-target-y-buyer-personas.md` |
 | 2 | Meta de negocio a 3 años | Ninro |
 | 5 | Descriptor fijo del nombre | Liam + Alonzo |
 | 6 | Protocolo ante señales de trastorno alimentario | Ninro + Kurt |

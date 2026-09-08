@@ -6,7 +6,7 @@
 
 ## Resumen en una línea
 
-**El enemigo B es real y masivo, el descanso no es la batalla que yo creía, el competidor no es otra app sino un amigo, y llueve.**
+**El enemigo B es real y masivo, el descanso no es la batalla que yo creía, el competidor no es otra app sino un amigo, y el clima es un tema de entrenamiento — no una excusa.**
 
 ---
 
@@ -68,7 +68,7 @@ El mensaje deja de ser *«descansar también entrena»* y pasa a ser algo del or
 
 ---
 
-## 3 · Hallazgo nuevo: **la lluvia es la causa nº 1 de sesión perdida**
+## 3 · Hallazgo nuevo: **el clima es la causa nº 1 de sesión perdida** — y la lectura cambió
 
 | Causa del último fallo | Personas |
 |---|---|
@@ -79,14 +79,53 @@ El mensaje deja de ser *«descansar también entrena»* y pasa a ser algo del or
 | Lesión | 7 |
 | Cansancio | 5, 11 |
 
-Esto no lo predijo nadie y es de lo más accionable de toda la investigación:
+Esto no lo predijo nadie y es de lo más accionable de toda la investigación. **Pero la conclusión que saqué era la mitad de la historia, y la reunión con Ninro del 8 de septiembre la corrigió hacia el lado bueno.**
 
-- Es **local**: la lluvia de Caracas no la modela ninguna app global.
-- Es **predecible**: hay pronóstico.
-- Es **automatizable**: Kenia puede reprogramar *antes* de que llueva, o dar la alternativa bajo techo el mismo día.
-- Es **campaña**: nadie en la categoría le habla al corredor caraqueño que se quedó viendo llover.
+### Mi primera lectura: esquivar el clima
 
-**Recomendación para Kurt y Ninro:** la variable meteorológica es la funcionalidad de adaptación con mejor relación impacto/esfuerzo que salió de esta investigación.
+Concluí que Kenia debía **reprogramar antes de que lloviera** y dar la alternativa bajo techo. Es local, es predecible con pronóstico y es automatizable. Todo eso sigue siendo cierto — pero es la mitad defensiva del asunto.
+
+### La lectura de Ninro: **prepararse para entrenar bajo cualquier circunstancia**
+
+> Lo planteó al revés: el problema no es que llueva, es que **la gente no está preparada para correr cuando llueve**. Y una carrera con fecha cerrada —un 21K, una maratón— **no se suspende por lluvia ni por calor**. Si nunca entrenaste en esas condiciones, el día de la carrera es la primera vez que las vives, y es el peor día para estrenarlas.
+
+Tiene razón, y su versión abre el tema más allá del agua: **el calor y la humedad de Caracas pesan en el rendimiento tanto o más que la lluvia**, y nadie los entrena a propósito. El hallazgo deja de ser «llueve y se pierde la sesión» y pasa a ser **«las condiciones son parte del entrenamiento y aquí nadie las entrena»**, que es bastante más grande.
+
+### Cómo conviven las dos cosas sin contradecirse
+
+Hay una tensión real que hay que resolver bien, porque mal resuelta rompe el valor 1 de la marca:
+
+| El plan… | …cuando la condición es **entrenable** | …cuando la condición es **riesgo** |
+|---|---|---|
+| **Qué hace** | Programa la sesión bajo esa condición **a propósito**, y explica para qué | Mueve la sesión, o da la alternativa bajo techo |
+| **Cuándo** | Lluvia normal, calor de mediodía, humedad alta, viento | Tormenta eléctrica, calle inundada, alerta de calor, inseguridad |
+| **Cómo suena** | *«Hoy toca rodaje bajo lluvia. Tu carrera de noviembre puede ser así, y quiero que no sea la primera vez.»* | *«Hoy no. Está cayendo con rayos. Movemos la sesión al jueves.»* |
+
+**La regla en una línea:** **el clima se entrena, el riesgo se esquiva, y a la persona no se la juzga nunca.**
+
+### El límite que no se puede cruzar
+
+«Entrenar bajo cualquier circunstancia» está **a una frase de distancia** de *«sin excusas»* — que es el enemigo declarado de la marca y una palabra prohibida literal del manual de tono. La diferencia es de sujeto, y es la regla que ya está escrita en `07`: **la exigencia se le pone al plan, nunca a la persona.**
+
+| ✅ Se puede decir | ❌ No se puede decir |
+|---|---|
+| «Esta sesión es bajo lluvia a propósito.» | «Llueve. No es excusa.» |
+| «Tu carrera puede ser así. Vamos a que no sea la primera vez.» | «Los que ganan salen igual.» |
+| «Prepararse para el clima es parte del plan.» | «Si llovió y no fuiste, fallaste.» |
+
+**Kenia entrena para que puedas correr bajo cualquier circunstancia. Nunca te obliga a hacerlo.** Lo primero es método; lo segundo es culpa, y la culpa está vetada.
+
+### Recomendación para Kurt y Ninro
+
+1. **Las condiciones como variable del plan**, no solo como alerta: que el bloque previo a una carrera incluya **exposición progresiva al calor y sesiones bajo lluvia**, programadas.
+2. **Pronóstico conectado**, para distinguir entrenable de riesgo y para mover la sesión con antelación en vez del mismo día.
+3. **Ajuste del ritmo objetivo por condición.** Con 30 °C y humedad alta el ritmo baja, y el usuario tiene que saber que eso **no es perder forma**. Esto además es prevención: el que fuerza su ritmo objetivo con calor es el que se rompe.
+
+Sigue siendo la funcionalidad de adaptación con mejor relación impacto/esfuerzo de toda la investigación — y ahora tiene **dos usos en vez de uno**: preparar y proteger.
+
+### Y lo que gana la campaña
+
+Es un territorio de contenido que ninguna app global va a ocupar aquí: **el calor de Caracas y la lluvia de Caracas**. Es lo primero que reconoce cualquier corredor de la ciudad, y es de lo poco que no se puede copiar desde afuera.
 
 ---
 
@@ -146,7 +185,7 @@ Y aparece un frente que no estaba en el radar: **la gente ya usa IA generalista 
 
 ### Tres conclusiones de precio
 
-1. **El argumento de R5 ya se puede publicar, con dato propio:** *«Un entrenador de running en Caracas cuesta entre $30 y $80 al mes. Kenia COACH cuesta $19,99.»*
+1. **El argumento de R5 ya se puede publicar, con dato propio:** *«Un entrenador de running en Caracas cuesta entre $30 y $80 al mes. Kenia Coach cuesta $19,99.»*
 2. **$19,99 está por debajo de lo que la mayoría dijo que pagaría.** Seis de ocho dieron cifras de $30 o más. El pricing está validado con holgura — y probablemente esté dejando dinero sobre la mesa. No propongo subirlo antes de lanzar; sí propongo revisarlo con datos de conversión reales a los 90 días.
 3. **8 de 12 no sabían cuánto cobra un entrenador.** La comparación no se puede dar por sabida: **hay que enseñarla** en la ficha, en la página de precios y en la campaña.
 
@@ -220,7 +259,7 @@ Es una decisión para tomar con datos de conversión reales, no ahora.
 
 ---
 
-## 10 · Qué le pasa a las cuatro buyer personas
+## 10 · Qué le pasa a las buyer personas
 
 | Persona | Veredicto | Evidencia |
 |---|---|---|
@@ -228,8 +267,11 @@ Es una decisión para tomar con datos de conversión reales, no ahora.
 | **Patricia** — la que vuelve tras la lesión | ✅ **Confirmada casi literal** | P7 (patelar tras 21K + CrossFit), P10 |
 | **Rebeca** — la constante estancada | ✅ **Confirmada** | P6 (13 años corriendo 1 vez por semana, sin plan), P3 (2-3 años, sin carrera) |
 | **Andrés** — el del box que corre mal | ⚠️ **Parcial** | El patrón correr + CrossFit existe (P7, P10, P12), pero nadie se describe como «el del box que quiere correr». El perfil real es más amplio: **quien combina running con fuerza y se pasa de carga** |
+| **Gabriel** — el que va por la marca | ➕ **Añadida después, fuera de esta muestra** | **No sale de las entrevistas.** Entra el 8 de septiembre por un caso que aporta Ninro: un conocido que persigue un maratón por debajo de 3 horas. Es n = 1 y así hay que tratarla — como piloto, no como público de campaña |
 
 **Cambio de prioridad: Daniel lidera, no Andrés.** La razón es simple — la carrera con fecha es lo que convierte, y siete de doce la tienen.
+
+> **Nota de honestidad sobre la muestra y la persona 5.** Ninguno de los 12 entrevistados es un corredor de nivel avanzado persiguiendo una marca de élite. Esta muestra **no valida ni invalida** a Gabriel: no lo cubre. Es la razón por la que el documento de personas lo marca entero como hipótesis.
 
 ---
 

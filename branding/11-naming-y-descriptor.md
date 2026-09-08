@@ -95,7 +95,9 @@ Tres razones acumuladas:
 
 **`Kenia`** — mayúscula inicial, resto en minúscula. Ni `KENIA` ni `kenia`.
 
-> ⚠️ **Inconsistencia a corregir:** los planes están escritos como `KENIA STARTER`, `KENIA COACH`, `KENIA ELITE` en todo mayúsculas. Si la marca es `Kenia`, los planes son **`Kenia Starter`, `Kenia Coach`, `Kenia Elite`**. Hay que unificarlo antes de que salga a tienda.
+> ⚠️ **Inconsistencia a corregir.** Los planes estaban escritos como `KENIA STARTER`, `KENIA COACH`, `KENIA ELITE` en todo mayúsculas. Si la marca es `Kenia`, los planes son **`Kenia Starter`, `Kenia Coach`, `Kenia Elite`**.
+>
+> ✅ **Unificado el 8 de septiembre en todos los documentos de branding.** Falta aplicarlo **dentro de la app y en la ficha de tienda**: eso es de Kurt y Ninro, y hay que hacerlo antes de subirla.
 
 ### El gentilicio de la comunidad
 

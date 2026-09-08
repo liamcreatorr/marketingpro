@@ -16,7 +16,7 @@ La prueba rápida para cada imagen:
 
 ---
 
-## Seis territorios visuales
+## Siete territorios visuales
 
 ### 1 · El esfuerzo real, no el esfuerzo de stock
 Cara de trabajo y concentración: mandíbula suelta, mirada al frente, respiración. **No** la cara de grito ni el puño cerrado.
@@ -31,11 +31,30 @@ El Ávila, la Cota Mil, el Parque del Este, las calles que la gente identifica. 
 ### 4 · El dato como material visual
 Trazos de ruta sobre mapa, splits, zonas de ritmo, curvas de carga. Estética de **instrumento de medición**, no de infografía de redes. El manual ya tiene piezas así —los pósters de ruta y la UI de reloj— y son de lo mejor que hay.
 
-### 5 · La recuperación — **territorio virgen**
-El estiramiento, el hielo, las piernas en alto, la siesta, el día libre. **Nadie en la categoría fotografía el descanso**, y el descanso es literalmente el diferencial de Kenia. Si el moodboard trae una sección de esto, la marca ya se ve distinta antes de escribir una palabra.
+### 5 · La recuperación y **el regreso** — territorio casi virgen
+El estiramiento, el hielo, las piernas en alto, la siesta, el día libre. Y sobre todo **el primer día de vuelta**: atarse los cordones otra vez después de una semana perdida.
+
+**La categoría fotografía el esfuerzo, casi nunca la recuperación.** Si el moodboard trae una sección de esto, la marca ya se ve distinta antes de escribir una palabra.
+
+> **Corregido el 8 de septiembre.** Este territorio decía que *«el descanso es literalmente el diferencial de Kenia»*. Las entrevistas lo desmintieron: **10 de 12 ya descansan sin culpa** y el descanso bajó a higiene de marca. El diferencial emocional real es **volver sin castigo** (E8). Por eso el territorio se amplía del descanso al **regreso**, que es lo que de verdad no fotografía nadie.
 
 ### 6 · La comunidad sin ranking
 Grupo corriendo junto, gente esperando en la salida, alguien acompañando a otro en el último kilómetro. **No** podio, no medallero, no comparación.
+
+### 7 · Las condiciones — **nuevo, 8 de septiembre**
+Correr **bajo la lluvia y bajo el calor de Caracas**: camiseta empapada, vapor del asfalto mojado, sol de mediodía, sombra buscada, agua en la cara. Entra por la decisión de Ninro de que Kenia prepare para **entrenar bajo cualquier circunstancia**, porque una carrera no se suspende por el clima.
+
+Es, además, el territorio más difícil de copiar desde afuera: **el calor y la lluvia de aquí son específicos y reconocibles**, y ninguna app global los va a fotografiar.
+
+**La diferencia con la categoría, y es toda la diferencia:**
+
+| | Cómo lo fotografía la categoría | Cómo lo fotografía Kenia |
+|---|---|---|
+| **El tono** | Épica. La adversidad como enemigo a vencer | **Preparación.** La adversidad como algo que se entrena |
+| **La cara** | Rictus, grito, desafío al cielo | Concentración. Alguien que ya sabe cómo se siente esto |
+| **Lo que sugiere** | *«Yo salí y tú no.»* | *«Esto ya lo entrené.»* |
+
+⚠️ **El riesgo de este territorio.** Es el que más fácil se desliza hacia *«sin excusas»*, que es palabra prohibida y enemigo declarado de la marca. La prueba para cada imagen: **¿esta foto celebra al que salió, o muestra a alguien preparado?** Si celebra, está juzgando al que no salió. Fuera.
 
 ---
 
@@ -49,6 +68,7 @@ Grupo corriendo junto, gente esperando en la salida, alguien acompañando a otro
 | Antes / después | Política de cuerpo |
 | Solo cuerpos atléticos y delgados | El target ya corre, pero no todos se ven igual |
 | Pose de estudio con luz de gimnasio | Kenia vive en la calle, no en un set |
+| Adversidad épica: correr bajo el diluvio con cara de guerra | Territorio 7 se fotografía como preparación, no como hazaña. Roza «sin excusas» |
 | Azul frío saturado + naranja tipo videojuego | Es el cliché visual de las apps deportivas |
 
 ---
@@ -103,9 +123,10 @@ El manual no define ninguna, y es la ausencia más urgente. No hace falta elegir
 
 ## Qué debe contener el moodboard entregado
 
-- [ ] Una lámina por cada uno de los seis territorios
+- [ ] Una lámina por cada uno de los siete territorios
 - [ ] Mínimo dos imágenes de **Caracas reconocible** (territorio 3)
-- [ ] Al menos una lámina de **recuperación y descanso** (territorio 5) — es la que hace la diferencia
+- [ ] Al menos una lámina de **recuperación y regreso** (territorio 5) — es la que hace la diferencia
+- [ ] Una lámina de **condiciones** (territorio 7), con lluvia **y** calor — no solo lluvia
 - [ ] La jerarquía de color aplicada en un ejemplo real
 - [ ] Tres referencias de marcas de **otras categorías** cuya voz de mentor admiren
 - [ ] Una lámina de **qué NO** — las referencias descartadas, que delimitan más rápido que las que gustan

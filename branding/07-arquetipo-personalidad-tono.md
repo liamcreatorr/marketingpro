@@ -1,6 +1,8 @@
 # Arquetipo, personalidad y tono de voz — Kenia
 
-> **Target cerrado el 3 de septiembre.** Kenia es para **quien ya corre**: el que está en el proceso, el que se prepara para carreras, el que quiere mejorar. **No es para quien no corre y no tiene el hábito.** Esa decisión la tomó el equipo y ordena todo lo que sigue.
+> **Target cerrado el 3 de septiembre, precisado el 8.** Kenia es para **quien ya corre y no tiene quien le diga qué hacer mañana**: el que está en el proceso, el que se prepara para carreras, el que quiere mejorar una marca. **No es para quien no corre y no tiene el hábito**, ni para quien ya tiene un entrenador humano que lo ve correr. Esa decisión la tomó el equipo y ordena todo lo que sigue.
+>
+> **El target no se define por nivel, sino por quién decide tu semana.** Eso admite desde quien corre 5 km tres veces por semana hasta quien persigue un maratón por debajo de 3 horas. Ver `05-target-y-buyer-personas.md`.
 
 ---
 
@@ -126,10 +128,14 @@ El tono no es uno solo: cambia según lo que le está pasando a la persona.
 | **Sesión asignada** | Directo + el porqué | «Hoy: 6 × 3 min fuerte. Trabajamos tu capacidad de sostener ritmo para el 10K.» |
 | **A mitad de un entreno duro** | Breve y presente. Sin épica | «Vas dos de seis. Respira y sostén.» |
 | **Récord personal** | Reconocimiento sobrio | «Tu mejor 5K hasta ahora. Y llevas siete semanas sin saltarte una.» |
-| **Descanso recomendado** | Firme y explicativo — **el momento más importante de la marca** | «Hoy no entrenas. Dormiste cuatro horas y llevas dos semanas subiendo carga. Descansar también entrena.» |
-| **Racha rota / dos semanas sin aparecer** | Sin reproche, con opción | «Tu plan te esperó. ¿Lo retomamos donde quedó o lo armamos de nuevo con tu semana de ahora?» |
+| **Descanso recomendado** | Firme y explicativo | «Hoy no entrenas. Dormiste cuatro horas y llevas dos semanas subiendo carga. Descansar también entrena.» |
+| **Sesión bajo lluvia o calor, programada** | Explicativa y con propósito. **Nunca desafiante** | «Hoy toca rodaje bajo lluvia. Tu carrera de noviembre puede ser así, y quiero que no sea la primera vez.» |
+| **Condición de riesgo** *(tormenta eléctrica, calle inundada, alerta de calor)* | Directa y sin drama | «Hoy no. Está cayendo con rayos. Movemos la sesión al jueves.» |
+| **Racha rota / dos semanas sin aparecer** | Sin reproche, con opción — **el momento más importante de la marca** | «Tu plan te esperó. ¿Lo retomamos donde quedó o lo armamos de nuevo con tu semana de ahora?» |
 | **Fallo de pago** | Neutro y práctico | «No pudimos procesar tu pago. Tu plan sigue guardado. Actualiza el método cuando puedas.» |
 | **Cancelación** | Agradecido, sin retención agresiva | «Listo, cancelado. Tu historial queda guardado por si vuelves.» |
+
+> **Corregido el 8 de septiembre.** El «momento más importante de la marca» estaba puesto en el descanso recomendado. Las 12 entrevistas lo movieron: **10 de 12 ya descansan sin culpa**, así que ahí no hay nada que ganar. Donde sí se juega la marca es en **el primer día después del fallo** — el reingreso. Es el beneficio E8 y es donde vive la culpa real.
 
 ## Palabras prohibidas
 
@@ -164,6 +170,20 @@ Traducido a tres reglas operativas:
 1. **El sujeto de la frase dura es el entrenamiento, no el usuario.** «Esta semana es exigente» ✅ · «Tienes que esforzarte más» ❌
 2. **Cada exigencia viene con su razón.** Sin porqué, es una orden.
 3. **El descanso se comunica con la misma firmeza que el esfuerzo.** Si «descansa» suena a disculpa, el usuario no descansa.
+
+### El caso que pone a prueba la regla: entrenar bajo cualquier circunstancia
+
+Ninro pidió el 8 de septiembre que Kenia prepare para **correr en cualquier condición** —calor, lluvia, humedad— porque una carrera no se suspende por el clima. Es correcto y es producto. Pero es **el caso más fácil de romper**, porque está a una frase de *«sin excusas»*, que es palabra prohibida.
+
+La regla resuelve el caso sin ambigüedad: **la condición se le exige al plan, nunca a la persona.**
+
+| ✅ | ❌ |
+|---|---|
+| «Esta sesión es bajo lluvia a propósito.» | «Llueve. No es excusa.» |
+| «Tu carrera puede ser así. Vamos a que no sea la primera vez.» | «Los que ganan salen igual.» |
+| «Con este calor bajamos el ritmo objetivo. No estás perdiendo forma.» | «Si llovió y no fuiste, fallaste.» |
+
+**Kenia entrena para que puedas correr bajo cualquier circunstancia. Nunca te obliga a hacerlo.** Y cuando la condición deja de ser entrenable y pasa a ser riesgo —rayos, calle inundada, alerta de calor— **la marca es la que dice que hoy no.**
 
 ---
 

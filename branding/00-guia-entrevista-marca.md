@@ -92,45 +92,60 @@ Todo lo demás —público, porqué, misión, visión, valores, beneficios, arqu
 
 ---
 
-## Bloque 02 — Buyer personas (4)
+## Bloque 02 — Buyer personas
 
-*Objetivo: cuatro perfiles con nombre, historia y decisión de compra.*
+*Objetivo: perfiles con nombre, historia y decisión de compra.*
+
+> **Actualizado el 8 de septiembre.** Este bloque pedía **cuatro** personas con dos ejes y once campos. El resultado final son **cinco**, con **tres ejes** y una ficha bastante más completa, a petición de Ninro. Lo de abajo está actualizado a lo que de verdad se entregó; el resultado está en `05-target-y-buyer-personas.md`.
 
 ### Criterio de segmentación (leer antes de responder)
 
-El error más común aquí es sacar cuatro versiones de la misma persona a distintas edades. Para evitarlo, **las cuatro personas tienen que diferenciarse en al menos uno de estos dos ejes**:
+El error más común aquí es sacar varias versiones de la misma persona a distintas edades. Para evitarlo, **cada persona tiene que diferenciarse en al menos uno de estos tres ejes**:
 
 - **Eje A — motivación dominante:** estética · rendimiento · salud · pertenencia · disciplina
 - **Eje B — relación con la constancia:** arranca y abandona · constante pero estancado · obsesivo con el dato · vuelve después de una pausa larga (lesión, embarazo, mudanza, burnout)
+- **Eje C — nivel** *(añadido el 8 de septiembre)*: empieza a entrenar · entrena · **compite por una marca**
 
-Si dos personas comparten los dos ejes, son una sola persona.
+Si dos personas comparten los tres ejes, son una sola persona.
 
-### Ficha común (respondan lo mismo para las cuatro)
+> **Por qué hizo falta el eje C.** Con solo A y B, el corredor avanzado que persigue un tiempo caía en la misma casilla que el que se inscribió en su primer 21K —los dos son «rendimiento» y «obsesivo con el dato»— y no son la misma persona ni compran el mismo plan. El nivel es lo que los separa.
+
+### Ficha común (respondan lo mismo para todas)
 
 | Campo | |
 |---|---|
 | Nombre y edad | |
-| Ocupación y contexto semanal | |
+| **Demografía** — ciudad, zona, con quién vive | |
+| **Ocupación / trabajo** e ingreso aproximado | |
+| **Hábitos** — la semana real, de entrenamiento y de vida | |
+| **Hobbies** — qué hace cuando no corre | |
+| **Contenidos y medios** que consume — plataformas **y cuentas concretas** | |
+| **Hábitos de compra** — en qué gasta, cómo decide, disposición a pagar | |
+| **Objetivos y metas** | |
+| **Resumen de personalidad** | |
 | Motivación dominante (eje A) | |
 | Relación con la constancia (eje B) | |
+| Nivel (eje C) | |
 | Disparador que la trae a Kenia | |
+| **Cómo la ayuda Kenia** — concreto, con los diferenciales | |
+| Plan que compra | |
 | Frase textual al **descargar** | |
 | Frase textual al **cancelar** | |
 | Objeción principal | |
-| Disposición a pagar | |
-| Dónde vive digitalmente | |
 | Quién influye en su decisión | |
+
+> **Regla de honestidad de la ficha.** Los campos que no se sepan se marcan como hipótesis, **no se rellenan con supuesto disfrazado de dato**. Estas fichas se usan para segmentar pauta, y gastar dinero sobre una suposición sin saber que lo es sale caro. En `05` cada campo va marcado con ✅ verificado o ⚠️ hipótesis.
 
 ### Preguntas
 
-1. ¿Cuáles son los 4 perfiles que más se repiten en la información recopilada? Nómbrenlos como los llaman internamente y ubíquenlos en los ejes A y B.
+1. ¿Cuáles son los perfiles que más se repiten en la información recopilada? Nómbrenlos como los llaman internamente y ubíquenlos en los ejes A, B y C.
 2. Completen la ficha de arriba para cada uno. Si un campo no lo saben, escriban "no lo sabemos" — no lo rellenen con supuesto.
 3. ¿Cuánto está dispuesto a pagar cada uno y qué lo haría pagar **sin dudarlo**?
 4. ¿Qué objeción concreta pondría cada uno? ("otra app más", "no tengo tiempo", "no sé si es para mi nivel", "prefiero un coach de verdad")
-5. ¿Alguno de los cuatro **ya se fue** de otra app? ¿Por qué se fue? — La persona que ya churneó en otro lado es la que más enseña.
-6. ¿Cuál de los 4 es el prioritario para el primer año?
+5. ¿Alguna **ya se fue** de otra app? ¿Por qué se fue? — La persona que ya churneó en otro lado es la que más enseña.
+6. ¿Cuál es la prioritaria para el primer año?
 
-> **Regla de reparto:** la marca se construye para la persona prioritaria; las otras tres tienen que *caber*, no mandar. Cuatro personas con el mismo peso equivalen a no tener ninguna.
+> **Regla de reparto:** la marca se construye para la persona prioritaria; las demás tienen que *caber*, no mandar. Cinco personas con el mismo peso equivalen a no tener ninguna. **En Kenia lideran Daniel y Patricia**; las otras tres se atienden con contenido y comunidad, no con pauta fría.
 
 ---
 
@@ -349,7 +364,7 @@ Entusiasta     1 ── 2 ── 3 ── 4 ── 5   Neutro (matter-of-fact)
 
 | # | Entregable | Depende de |
 |---|---|---|
-| 1 | Target y 4 buyer personas | 00 · 01 · 02 |
+| 1 | Target y buyer personas | 00 · 01 · 02 |
 | 2 | Círculo dorado | 00 (12–16) · 03 |
 | 3 | Misión y visión | **03** → 04 |
 | 4 | Valores con comportamientos observables + política de cuerpo | 03 · 05 |

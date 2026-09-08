@@ -4,7 +4,11 @@
 
 ## Qué es Kenia
 
-Plataforma de entrenamiento para **corredores**, con planes personalizados que se recalculan según la vida real del usuario, más una capa social (feed, ligas, rutas compartidas, ranking por puntos).
+Plataforma de **entrenamiento de running**: lleva las marcas del usuario —historial, ritmos, distancias, carga— y sobre ellas arma un plan que se recalcula según su vida real. Más una capa social (feed, ligas, rutas compartidas, ranking por puntos).
+
+> **Dos precisiones de escritura, del 8 de septiembre.**
+> 1. Aquí decía *«para corredores»*. En comunicación eso está prohibido —11 de 12 entrevistados no se llaman corredores— y conviene no escribirlo ni en los documentos internos, para que no se filtre al copy. Ver `11-naming-y-descriptor.md`.
+> 2. **Kenia lleva tus marcas y te entrena con ellas.** El registro es higiene del producto y alimenta al coach; el coach es el diferencial y es lo único que se vende. Ver `06-beneficios.md`.
 
 - **Estado:** app construida, **no publicada**. Versiones de prueba en circulación.
 - **Lanzamiento:** octubre.
@@ -29,11 +33,11 @@ Suscripción, tres planes:
 
 | Plan | Mensual | Anual s/desc. | Anual con 15 % |
 |---|---|---|---|
-| **KENIA STARTER** | 9,99 $ | 119,88 $ | **101,90 $** |
-| **KENIA COACH** ⭐ | 19,99 $ | 239,88 $ | **203,90 $** |
-| **KENIA ELITE** | 29,99 $ | 359,88 $ | **305,90 $** |
+| **Kenia Starter** | 9,99 $ | 119,88 $ | **101,90 $** |
+| **Kenia Coach** ⭐ | 19,99 $ | 239,88 $ | **203,90 $** |
+| **Kenia Elite** | 29,99 $ | 359,88 $ | **305,90 $** |
 
-*Precios confirmados el 3 de septiembre. Sustituyen a la primera versión (9,97 / 19,99 / 29,98). Los anuales están recalculados: el 203,90 $ de COACH corrige el 203 $ que venía de los 19,99 $ anteriores.*
+*Precios confirmados el 3 de septiembre. Sustituyen a la primera versión (9,97 / 19,99 / 29,98). Los anuales están recalculados: el 203,90 $ de Kenia Coach corrige el 203 $ que venía de los 19,99 $ anteriores.*
 
 La estructura de los tres niveles está definida (ver `04-nucleo-estrategico.md`).
 
@@ -53,7 +57,7 @@ La estructura de los tres niveles está definida (ver `04-nucleo-estrategico.md`
 
 **Quién firma los planes — corregido el 3 de septiembre.** En la primera respuesta se dijo «humano + IA con aprobación del equipo Kenia». La versión definitiva es otra: **no interviene ningún humano en el plan del usuario**. Kenia es un coach virtual: la IA analiza el perfil de cada persona, arma la rutina y la acompaña con vídeos de ejecución de cada ejercicio. A futuro se contempla que Ninro aparezca en cámara, pero hoy no.
 
-Esto tiene consecuencias directas de marca y están aplicadas en `04-nucleo-estrategico.md`: **no se puede prometer supervisión ni revisión humana en ningún plan**, ELITE incluido.
+Esto tiene consecuencias directas de marca y están aplicadas en `04-nucleo-estrategico.md`: **no se puede prometer supervisión ni revisión humana en ningún plan**, Kenia Elite incluido.
 
 ## Competencia — corregida con las entrevistas
 
@@ -72,7 +76,7 @@ Esto tiene consecuencias directas de marca y están aplicadas en `04-nucleo-estr
 
 Y aparece un frente nuevo: **la IA generalista**. La gente ya le pide planes de running a Gemini y a ChatGPT. Kenia no compite contra la idea de un plan hecho por IA: compite contra **una IA que no te conoce**.
 
-**Wedge real:** entrenamiento adaptativo, en español, para la vida caraqueña — contra un plan de WhatsApp que no sabe que hoy llovió.
+**Wedge real:** entrenamiento adaptativo, en español, para la vida caraqueña — contra un plan de WhatsApp que no sabe cómo fue tu semana, ni que aquí hace 30 °C, ni que tu carrera de noviembre puede ser bajo lluvia.
 
 ## Respuesta oficial a «¿pero no son solo running?»
 

@@ -16,7 +16,9 @@
 
 ### 1 · ¿Qué de los tres planes está construido para octubre?
 
-El resumen de planes promete en ELITE **cuerpo digital**, **planificación predictiva** y **estrategia de competición**; en COACH, **coach conversacional** y **perfil adaptativo**.
+El resumen de planes promete en **Kenia Elite** —**cuerpo digital**, **planificación predictiva** y **estrategia de competición**— y en **Kenia Coach** —**coach conversacional** y **perfil adaptativo**.
+
+> **Sube de urgencia el 8 de septiembre.** Kenia Elite ya tiene comprador definido: la persona 5 del documento 05, el corredor avanzado que persigue una marca. Es quien va a pagar 29,99 $ **y quien va a detectar en la primera semana si el cuerpo digital y la planificación predictiva no existen todavía**. Saber qué entra en v1 dejó de ser una cuestión de redacción.
 
 **Pregunta: ¿eso existe en la versión que sale, o es roadmap?**
 
@@ -67,7 +69,12 @@ Si la app no recalcula sola, la promesa no se puede hacer: hay que cambiarla o p
 ## Producto y adaptación
 
 6. El onboarding pregunta por otra actividad física — **¿el plan usa esa respuesta para ajustar carga, o solo la guarda?** *(3 de 12 entrevistados se lesionaron por correr + gimnasio subiendo volumen. Es el diferencial 5 sin activar.)*
-7. **¿La app sabe si va a llover?** *(La lluvia es la causa nº 1 de sesión perdida: 4 de 12. Reprogramar antes es el ajuste con mejor relación impacto/esfuerzo de toda la investigación.)*
+7. **¿La app sabe qué tiempo va a hacer?** — y son en realidad **tres preguntas**, tras la decisión de Ninro del 8 de septiembre de que Kenia prepare para **entrenar bajo cualquier circunstancia**:
+   - **a)** ¿Puede **mover** una sesión cuando la condición es un riesgo (tormenta eléctrica, calle inundada, alerta de calor)?
+   - **b)** ¿Puede **programar a propósito** sesiones bajo lluvia o con calor en el bloque previo a una carrera? *(Esto es lo nuevo, y es lo que pidió Ninro: el día de la carrera no se elige el clima.)*
+   - **c)** ¿Puede **ajustar el ritmo objetivo por condición** y decírselo al usuario, para que sepa que correr más lento con 30 °C no es perder forma? *(Esto además es prevención: el que fuerza el ritmo con calor es el que se rompe.)*
+
+   *(El clima es la causa nº 1 de sesión perdida: 4 de 12. Sigue siendo el ajuste con mejor relación impacto/esfuerzo de toda la investigación, y ahora tiene dos usos en vez de uno.)*
 8. ¿Cuántas preguntas tiene el onboarding y cuánto tarda?
 9. ¿Cuándo aparece el paywall: antes o después de que la persona vea su plan? *(Enseñar el plan primero suele convertir mejor.)*
 10. ¿Se puede pausar la suscripción o solo cancelar? *(Con carreras estacionales, pausar retiene mucho mejor.)*
@@ -105,3 +112,9 @@ Quedarse con las cinco primeras. **1, 2 y 3 pueden cambiar el plan completo; 4 y
 ## Un dato para llevarle a Kurt
 
 **3 de 12 entrevistados se lesionaron, todos por la misma causa: correr y gimnasio a la vez subiendo volumen.** Es su comunidad exacta. Vigilar la carga combinada es algo que ninguna app de running hace — y él ya tiene la pregunta en el onboarding.
+
+## Y una pregunta nueva, del 8 de septiembre
+
+23. **¿A qué volumen semanal aguanta el plan?** ¿Está probado con alguien que corra **70–90 km por semana**, con series en pista, tirada larga y doble sesión?
+
+*(Sale de la persona 5. Es un perfil que ninguna de las 12 entrevistas cubría, y el conocido de Ninro que persigue el maratón sub-3 es exactamente eso. Si el generador de planes se diseñó pensando en 30–40 km semanales, ese usuario va a ver el techo en la primera semana — y es el usuario cuya opinión más pesa en su grupo. Conviene saberlo antes de dárselo a probar, no después.)*
