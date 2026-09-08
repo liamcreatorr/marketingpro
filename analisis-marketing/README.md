@@ -18,7 +18,7 @@ entrevistas disponibles. Usarlas antes de suponer.
 
 | # | Sección | Contenido | Estado |
 |---|---|---|---|
-| 1 | **PESTEL** | Político · Económico · Social · Tecnológico · Ecológico · Legal | 🔵 en entrevista |
+| 1 | **PESTEL** | Político · Económico · Social · Tecnológico · Ecológico · Legal | ✅ escrito — `02-pestel.md` |
 | 2 | **Tendencias** | Macrotendencias · Microtendencias · Tendencias potenciales | 🔵 en entrevista |
 | 3 | **Análisis del servicio** | Qué vende Kenia de verdad, capas del servicio, brecha promesa ↔ v1 | 🔵 en entrevista |
 | 4 | **Socios estratégicos** | Input de Liam desde la reunión con Ninro | pendiente — falta input |
@@ -67,3 +67,4 @@ Son inputs, no preguntas abiertas.
 | `README.md` | Este índice y el estado de cada sección |
 | `00-registro-de-entrevistas.md` | Retro de las reuniones con Ninro y Kurt, bajada por sección |
 | `01-cuestionario-maestro.md` | Todas las preguntas abiertas, organizadas por quién las contesta |
+| `02-pestel.md` | Análisis de entorno en seis dimensiones, con fuentes y con las oportunidades y amenazas que entran al FODA |
