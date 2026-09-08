@@ -32,6 +32,15 @@ Los doce bloques de la entrevista de marca están cerrados. Lo que queda abierto
 | 10 | `10-preguntas-kurt.md` | Las 23 preguntas técnicas para el desarrollador |
 | 11 | `11-naming-y-descriptor.md` | **Significado del nombre, descriptor fijo y sistema verbal** |
 
+## Documentos derivados
+
+| Documento | Para quién | Qué es |
+|---|---|---|
+| `presentacion/plataforma-de-marca-kenia.html` | **Ninro** | La plataforma completa redactada para presentar al cliente, con la paleta de Kenia. Publicado en [claude.ai/code/artifact/3d0ebcfa](https://claude.ai/code/artifact/3d0ebcfa-7283-451e-93fe-17d4bf9bf63d) |
+| `CONTEXTO-PARA-ANALISIS-DE-MARKETING.md` | **Uso interno / otra conversación de IA** | Contexto, datos crudos y auditoría del estado de verificación de cada cosa. Incluye los errores ya cometidos, para no repetirlos |
+
+Los dos documentos son independientes y no se mezclan: el primero presenta, el segundo traspasa.
+
 ## La marca en una página
 
 **Por qué.** Nadie deja de correr por falta de voluntad. Deja de correr porque sigue un plan que no sabe nada de su vida. Correr no es de un tipo de cuerpo ni de un tipo de persona.
