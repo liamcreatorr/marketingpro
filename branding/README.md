@@ -36,7 +36,8 @@ Los doce bloques de la entrevista de marca están cerrados. Lo que queda abierto
 
 | Documento | Para quién | Qué es |
 |---|---|---|
-| `presentacion/plataforma-de-marca-kenia.html` | **Ninro** | La plataforma completa redactada para presentar al cliente, con la paleta de Kenia. Publicado en [claude.ai/code/artifact/3d0ebcfa](https://claude.ai/code/artifact/3d0ebcfa-7283-451e-93fe-17d4bf9bf63d) |
+| `presentacion/Kenia - Plataforma de marca (Organic Club).docx` | **Ninro** | **El entregable.** Documento de Word de 16 secciones con la paleta de Kenia: portada, índice, plataforma completa, las cinco fichas de buyer persona, propuestas de refuerzo, decisiones pendientes y calendario. Se genera con `presentacion/generar-docx.js` |
+| `presentacion/plataforma-de-marca-kenia.html` | Consulta rápida | La misma plataforma como página web, para leer y navegar. [claude.ai/code/artifact/3d0ebcfa](https://claude.ai/code/artifact/3d0ebcfa-7283-451e-93fe-17d4bf9bf63d) |
 | `CONTEXTO-PARA-ANALISIS-DE-MARKETING.md` | **Uso interno / otra conversación de IA** | Contexto, datos crudos y auditoría del estado de verificación de cada cosa. Incluye los errores ya cometidos, para no repetirlos |
 
 Los dos documentos son independientes y no se mezclan: el primero presenta, el segundo traspasa.
