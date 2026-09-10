@@ -1,0 +1,1193 @@
+<title>Kenia · Estrategia de contenido</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+:root{
+  --cian:#079CB5; --petroleo:#00677E; --naranja:#FF5A00;
+  --ground:#F6F8F9; --surface:#FFFFFF; --surface-2:#EEF3F5;
+  --ink:#15201F; --muted:#5C6E74; --border:#DBE4E7; --rule:#C8D5D9;
+  --cian-soft:#E4F2F5; --naranja-soft:#FFEDE4; --naranja-ink:#B03C00;
+  --ok:#1E7A5F;
+  --f-display:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --f-body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --f-mono:"IBM Plex Mono","SF Mono",Menlo,monospace;
+  --measure:66ch;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --ground:#111516; --surface:#191F21; --surface-2:#212A2C;
+  --ink:#E8EFF0; --muted:#93A5AA; --border:#2B3538; --rule:#39464A;
+  --cian:#2FBAD2; --petroleo:#7FD3E2; --naranja:#FF7A33;
+  --cian-soft:#132A30; --naranja-soft:#2E1A10; --naranja-ink:#FFA772;
+  --ok:#4FBF97;
+}}
+:root[data-theme="dark"]{
+  --ground:#111516; --surface:#191F21; --surface-2:#212A2C;
+  --ink:#E8EFF0; --muted:#93A5AA; --border:#2B3538; --rule:#39464A;
+  --cian:#2FBAD2; --petroleo:#7FD3E2; --naranja:#FF7A33;
+  --cian-soft:#132A30; --naranja-soft:#2E1A10; --naranja-ink:#FFA772;
+  --ok:#4FBF97;
+}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:var(--f-body);
+  font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--f-display);text-wrap:balance;line-height:1.15;margin:0}
+p{margin:0}
+a{color:var(--petroleo)}
+code,.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+
+/* ---------- shell ---------- */
+.shell{display:grid;grid-template-columns:230px minmax(0,1fr);gap:0;
+  max-width:1160px;margin:0 auto}
+.rail{position:sticky;top:0;align-self:start;height:100vh;overflow-y:auto;
+  padding-block:28px;padding-inline:20px 14px;border-right:1px solid var(--border)}
+.rail-brand{font-family:var(--f-display);font-weight:700;font-size:15px;letter-spacing:.02em}
+.rail-brand span{color:var(--cian)}
+.rail-sub{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--muted);margin-top:4px}
+.rail nav{display:flex;flex-direction:column;gap:1px;margin-top:22px}
+.rail a{display:flex;align-items:baseline;gap:8px;text-decoration:none;color:var(--muted);
+  font-family:var(--f-display);font-size:12.5px;font-weight:500;padding:5px 9px;
+  border-radius:3px;border-left:2px solid transparent}
+.rail a:hover{color:var(--ink);background:var(--surface-2)}
+.rail a.on{color:var(--ink);border-left-color:var(--cian);background:var(--surface-2)}
+.rail a.falta{border-left-color:var(--naranja)}
+.rail a .n{font-family:var(--f-mono);font-size:10px;color:var(--rule);min-width:15px}
+.rail-foot{margin-top:20px;padding-top:14px;border-top:1px solid var(--border);
+  font-family:var(--f-mono);font-size:10.5px;line-height:1.6;color:var(--muted)}
+
+.main{min-width:0;padding-inline:clamp(18px,4vw,52px);padding-block:0 90px}
+
+/* ---------- top bar (mobile) ---------- */
+.topbar{display:none;position:sticky;top:0;z-index:20;background:var(--ground);
+  border-bottom:1px solid var(--border)}
+.topbar-head{display:flex;justify-content:space-between;align-items:center;
+  gap:12px;padding:11px 16px}
+.topbar-scroll{display:flex;gap:6px;overflow-x:auto;padding:0 16px 10px;
+  scrollbar-width:none}
+.topbar-scroll::-webkit-scrollbar{display:none}
+.topbar-scroll a{flex:0 0 auto;text-decoration:none;font-family:var(--f-display);
+  font-size:11.5px;font-weight:600;padding:5px 10px;border-radius:100px;
+  border:1px solid var(--border);color:var(--muted);white-space:nowrap}
+.topbar-scroll a.on{color:var(--surface);background:var(--petroleo);border-color:var(--petroleo)}
+.topbar-scroll a.falta{border-color:var(--naranja);color:var(--naranja-ink)}
+
+/* ---------- hero ---------- */
+.hero{padding-block:52px 34px;border-bottom:2px solid var(--ink)}
+.eyebrow{font-family:var(--f-mono);font-size:11px;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--cian);font-weight:500}
+.hero h1{font-size:clamp(34px,6.2vw,54px);font-weight:700;letter-spacing:-.02em;margin-top:14px}
+.hero h1 em{font-style:normal;color:var(--cian)}
+.hero-lede{font-size:19px;max-width:var(--measure);margin-top:18px;color:var(--ink)}
+.hero-meta{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:26px;
+  font-family:var(--f-mono);font-size:11.5px;color:var(--muted)}
+.hero-meta b{color:var(--ink);font-weight:500}
+
+/* ---------- countdown ---------- */
+.counts{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:1px;background:var(--border);border:1px solid var(--border);margin-top:28px}
+.count{background:var(--surface);padding:15px 17px}
+.count.hot{background:var(--naranja-soft)}
+.count .k{font-family:var(--f-mono);font-size:10px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--muted)}
+.count .v{font-family:var(--f-display);font-weight:700;font-size:27px;
+  letter-spacing:-.02em;margin-top:5px;font-variant-numeric:tabular-nums}
+.count.hot .v{color:var(--naranja-ink)}
+.count .d{font-family:var(--f-mono);font-size:11px;color:var(--muted);margin-top:2px}
+
+/* ---------- sections ---------- */
+section{padding-block:46px;border-bottom:1px solid var(--border);scroll-margin-top:20px}
+.sec-head{display:flex;align-items:flex-start;gap:14px;margin-bottom:22px}
+.sec-bar{flex:0 0 3px;align-self:stretch;background:var(--cian);min-height:46px}
+section.falta .sec-bar{background:var(--naranja)}
+.sec-titles{min-width:0}
+.sec-head h2{font-size:clamp(23px,3.4vw,30px);font-weight:700;letter-spacing:-.015em}
+.sec-src{font-family:var(--f-mono);font-size:11px;color:var(--muted);margin-top:5px}
+.lede{font-size:18px;max-width:var(--measure);color:var(--muted);margin-top:10px}
+.body{max-width:var(--measure);display:flex;flex-direction:column;gap:16px}
+.body h3{font-family:var(--f-display);font-size:15px;font-weight:600;
+  letter-spacing:.01em;margin-top:14px}
+.body h4{font-family:var(--f-mono);font-size:11px;font-weight:500;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--muted);margin-top:12px}
+.body ul{margin:0;padding-left:19px;display:flex;flex-direction:column;gap:7px}
+strong{font-weight:600}
+
+/* ---------- pull ---------- */
+.pull{border-left:3px solid var(--cian);padding:3px 0 3px 18px;
+  font-size:19.5px;line-height:1.45;font-weight:600;max-width:var(--measure)}
+.pull.warn{border-left-color:var(--naranja)}
+.note{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--rule);
+  padding:14px 17px;font-size:15.5px;max-width:var(--measure)}
+.note.warn{border-left-color:var(--naranja);background:var(--naranja-soft)}
+.note.warn strong{color:var(--naranja-ink)}
+.note .lbl{font-family:var(--f-mono);font-size:10px;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--muted);display:block;margin-bottom:5px}
+
+/* ---------- tables ---------- */
+.tw{overflow-x:auto;border:1px solid var(--border);background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-family:var(--f-display);font-size:13.5px}
+th{text-align:left;font-family:var(--f-mono);font-size:10px;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--muted);font-weight:500;
+  padding:10px 13px;border-bottom:1px solid var(--rule);white-space:nowrap;
+  background:var(--surface-2)}
+td{padding:10px 13px;border-bottom:1px solid var(--border);vertical-align:top;line-height:1.45}
+tr:last-child td{border-bottom:none}
+td.num,th.num{font-family:var(--f-mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+td b{font-weight:600}
+
+/* ---------- chips ---------- */
+.chip{display:inline-block;font-family:var(--f-mono);font-size:10px;font-weight:500;
+  letter-spacing:.05em;padding:2px 7px;border-radius:2px;white-space:nowrap;
+  background:var(--cian-soft);color:var(--petroleo)}
+.chip.o{background:var(--naranja-soft);color:var(--naranja-ink)}
+.chip.g{background:var(--surface-2);color:var(--muted)}
+
+/* ---------- ladder / hierarchy ---------- */
+.rungs{display:flex;flex-direction:column;gap:1px;background:var(--border);
+  border:1px solid var(--border)}
+.rung{background:var(--surface);padding:13px 16px;display:grid;
+  grid-template-columns:26px minmax(0,1fr);gap:14px;align-items:start}
+.rung .r{font-family:var(--f-mono);font-size:13px;font-weight:600;color:var(--cian)}
+.rung .t{font-family:var(--f-display);font-weight:600;font-size:14.5px}
+.rung .s{font-size:14.5px;color:var(--muted);margin-top:3px}
+.rung .q{font-family:var(--f-display);font-weight:600;font-size:14.5px;
+  color:var(--petroleo);margin-top:6px}
+
+/* ---------- weeks ---------- */
+.weeks{display:flex;flex-direction:column;gap:12px}
+.week{background:var(--surface);border:1px solid var(--border);
+  border-left:3px solid var(--rule);padding:15px 17px}
+.week.key{border-left-color:var(--naranja)}
+.week-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px}
+.week-n{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--muted)}
+.week-t{font-family:var(--f-display);font-weight:700;font-size:17px}
+.week-d{font-family:var(--f-mono);font-size:11px;color:var(--muted);margin-left:auto}
+.week-job{font-size:15px;color:var(--muted);margin-top:7px;max-width:var(--measure)}
+.pieces{display:flex;flex-direction:column;gap:5px;margin-top:12px}
+.piece{display:grid;grid-template-columns:44px 52px minmax(0,1fr);gap:11px;
+  align-items:baseline;font-size:14px;padding-top:5px;border-top:1px solid var(--border)}
+.piece .id{font-family:var(--f-mono);font-size:11.5px;font-weight:600;color:var(--cian)}
+.piece .dt{font-family:var(--f-mono);font-size:10.5px;color:var(--muted)}
+.piece .tx b{font-family:var(--f-display);font-weight:600;font-size:14px}
+.piece .tx span{color:var(--muted);font-size:13.5px}
+
+/* ---------- checklist ---------- */
+.ck-status{font-family:var(--f-mono);font-size:11px;color:var(--muted);
+  margin-bottom:14px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.ck-dot{width:7px;height:7px;border-radius:50%;background:var(--rule);flex:0 0 auto}
+.ck-dot.live{background:var(--ok)}
+.ck-group{margin-top:26px}
+.ck-group-h{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;
+  padding-bottom:8px;border-bottom:1px solid var(--rule)}
+.ck-group-h h3{font-family:var(--f-display);font-weight:700;font-size:16px;margin:0}
+.ck-group-h .who{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--naranja-ink)}
+.ck-group-h .cnt{margin-left:auto;font-family:var(--f-mono);font-size:11px;color:var(--muted)}
+.ck{display:flex;gap:12px;padding:12px 2px;border-bottom:1px solid var(--border);
+  align-items:flex-start}
+.ck input[type=checkbox]{flex:0 0 auto;width:17px;height:17px;margin-top:3px;
+  accent-color:var(--cian);cursor:pointer}
+.ck-b{min-width:0;flex:1}
+.ck-t{font-family:var(--f-display);font-weight:600;font-size:14.5px;line-height:1.4}
+.ck-w{font-size:14px;color:var(--muted);margin-top:3px}
+.ck-m{display:flex;flex-wrap:wrap;gap:6px 12px;margin-top:6px;
+  font-family:var(--f-mono);font-size:10.5px;color:var(--muted)}
+.ck.done .ck-t{text-decoration:line-through;color:var(--muted)}
+.ck-when{color:var(--ok)}
+label.ck{cursor:pointer}
+input:focus-visible,a:focus-visible,button:focus-visible{outline:2px solid var(--cian);outline-offset:2px}
+
+/* ---------- misc ---------- */
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:1px;
+  background:var(--border);border:1px solid var(--border)}
+.two>div{background:var(--surface);padding:14px 16px}
+.two h4{margin-top:0}
+.yn{font-family:var(--f-display);font-size:14px;line-height:1.5}
+.yn .y{color:var(--ok);font-weight:600}
+.yn .n{color:var(--naranja-ink);font-weight:600}
+.foot{padding-block:34px;font-family:var(--f-mono);font-size:11.5px;
+  color:var(--muted);line-height:1.7;max-width:var(--measure)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media (max-width:860px){
+  .shell{grid-template-columns:minmax(0,1fr)}
+  .rail{display:none}
+  .topbar{display:block}
+  .hero{padding-block:32px 26px}
+  body{font-size:16.5px}
+  .piece{grid-template-columns:40px minmax(0,1fr);row-gap:1px}
+  .piece .dt{grid-column:2}
+}
+</style>
+
+<div class="topbar">
+  <div class="topbar-head">
+    <div>
+      <div class="rail-brand">Kenia<span>.</span></div>
+      <div class="rail-sub">Estrategia de contenido</div>
+    </div>
+    <div class="rail-sub" id="tb-count"></div>
+  </div>
+  <div class="topbar-scroll" id="tb-nav"></div>
+</div>
+
+<div class="shell">
+  <aside class="rail">
+    <div class="rail-brand">Kenia<span>.</span></div>
+    <div class="rail-sub">Estrategia de contenido</div>
+    <nav id="rail-nav"></nav>
+    <div class="rail-foot">
+      Organic Club<br>
+      Liam Libre · Alonzo García<br><br>
+      v1.1 · 10 sep 2026<br>
+      <span style="color:var(--naranja-ink)">■</span> naranja = falta
+    </div>
+  </aside>
+
+  <main class="main">
+
+  <header class="hero">
+    <div class="eyebrow">Organic Club · documento interno</div>
+    <h1>El mes que <em>no vende</em> la app</h1>
+    <p class="hero-lede">Estrategia de contenido completa para el lanzamiento de Kenia: embudo, relato, pilares,
+      formatos, calendario de un mes y plan de lanzamiento. Con lo que está cerrado y —sobre todo—
+      <strong>lo que todavía falta y de quién depende.</strong></p>
+    <div class="hero-meta">
+      <span>Para <b>Alonzo García</b></span>
+      <span>Cliente <b>Ninro Libre</b></span>
+      <span>Mercado <b>Caracas</b></span>
+      <span>Pauta <b>$300/mes</b></span>
+    </div>
+    <div class="counts">
+      <div class="count hot"><div class="k">Rodaje con Ninro</div><div class="v" id="c-rodaje">—</div><div class="d">domingo 13 de septiembre</div></div>
+      <div class="count"><div class="k">Caracas Rock</div><div class="v" id="c-rock">—</div><div class="d">domingo 4 de octubre</div></div>
+      <div class="count"><div class="k">Lanzamiento</div><div class="v" id="c-lanza">—</div><div class="d">jueves 15 de octubre · sin confirmar</div></div>
+      <div class="count"><div class="k">Piezas del mes</div><div class="v">19</div><div class="d">13 videos · 6 carruseles</div></div>
+    </div>
+  </header>
+
+  <!-- ============ 1 ============ -->
+  <section id="s-situacion">
+    <div class="sec-head"><div class="sec-bar"></div><div class="sec-titles">
+      <h2>Dónde estamos</h2>
+      <div class="sec-src">README.md · 03-alcance-y-cronograma.md</div>
+    </div></div>
+    <div class="body">
+      <p class="pull">El mes que viene no vende la app. Construye la lista que la descarga el día uno.</p>
+      <p>Entre el rodaje del <b>13 de septiembre</b> y el lanzamiento de mediados de octubre hay un mes
+        en el que se puede publicar pero <strong>no se puede descargar nada</strong>. Ese mes tiene un solo
+        trabajo: llegar al día del lanzamiento con <strong>400 personas esperando</strong>. Todo lo demás
+        es consecuencia de eso.</p>
+
+      <h3>Las cuatro cosas que ordenan todo</h3>
+      <div class="tw"><table>
+        <tr><td style="width:34%"><b>Ninro se graba una sola vez</b></td>
+            <td>Viaja a Buenos Aires del 15 al 20 y después el calendario aprieta. <b>7 de los 13 videos del mes llevan su cara</b> y todos salen del 13 de septiembre.</td></tr>
+        <tr><td><b>Caracas Rock cae antes del lanzamiento</b></td>
+            <td>4 de octubre. Cuatro de los doce entrevistados la corren y se la pierden como usuarios. Es donde está el público, once días antes: se va a captar, no a vender.</td></tr>
+        <tr><td><b>Octubre es el mes más lluvioso del año</b></td>
+            <td>≈228 mm y casi treinta días con lluvia, justo en la ventana donde se mide la retención a 30 días. Es a la vez el mayor riesgo y el mejor territorio de contenido.</td></tr>
+        <tr><td><b>La campaña se ancla a noviembre</b></td>
+            <td>La Media Maratón de Hipereventos. Da fecha, urgencia y un motivo para suscribirse en octubre en vez de «algún día». Tres de doce la corren.</td></tr>
+      </table></div>
+
+      <div class="note"><span class="lbl">La regla que manda sobre todo el proyecto</span>
+        Cada vez que se predijo el comportamiento del público sin datos, la predicción salió mal.
+        Hay <b>12 entrevistas</b> y un PESTEL cerrado. <strong>Todo lo que en este documento es hipótesis
+        va marcado como hipótesis</strong>, y lo que es hueco va marcado en naranja.</div>
+    </div>
+  </section>
+
+  <!-- ============ 2 ============ -->
+  <section id="s-urgente" class="falta">
+    <div class="sec-head"><div class="sec-bar"></div><div class="sec-titles">
+      <h2>Lo urgente: los tres días antes del rodaje</h2>
+      <div class="sec-src">06-guion-grabacion-13-sep.md</div>
+    </div></div>
+    <div class="body">
+      <p class="lede" style="margin-top:0">Si algo de esto no está el viernes 12, el domingo se improvisa.
+        Y un rodaje improvisado con la única persona disponible del mes es el peor escenario del plan entero.</p>
+      <div class="tw"><table>
+        <tr><th class="num">Cuándo</th><th>Qué</th><th>Quién</th></tr>
+        <tr><td class="num">jue 11</td><td><b>Confirmar los 8–10 del box</b>, con nombre y hora de llegada</td><td>Ninro</td></tr>
+        <tr><td class="num">jue 11</td><td><b>Describir el reel de referencia</b> que pasó Kurt <span class="chip o">bloquea V13</span></td><td>Kurt · Liam</td></tr>
+        <tr><td class="num">vie 12</td><td><b>Aprobar tagline y las cuatro frases</b> — se graban a cámara</td><td>Ninro</td></tr>
+        <tr><td class="num">vie 12</td><td>Ropa sin logos de terceros visibles</td><td>Ninro</td></tr>
+        <tr><td class="num">vie 12</td><td>Guion cerrado, shot list impresa, tarjetas y baterías</td><td>Nosotros</td></tr>
+        <tr><td class="num">dom 13</td><td><b>5:30</b> — b-roll de hora azul <span class="chip">no se puede fingir a las 8</span></td><td>Nosotros</td></tr>
+        <tr><td class="num">dom 13</td><td><b>6:00</b> — testimonios del box <span class="chip o">si solo se hace una cosa, es esta</span></td><td>Todos</td></tr>
+        <tr><td class="num">dom 13</td><td><b>11:00</b> — pedir las diez reseñas de tienda</td><td>Ninro</td></tr>
+      </table></div>
+      <div class="note warn"><span class="lbl">Por qué las reseñas se piden un mes antes</span>
+        <strong>La app sale a tiendas sin una sola reseña, sin testimonios y sin casos</strong>, prometiendo que
+        se adapta y que previene lesiones. La única fuente gratis somos nosotros mismos: los doce
+        entrevistados y la gente del box. Se piden veinte para conseguir diez.</div>
+    </div>
+  </section>
+
+  <!-- ============ 3 ============ -->
+  <section id="s-relato">
+    <div class="sec-head"><div class="sec-bar"></div><div class="sec-titles">
+      <h2>El relato</h2>
+      <div class="sec-src">09-storytelling-y-narrativa.md</div>
+    </div></div>
+    <div class="body">
+      <p class="pull">Nadie deja de correr por falta de voluntad. Deja de correr porque sigue un plan que
+        no sabe nada de su vida.</p>
+      <p>El arquetipo ya estaba decidido: <strong>el usuario es el héroe, Kenia es el mentor</strong>.
+        Lo que faltaba era bajarlo a estructura de relato, y ahí aparece la pieza que decide este mercado.</p>
+
+      <div class="tw"><table>
+        <tr><th style="width:30%">Pieza del relato</th><th>En Kenia</th></tr>
+        <tr><td><b>El héroe</b></td><td>Quien ya corre y no tiene quien decida con él</td></tr>
+        <tr><td><b>Su problema externo</b></td><td>El plan que sigue no sabe nada de su vida <span class="chip">4 de 12 siguen el de un amigo</span></td></tr>
+        <tr><td><b>Su problema interno</b></td><td><b>Cree que el que falla es él</b> <span class="chip">11 de 12 no se llaman corredores</span></td></tr>
+        <tr><td><b>El villano</b></td><td>No es una persona ni una app: son los dos enemigos</td></tr>
+        <tr><td><b>El mentor</b></td><td>Empatía («¿cómo amaneciste?») + autoridad (método de autor)</td></tr>
+        <tr><td><b>El fracaso que evita</b></td><td>Abandonar otra vez — y esta vez creyendo que fue culpa suya</td></tr>
+        <tr><td><b>La transformación</b></td><td>De «siempre lo dejo» a «cuando falto, el plan se mueve conmigo»</td></tr>
+      </table></div>
+
+      <div class="note"><span class="lbl">La razón de que esto importe</span>
+        Casi todas las marcas de fitness cuentan solo el problema externo —<em>no tienes plan, toma un
+        plan</em>— y por eso todas suenan igual. <strong>Quien resuelve el problema interno se queda con el
+        cliente. Quien resuelve solo el externo compite en precio contra Garmin, que es gratis.</strong></div>
+
+      <h3>Los tres relatos, y cuánto pesa cada uno</h3>
+      <div class="tw"><table>
+        <tr><th>Relato</th><th class="num">Peso</th><th>Para qué</th><th>Riesgo si se pasa</th></tr>
+        <tr><td><b>El del usuario</b></td><td class="num">60%</td><td>Legitimar y atraer</td><td>Ninguno. Es el correcto</td></tr>
+        <tr><td><b>El del método</b></td><td class="num">30%</td><td>Autoridad; sostiene los 19,99</td><td>Suena a clase. Se arregla con caras</td></tr>
+        <tr><td><b>El del fundador</b></td><td class="num">10%</td><td>Confianza antes de tener usuarios</td><td><b>La marca se vuelve él</b>, y el arquetipo se corre a Héroe</td></tr>
+      </table></div>
+      <div class="note warn"><span class="lbl">Veto permanente</span>
+        La historia de transformación física de Ninro <strong>no se graba, no se menciona y no se
+        guarda</strong>, en ninguna de las cuatro duraciones del relato. El relato se construye sobre su
+        cruzada —«el que hace CrossFit no corre»— y sobre el método. La decisión no se reabre.</div>
+    </div>
+  </section>
+
+  <!-- ============ 4 ============ -->
+  <section id="s-emocion">
+    <div class="sec-head"><div class="sec-bar"></div><div class="sec-titles">
+      <h2>Jerarquía emocional</h2>
+      <div class="sec-src">09-storytelling-y-narrativa.md §4</div>
+    </div></div>
+    <div class="body">
+      <div class="note warn"><span class="lbl">La corrección que dieron las entrevistas</span>
+        Se dio por hecho que la emoción a atacar era la culpa de descansar. <strong>Es falso y está
+        medido: 10 de 12 descansan sin conflicto.</strong> La emoción raíz es <b>la culpa del que falló</b>,
+        y sobre todo el peso de lo que cuesta retomar.</div>
+      <div class="rungs">
+        <div class="rung"><div class="r">1</div><div><div class="t">Volver sin castigo</div>
+          <div class="s">Que perder tres semanas no sea empezar de cero. Lidera en retención y reingreso</div>
+          <div class="q">«Tu plan te esperó.»</div></div></div>
+        <div class="rung"><div class="r">2</div><div><div class="t">Legitimidad</div>
+          <div class="s">Poder entrenar sin sentirse impostor. Lidera en todo el TOFU</div>
+          <div class="q">«Si corres, ya estás dentro.»</div></div></div>
+        <div class="rung"><div class="r">3</div><div><div class="t">Alivio</div>
+          <div class="s">De decidir cada día si entrenar, cuánto y cómo. Lidera en producto y en pauta</div>
+          <div class="q">«Hoy toca esto. Y por esto.»</div></div></div>
+        <div class="rung"><div class="r">4</div><div><div class="t">Seguridad</div>
+          <div class="s">Del miedo a repetir la lesión. Es todo lo que le importa a Patricia</div>
+          <div class="q">«Reducimos el riesgo» — nunca «no te vas a lesionar»</div></div></div>
+        <div class="rung"><div class="r">5</div><div><div class="t">Ser entendido</div>
+          <div class="s">De la soledad del que entrena solo</div>
+          <div class="q">«¿Cómo amaneciste hoy?»</div></div></div>
+        <div class="rung"><div class="r">6</div><div><div class="t">Pertenencia</div>
+          <div class="s">Del ranking que te deja siempre abajo</div>
+          <div class="q">«Gente que corre.»</div></div></div>
+        <div class="rung"><div class="r">7</div><div><div class="t">Orgullo silencioso</div>
+          <div class="s">El de haber sostenido, no el de la foto en la meta</div>
+          <div class="q">«Tu mejor 5K. Y llevas siete semanas sin saltarte una.»</div></div></div>
+      </div>
+      <h4>Las cinco emociones prohibidas</h4>
+      <div class="tw"><table>
+        <tr><td><b>Vergüenza</b></td><td>Es el valor 1 al revés. La marca renunció a ella por escrito</td></tr>
+        <tr><td><b>Culpa</b></td><td>El enemigo declarado, y la emoción raíz del público</td></tr>
+        <tr><td><b>Euforia</b></td><td>Envejece mal. <b>La emoción de Kenia tiene que seguir funcionando el martes malo</b></td></tr>
+        <tr><td><b>Superioridad</b></td><td>No puedes legitimar a uno y burlarte de otro igual</td></tr>
+        <tr><td><b>Miedo</b></td><td>Salvo Patricia, cuyo miedo es anterior a la marca: <b>se reconoce, no se enciende</b></td></tr>
+      </table></div>
+      <div class="note"><span class="lbl">La excepción declarada</span>
+        <b>Gabriel</b>, el que va por la marca sub-3, no se compra con ninguna de las siete. A él lo
+        convencen el argumento técnico y lo que Elite añade — y es el único que detecta al instante si
+        el argumento es hueco. Cualquier pieza dirigida a él se escribe sin capa emocional.</div>
+    </div>
+  </section>
+
+  <!-- ============ 5 ============ -->
+  <section id="s-embudo">
+    <div class="sec-head"><div class="sec-bar"></div><div class="sec-titles">
+      <h2>El embudo — que son dos, no uno</h2>
+      <div class="sec-src">01-embudo-y-objetivos.md</div>
+    </div></div>
+    <div class="body">
+      <p>El embudo de ventas decide <strong>cuánto</strong> contenido de cada tipo se produce. El embudo
+        comunicacional decide <strong>qué se dice</strong>. En Kenia manda el segundo, porque el obstáculo
+        dominante no es «no conozco Kenia» sino <b>«esto no es para mí»</b>.</p>
+
+      <h3>La escalera de mensajes</h3>
+      <div class="rungs">
+        <div class="rung"><div class="r">1</div><div><div class="t">Legitimidad</div>
+          <div class="s">«Yo no soy corredor. Me falta tiempo, estructura, disciplina»</div>
+          <div class="q">«Si corres, ya estás dentro.»</div></div></div>
+        <div class="rung"><div class="r">2</div><div><div class="t">Problema</div>
+          <div class="s">«Corro, pero cada semana improviso o sigo un plan que no me calza»</div>
+          <div class="q">«Tu semana cambia. Tu plan también.»</div></div></div>
+        <div class="rung"><div class="r">3</div><div><div class="t">Mecanismo</div>
+          <div class="s">«Vale, ¿y esto qué hace distinto?»</div>
+          <div class="q">«Te pregunta cómo amaneciste antes de mandarte a correr.»</div></div></div>
+        <div class="rung"><div class="r">4</div><div><div class="t">Justificación</div>
+          <div class="s">«¿Y por qué pagaría, si Garmin Coach es gratis?»</div>
+          <div class="q">«Un entrenador en Caracas cuesta $30–80 al mes. Kenia Coach, 19,99.»</div></div></div>
+        <div class="rung"><div class="r">5</div><div><div class="t">Permanencia</div>
+          <div class="s">«Fallé una semana. Ya para qué»</div>
+          <div class="q">«Tu plan te esperó.»</div></div></div>
+      </div>
+      <p class="pull">Una pieza puede saltar un peldaño, nunca dos. Un video que va del 1 al 4 no convierte: ofende.</p>
+
+      <h3>El reparto TOFU / MOFU / BOFU</h3>
+      <p>Propusimos 40/40/20. Es correcto <strong>como media del mes, no como cuota semanal</strong>:
+        durante el mes sin app el BOFU no tiene a dónde mandar a nadie.</p>
+      <div class="tw"><table>
+        <tr><th>Fase</th><th class="num">TOFU</th><th class="num">MOFU</th><th class="num">BOFU</th><th>Por qué</th></tr>
+        <tr><td><b>Mes sin app</b><br><span class="chip g">14 sep – 14 oct</span></td><td class="num">45%</td><td class="num">45%</td><td class="num">10%</td><td>El BOFU no es una pieza: es el CTA al canal en el pie de las de MOFU</td></tr>
+        <tr><td><b>Semana de lanzamiento</b><br><span class="chip g">15 – 18 oct</span></td><td class="num">0%</td><td class="num">25%</td><td class="num">75%</td><td>La única semana con permiso para vender de frente</td></tr>
+        <tr><td><b>Media del mes</b></td><td class="num">37%</td><td class="num">42%</td><td class="num">21%</td><td>≈ el 40/40/20 que propusimos</td></tr>
+        <tr><td><b>Régimen</b> <span class="chip g">desde nov</span></td><td class="num">40%</td><td class="num">40%</td><td class="num">20%</td><td>Ya sí semana a semana</td></tr>
+      </table></div>
+
+      <h3>El CTA del mes sin app, resuelto</h3>
+      <p class="pull">Canal de WhatsApp, no landing.</p>
+      <ul>
+        <li><strong>Es el canal que ya usan.</strong> WhatsApp aparece como canal principal o de grupo en las cinco personas.</li>
+        <li><strong>Una landing propia es bloqueable.</strong> El PESTEL documenta más de 200 dominios bloqueados en Venezuela por Conatel. Un canal de WhatsApp no se bloquea por dominio.</li>
+        <li><strong>El día del lanzamiento se avisa a todos de una vez</strong>, con notificación, sin depender del algoritmo ni de que abran un correo.</li>
+      </ul>
+      <h4>Los seis objetivos de contenido</h4>
+      <div class="tw"><table>
+        <tr><th>Objetivo</th><th class="num">Peso</th><th>Cómo se mide</th></tr>
+        <tr><td><b>Atracción</b></td><td class="num">25%</td><td>Alcance de no seguidores · seguidores nuevos</td></tr>
+        <tr><td><b>Legitimación</b> <span class="chip o">nuevo</span></td><td class="num">20%</td><td>Comentarios de identificación · compartidos en privado</td></tr>
+        <tr><td><b>Educación</b></td><td class="num">20%</td><td>Guardados · tiempo de visualización</td></tr>
+        <tr><td><b>Identidad de marca</b></td><td class="num">15%</td><td>Respuestas correctas en la caja de preguntas</td></tr>
+        <tr><td><b>Conversión</b></td><td class="num">15%</td><td>Contactos en el canal · descargas · suscriptores</td></tr>
+        <tr><td><b>Fidelización</b></td><td class="num">5%</td><td>Retención a 30 días · reingresos</td></tr>
+      </table></div>
+      <div class="note"><span class="lbl">Por qué añadimos legitimación como objetivo propio</span>
+        Porque <strong>se mide distinto</strong> —en compartidos, no en alcance—, porque es el único hallazgo
+        verificado que ningún competidor está usando, y porque <strong>si no es objetivo, no se produce</strong>:
+        es contenido que no vende nada visible y en cualquier revisión de resultados es el primero que se cae.</div>
+    </div>
+  </section>
+
+  <!-- ============ 6 ============ -->
+  <section id="s-pilares">
+    <div class="sec-head"><div class="sec-bar"></div><div class="sec-titles">
+      <h2>Los cinco pilares</h2>
+      <div class="sec-src">02-pilares-y-subtemas.md</div>
+    </div></div>
+    <div class="body">
+      <p>No salen de una lluvia de ideas: salen de cruzar los dos enemigos, los tres mensajes y el
+        territorio que nadie puede copiar desde fuera.</p>
+      <div class="tw"><table>
+        <tr><th>Pilar</th><th class="num">Peso</th><th>Objetivo</th><th>Subtemas principales</th></tr>
+        <tr><td><b>1 · Ya estás dentro</b></td><td class="num">25%</td><td>Legitimación</td>
+          <td>«¿Tú te consideras corredor?» · las seis frases textuales · el requisito que siempre está un paso más adelante · el primer día de vuelta</td></tr>
+        <tr><td><b>2 · Decide contigo</b></td><td class="num">25%</td><td>Conversión</td>
+          <td>La pregunta de la mañana · el día que cambió · el aviso de carga · el plan del pana vs. el que se recalcula · tu semana entera</td></tr>
+        <tr><td><b>3 · El porqué</b></td><td class="num">20%</td><td>Educación</td>
+          <td>Los tipos de sesión · la carga combinada · por qué en Caracas tus ritmos no cuadran · método keniano · lo que cuesta un entrenador</td></tr>
+        <tr><td><b>4 · Aquí se corre así</b></td><td class="num">20%</td><td>Atracción</td>
+          <td>La hora azul · rutas reconocibles · el clima se entrena · el calor de aquí · las carreras de aquí</td></tr>
+        <tr><td><b>5 · La gente de Kenia</b></td><td class="num">10%</td><td>Prueba social</td>
+          <td>Testimonios del box · el regreso · perfiles de clubes · las ligas · Ninro respondiendo en público</td></tr>
+      </table></div>
+      <div class="note warn"><span class="lbl">El pilar «Lifestyle» de la lluvia de ideas no entra</span>
+        Tres razones. <strong>Es la voz del héroe</strong> —lifestyle en fitness significa aspiración, y Kenia
+        es el mentor—. <strong>Choca con la política de cuerpo</strong>, porque acaba en cuerpos, comidas y
+        rutinas de gente que se ve bien. Y <strong>no prueba ningún mensaje</strong>: llena calendario sin
+        construir argumento.<br><br>
+        Lo que sí se salva —el mundo del corredor de Caracas— entra por el pilar 4, que lo trata como
+        <b>lugar</b> y no como estilo de vida. La diferencia es si la pieza dice «así es aquí» o
+        «así deberías vivir».</div>
+      <div class="note warn"><span class="lbl">El guardarraíl del pilar 4, que es el de más riesgo</span>
+        La prueba obligatoria de cada pieza: <strong>¿celebra al que salió, o muestra a alguien
+        preparado?</strong> Si celebra, está juzgando al que no salió y no sale.
+        <div class="yn" style="margin-top:9px">
+        <span class="y">SÍ</span> «Esta sesión es bajo lluvia a propósito» · «Tu carrera puede ser así»<br>
+        <span class="n">NO</span> «Llueve, no es excusa» · «Los que ganan salen igual»</div></div>
+    </div>
+  </section>
+
+  <!-- ============ 7 ============ -->
+  <section id="s-formatos">
+    <div class="sec-head"><div class="sec-bar"></div><div class="sec-titles">
+      <h2>Formatos y canales</h2>
+      <div class="sec-src">03-formatos-y-plataformas.md</div>
+    </div></div>
+    <div class="body">
+      <p>Seis formatos serializados con nombre propio, portada fija y una frase de apertura que se
+        repite. Con dos personas y $1.000 el primer mes, <strong>es la única forma de sostener 19 piezas</strong>:
+        se decide una vez la estética y cada pieza después cuesta la mitad.</p>
+      <h3>La matriz de producción — la tabla que decide si el mes se puede ejecutar</h3>
+      <div class="tw"><table>
+        <tr><th>Formato</th><th class="num">Piezas</th><th class="num">Cuáles</th><th>¿Ninro?</th><th>¿Salir a grabar?</th></tr>
+        <tr><td><b>Carrusel</b></td><td class="num">6</td><td class="num">C1–C6</td><td>No</td><td>No</td></tr>
+        <tr><td><b>Ninro</b></td><td class="num">5</td><td class="num">V2 V4 V6 V7 V10</td><td><b>Sí</b></td><td>Sí</td></tr>
+        <tr><td><b>Pantalla</b></td><td class="num">3</td><td class="num">V5 V8 V11</td><td>No</td><td>No</td></tr>
+        <tr><td><b>La gente</b></td><td class="num">3</td><td class="num">V1 V9 V12</td><td>Parcial</td><td>Sí</td></tr>
+        <tr><td><b>Calle</b></td><td class="num">1</td><td class="num">V3</td><td>No</td><td>Sí</td></tr>
+        <tr><td><b>Motion</b></td><td class="num">1</td><td class="num">V13</td><td>No</td><td>No</td></tr>
+      </table></div>
+      <p class="pull"><b>10 de las 19 piezas no dependen de nadie más que de nosotros.</b> Ese es el colchón:
+        si el 13 sale mal, el mes se sostiene igual, más pobre pero en pie. Lo que no se recupera es la
+        cara de Ninro y los testimonios.</p>
+
+      <h3>Plan de canales</h3>
+      <div class="tw"><table>
+        <tr><th>Canal</th><th>Rol</th><th>Qué va</th><th>Qué no va</th></tr>
+        <tr><td><b>Instagram</b></td><td>Principal</td><td>Reels, carruseles, stories diarias</td><td>Contenido largo</td></tr>
+        <tr><td><b>WhatsApp</b></td><td><b>Conversión</b></td><td>Canal de difusión = la lista. Mensajes de Ninro a su grupo del box</td><td>Contenido diario. Techo: 2 mensajes/semana</td></tr>
+        <tr><td><b>TikTok</b></td><td>Espejo</td><td>Los reels sin marca de agua, con 24 h de retraso</td><td>Carruseles. Piezas de precio</td></tr>
+        <tr><td><b>Strava</b></td><td>Presencia</td><td>Club de Kenia y rutas de las salidas</td><td><b>Strava no se usa para vender</b></td></tr>
+        <tr><td><b>YouTube</b></td><td>Aplazado</td><td>Solo Shorts espejo. El largo entra en noviembre</td><td>Video largo en fase 1</td></tr>
+        <tr><td><b>Web</b></td><td>Respaldo</td><td>Página simple con el canal y la ficha</td><td><b>Nunca ser el único punto de captación</b></td></tr>
+      </table></div>
+      <div class="note warn"><span class="lbl">Aviso de honestidad sobre esta tabla</span>
+        La ficha de buyer personas marca los medios de <b>Daniel, Patricia y Gabriel como hipótesis sin
+        verificar</b>. Lo único verificado es el Instagram de Rebeca y el grupo de WhatsApp del box de
+        Andrés. Y hay una excepción escrita: <strong>«Gabriel usa poco Instagram para informarse»</strong>.
+        Este plan de canales es la mejor apuesta disponible, no un hecho — y es lo que la caja de
+        preguntas de los martes tiene que corregir.</div>
+
+      <h3>Lo que decidimos no hacer, a propósito</h3>
+      <div class="tw"><table>
+        <tr><td><b>Blog / SEO</b></td><td>Es la jugada de RunMotion y funciona, pero tarda 6–9 meses. El lanzamiento es en cinco semanas</td></tr>
+        <tr><td><b>Podcast propio</b></td><td>Coste alto, audiencia lenta. El <em>fake podcast</em> da el formato sin el compromiso</td></tr>
+        <tr><td><b>Pauta antes del 22 sep</b></td><td>No hay creativos probados. Poner dinero sobre contenido sin datos es quemarlo</td></tr>
+        <tr><td><b>Facebook orgánico</b></td><td>Ninguna de las cinco personas lo menciona. Solo como ubicación de pauta</td></tr>
+      </table></div>
+    </div>
+  </section>
+
+  <!-- ============ 8 ============ -->
+  <section id="s-calendario">
+    <div class="sec-head"><div class="sec-bar"></div><div class="sec-titles">
+      <h2>El calendario — 19 piezas</h2>
+      <div class="sec-src">04-calendario-mes-1.md</div>
+    </div></div>
+    <div class="body">
+      <p>Del lunes 14 de septiembre al domingo 18 de octubre. <strong>Está construido en semanas
+        relativas</strong>: si la fecha de lanzamiento se mueve, la semana 5 se desplaza entera y las cuatro
+        anteriores no se tocan.</p>
+    </div>
+    <div class="weeks">
+      <div class="week key">
+        <div class="week-head"><span class="week-n">S0</span><span class="week-t">Rodaje</span><span class="week-d">dom 13 sep</span></div>
+        <div class="week-job">La única ventana con Ninro y con la gente del box. Seis bloques, de 5:30 a 11:30.</div>
+      </div>
+      <div class="week">
+        <div class="week-head"><span class="week-n">S1</span><span class="week-t">Ya estás dentro</span><span class="week-d">14 – 20 sep</span></div>
+        <div class="week-job">Que quien nunca ha oído hablar de Kenia se reconozca en el primer video.
+          Ninro está en Buenos Aires: cero producción nueva, todo sale del 13.</div>
+        <div class="pieces">
+          <div class="piece"><span class="id">V1</span><span class="dt">mar 15</span><span class="tx"><b>«¿Tú te consideras corredor?»</b> <span>— el montaje de negativas. Es la pieza de apertura de la marca</span></span></div>
+          <div class="piece"><span class="id">V2</span><span class="dt">jue 17</span><span class="tx"><b>«¿Por qué Kenia?»</b> <span>— Ninro selfie: «todo el mundo me pregunta si la app es de citas»</span></span></div>
+          <div class="piece"><span class="id">V3</span><span class="dt">sáb 19</span><span class="tx"><b>Hora azul</b> <span>— POV a las 5:30, sin voz</span></span></div>
+          <div class="piece"><span class="id">C1</span><span class="dt">dom 20</span><span class="tx"><b>Las seis frases</b> <span>— textuales de las entrevistas. Primera vez que se pide el canal</span></span></div>
+        </div>
+      </div>
+      <div class="week">
+        <div class="week-head"><span class="week-n">S2</span><span class="week-t">El porqué</span><span class="week-d">21 – 27 sep</span></div>
+        <div class="week-job">Demostrar que Kenia sabe de entrenamiento, y enseñar el producto por primera
+          vez. Es la semana que construye la autoridad que sostiene el precio de octubre. <b>Arranca la pauta el 22.</b></div>
+        <div class="pieces">
+          <div class="piece"><span class="id">V4</span><span class="dt">mar 22</span><span class="tx"><b>La carga combinada</b> <span>— fake podcast. 3 de 12 se lesionaron por correr y levantar a la vez</span></span></div>
+          <div class="piece"><span class="id">V5</span><span class="dt">jue 24</span><span class="tx"><b>La pregunta de la mañana</b> <span>— pantalla. La pieza más importante del mes después de V13</span></span></div>
+          <div class="piece"><span class="id">V6</span><span class="dt">sáb 26</span><span class="tx"><b>Los tipos de sesión</b> <span>— tier list de cosas, nunca de personas</span></span></div>
+          <div class="piece"><span class="id">C2</span><span class="dt">dom 27</span><span class="tx"><b>Por qué tus ritmos no cuadran</b> <span>— 900 m de altitud. Ninguna app global lo explica aquí</span></span></div>
+        </div>
+      </div>
+      <div class="week key">
+        <div class="week-head"><span class="week-n">S3</span><span class="week-t">Caracas Rock</span><span class="week-d">28 sep – 4 oct</span></div>
+        <div class="week-job">Estar donde está el público. El domingo 4 no hay pieza de feed: es día de
+          operación, no de publicación.</div>
+        <div class="pieces">
+          <div class="piece"><span class="id">V7</span><span class="dt">mar 29</span><span class="tx"><b>La semana antes</b> <span>— «lo que hagas ahora ya no te va a hacer más rápido»</span></span></div>
+          <div class="piece"><span class="id">C3</span><span class="dt">jue 1 oct</span><span class="tx"><b>Guía de Caracas Rock</b> <span>— la jugada de RunMotion a escala local. Lo más compartible del mes</span></span></div>
+          <div class="piece"><span class="id">V8</span><span class="dt">sáb 3</span><span class="tx"><b>Una semana, ordenada</b> <span>— pantalla: el plan en scroll, sin voz</span></span></div>
+          <div class="piece"><span class="id">—</span><span class="dt">dom 4</span><span class="tx"><b>La carrera</b> <span>— stories en vivo, QR al canal, la pregunta en meta</span></span></div>
+        </div>
+      </div>
+      <div class="week">
+        <div class="week-head"><span class="week-n">S4</span><span class="week-t">Cuenta atrás</span><span class="week-d">5 – 11 oct</span></div>
+        <div class="week-job">Convertir lo acumulado en lista, y enganchar a los que acaban de correr al
+          siguiente objetivo antes de que se desconecten.</div>
+        <div class="pieces">
+          <div class="piece"><span class="id">V9</span><span class="dt">lun 5</span><span class="tx"><b>Caracas Rock</b> <span>— cobertura. «¿Y ahora qué?»</span></span></div>
+          <div class="piece"><span class="id">V10</span><span class="dt">mié 7</span><span class="tx"><b>El lunes después de la carrera</b> <span>— ataca el churn más grave: «ya corrí la carrera»</span></span></div>
+          <div class="piece"><span class="id">V11</span><span class="dt">vie 9</span><span class="tx"><b>Este plan no sabe que hoy llovió</b> <span>— el enemigo A, sin nombrar a nadie</span></span></div>
+          <div class="piece"><span class="id">V12</span><span class="dt">dom 11</span><span class="tx"><b>Tu plan te esperó</b> <span>— el regreso. El beneficio emocional central</span></span></div>
+        </div>
+      </div>
+      <div class="week key">
+        <div class="week-head"><span class="week-n">S5</span><span class="week-t">Lanzamiento</span><span class="week-d">12 – 18 oct</span></div>
+        <div class="week-job">La única semana del trimestre con permiso para vender de frente.</div>
+        <div class="pieces">
+          <div class="piece"><span class="id">C4</span><span class="dt">lun 12</span><span class="tx"><b>El jueves abre</b> <span>— cuenta atrás. Los del canal entran primero</span></span></div>
+          <div class="piece"><span class="id">V13</span><span class="dt">jue 15</span><span class="tx"><b>Video de lanzamiento</b> <span>— 45 s. Ver la sección siguiente</span></span></div>
+          <div class="piece"><span class="id">C5</span><span class="dt">vie 16</span><span class="tx"><b>Qué hace Kenia que tu plan no hace</b></span></div>
+          <div class="piece"><span class="id">C6</span><span class="dt">dom 18</span><span class="tx"><b>Lo que cuesta</b> <span>— precios <span class="chip o">veto técnico hasta que Kurt confirme el cobro</span></span></span></div>
+        </div>
+      </div>
+    </div>
+    <div class="body" style="margin-top:22px">
+      <h3>Stories — el esqueleto semanal</h3>
+      <p>Tres a cinco al día, también los días sin pieza de feed. Es donde vive la lista de espera y es
+        la mitad del alcance real.</p>
+      <div class="tw"><table>
+        <tr><td class="num"><b>lun</b></td><td>Tu semana en Kenia — qué se publica</td></tr>
+        <tr><td class="num"><b>mar</b></td><td><b>Caja de preguntas</b> — alimenta contenido <b>y cierra el hueco de qué consumen</b></td></tr>
+        <tr><td class="num"><b>mié</b></td><td>Detrás de cámara o pantalla suelta</td></tr>
+        <tr><td class="num"><b>jue</b></td><td><b>Ninro responde</b> comentarios reales — la jugada de Runna</td></tr>
+        <tr><td class="num"><b>vie</b></td><td>Recordatorio del canal, con el número actual</td></tr>
+        <tr><td class="num"><b>sáb–dom</b></td><td>Ruta, clima, comunidad y carreras</td></tr>
+      </table></div>
+    </div>
+  </section>
+
+  <!-- ============ 9 ============ -->
+  <section id="s-lanzamiento">
+    <div class="sec-head"><div class="sec-bar"></div><div class="sec-titles">
+      <h2>El lanzamiento</h2>
+      <div class="sec-src">05-plan-de-lanzamiento.md</div>
+    </div></div>
+    <div class="body">
+      <p>No es un evento de un día. Son tres movimientos.</p>
+      <div class="tw"><table>
+        <tr><th>Movimiento</th><th class="num">Cuándo</th><th>Qué hace</th></tr>
+        <tr><td><b>A · Captación presencial</b></td><td class="num">dom 4 oct</td><td>Llenar la lista donde está el público, once días antes. <b>El sábado 3, en el retiro de kits, se capta más que el domingo</b></td></tr>
+        <tr><td><b>B · La cuenta atrás</b></td><td class="num">5 – 14 oct</td><td>Convertir audiencia en lista, y lista en expectativa</td></tr>
+        <tr><td><b>C · La apertura</b></td><td class="num">15 – 18 oct</td><td>Descarga, reseñas el día uno, y el ancla de noviembre</td></tr>
+      </table></div>
+
+      <h3>Las dos preguntas de Caracas Rock</h3>
+      <ul>
+        <li><strong>«¿Y ahora qué? ¿Cuál es tu próxima carrera?»</strong> — alimenta V9 y V10, y detecta a los que van a la media de noviembre, que son los suscriptores de octubre.</li>
+        <li><strong>«¿Tú te consideras corredor?»</strong> — la misma pregunta en la meta, con el dorsal puesto, y la gente sigue diciendo que no. <b>Ese contraste es el mejor material de marca que se puede conseguir.</b></li>
+      </ul>
+      <div class="note"><span class="lbl">Lo que no se hace en Caracas Rock</span>
+        No se vende, no se dice el precio, no se pide descargar nada. La app no existe todavía.
+        <strong>Se pide permiso para avisar.</strong> Y sin un mensaje de cesión de imagen a cada persona
+        grabada, con su nombre, no se publica ninguna cara.</div>
+
+      <h3>El día 15, hora por hora</h3>
+      <div class="tw"><table>
+        <tr><td class="num"><b>6:00</b></td><td><b>Mensaje al canal.</b> Es lo primero que pasa</td></tr>
+        <tr><td class="num"><b>6:30</b></td><td>V13 en Reels y TikTok</td></tr>
+        <tr><td class="num"><b>8:00</b></td><td>Ninro publica en su cuenta personal y en el grupo del box</td></tr>
+        <tr><td class="num"><b>—</b></td><td><b>Las diez reseñas se suben a tienda</b>, pedidas un mes antes</td></tr>
+        <tr><td class="num"><b>12:00</b></td><td>Mensaje uno a uno a los 12 entrevistados, con nombre</td></tr>
+        <tr><td class="num"><b>todo el día</b></td><td><b>Ninro contesta cada comentario, uno por uno.</b> Es lo más barato y lo más creíble que tenemos</td></tr>
+      </table></div>
+
+      <h3>El video de lanzamiento — 45 segundos</h3>
+      <div class="note warn"><span class="lbl">Aviso</span>
+        <strong>El reel de referencia que pasó Kurt no se pudo revisar</strong> — Instagram está bloqueado
+        desde el entorno donde se trabajó. Esta estructura está construida desde cero. Con que alguien lo
+        vea y conteste tres cosas —qué formato es, cómo arranca los primeros dos segundos, y qué gustó
+        exactamente— se calibra en una hora.</div>
+      <div class="tw"><table>
+        <tr><th class="num">Tiempo</th><th>Qué se ve</th><th>Qué se oye o se lee</th></tr>
+        <tr><td class="num">0:00–0:03</td><td>Negro, tipografía cian</td><td><b>«Nadie deja de correr por falta de voluntad.»</b></td></tr>
+        <tr><td class="num">0:03–0:10</td><td>Lluvia sobre asfalto · despertador a las 4:58 · una mano en el gemelo</td><td>Sin voz. «Deja de correr porque sigue un plan que no sabe nada de su vida»</td></tr>
+        <tr><td class="num">0:10–0:17</td><td>Ninro a cámara</td><td>«Todos los planes te dicen qué hacer. Ninguno te pregunta cómo amaneciste»</td></tr>
+        <tr><td class="num">0:17–0:30</td><td><b>Pantalla de la app.</b> La pregunta, la respuesta, la sesión cambiando delante del ojo</td><td>«Te pregunta cómo dormiste, cómo tienes las piernas y cuánto tiempo tienes. Y con eso decide tu día»</td></tr>
+        <tr><td class="num">0:30–0:38</td><td>Cuatro caras del box, cortes de un segundo</td><td>Cuatro negativas → <b>«Si corres, ya estás dentro»</b></td></tr>
+        <tr><td class="num">0:38–0:45</td><td>Logo, descriptor, tagline, badges de tienda</td><td><b>Kenia · Entrenamiento de running</b> — El plan que decide contigo</td></tr>
+      </table></div>
+      <div class="two" style="margin-top:6px">
+        <div><h4>Sí</h4><div class="yn">
+          <span class="y">✓</span> Sonido real: lluvia, pisadas, interfaz<br>
+          <span class="y">✓</span> Cara de concentración<br>
+          <span class="y">✓</span> Caracas reconocible<br>
+          <span class="y">✓</span> Cuerpos diversos<br>
+          <span class="y">✓</span> Un solo CTA, al final</div></div>
+        <div><h4>No</h4><div class="yn">
+          <span class="n">✕</span> Música épica con subida<br>
+          <span class="n">✕</span> Grito, puño al aire, cámara lenta<br>
+          <span class="n">✕</span> Amanecer genérico de banco<br>
+          <span class="n">✕</span> Solo cuerpos atléticos<br>
+          <span class="n">✕</span> «Plan personalizado» de titular</div></div>
+      </div>
+      <p class="lede">Del mismo montaje salen tres versiones: la larga de 45 s para feed y tienda, la corta
+        de 15 s para pauta —el tramo 0:10–0:25, que dice qué es en tres segundos— y la de 20 s solo de
+        pantalla para el video de vista previa de las tiendas.</p>
+
+      <h3>Y hasta enero — el mapa, no el calendario</h3>
+      <div class="tw"><table>
+        <tr><th class="num">Tramo</th><th>Trabajo del contenido</th><th>Riesgo que atiende</th></tr>
+        <tr><td class="num">23 nov – 6 dic</td><td><b>La cosecha:</b> los primeros casos reales de gente que sostuvo 8–10 semanas</td><td>El lanzamiento ya no es noticia</td></tr>
+        <tr><td class="num">7 – 20 dic</td><td><b>El contenido del que falla en diciembre.</b> La promesa central se demuestra en vez de prometerse</td><td><b>La retención a 60 días</b></td></tr>
+        <tr><td class="num">21 dic – 3 ene</td><td>Frecuencia mínima, coste mínimo</td><td>Gastar en la peor ventana del año</td></tr>
+        <tr><td class="num">4 – 18 ene</td><td><b>La segunda campaña de captación</b>, la más barata del año en intención</td><td>Única ventana comparable a un lanzamiento</td></tr>
+      </table></div>
+      <div class="note"><span class="lbl">Por qué esto es un mapa y no un calendario de piezas</span>
+        Bajar noviembre, diciembre y enero a piezas hoy, sin un solo dato de conversión, sería predecir
+        sin datos — que es el error número uno documentado de este proyecto. <strong>Las piezas se
+        escriben el 19 de octubre y el 30 de noviembre, con números en la mano.</strong></div>
+    </div>
+  </section>
+
+  <!-- ============ 10 ============ -->
+  <section id="s-copy" class="falta">
+    <div class="sec-head"><div class="sec-bar"></div><div class="sec-titles">
+      <h2>Tagline, frases y comunidad</h2>
+      <div class="sec-src">07-tagline-frases-y-comunidad.md · pendiente de Ninro</div>
+    </div></div>
+    <div class="body">
+      <p class="lede" style="margin-top:0">Todo esto es propuesta y necesita el visto bueno de Ninro
+        <strong>antes del 12 de septiembre</strong>, porque el tagline y las cuatro frases se graban el 13.</p>
+
+      <h3>Tagline</h3>
+      <p class="pull">Kenia · Entrenamiento de running<br>El plan que decide contigo</p>
+      <p>El descriptor ya dice de qué categoría es; el tagline tiene que decir qué hace distinto.
+        <strong>«Decide contigo» hace las dos cosas</strong>: nombra la acción del producto y, con el
+        «contigo», mete al usuario dentro sin pedirle que se llame nada. Y aguanta las cuatro pruebas:
+        bio de Instagram, subtítulo de tienda, cierre de reel y dicho en voz alta.</p>
+
+      <h3>Las cuatro frases de campaña</h3>
+      <div class="tw"><table>
+        <tr><th>Frase</th><th>Pilar</th><th>Reemplaza a</th></tr>
+        <tr><td><b>Tu semana cambia. Tu plan también.</b></td><td>Decide contigo</td><td>«Donde termina tu excusa, empieza tu carrera»</td></tr>
+        <tr><td><b>Si corres, ya estás dentro.</b></td><td>Ya estás dentro</td><td>«Tu único rival te mira en el espejo»</td></tr>
+        <tr><td><b>Tu plan te esperó.</b> <span class="chip o">depende de Kurt</span></td><td>El regreso</td><td>«La meta es solo el principio»</td></tr>
+        <tr><td><b>El clima se entrena.</b></td><td>Aquí se corre así</td><td>«El asfalto no miente»</td></tr>
+      </table></div>
+      <div class="note warn"><span class="lbl">La condición de la frase 3</span>
+        <strong>«Tu plan te esperó» solo se puede publicar si el producto de verdad hace algo razonable el
+        día después de un fallo.</strong> Si la respuesta de Kurt es que el plan se rompe y hay que empezar
+        de cero, esta frase no sale — y tenemos un problema mucho más grande que una frase de campaña.</div>
+
+      <h3>Nombre de comunidad</h3>
+      <p class="pull">Gente que corre</p>
+      <p>El criterio es que sea <strong>algo a lo que te unes, no un título que haya que ganarse</strong>.
+        Y esta frase es textual: tres de doce, al negar que fueran corredores, se describieron
+        exactamente así. <strong>Convertir su forma de excluirse en el nombre del club es toda la estrategia
+        de marca en dos palabras.</strong></p>
+      <p>El argumento en una línea, por si alguien pregunta: <em>no hay que ser corredor para entrar; hay
+        que correr</em>. Y correr es lo que esas once personas ya hacen.</p>
+      <div class="note"><span class="lbl">La alternativa, y por qué no la recomendamos</span>
+        «En formación» sale de P5 y es la dirección que la plataforma de marca marcó como más
+        interesante. <strong>El riesgo es real: conserva la idea de que todavía no llegaste.</strong> Nombra la
+        carencia en vez de disolverla.</div>
+    </div>
+  </section>
+
+  <!-- ============ 11 ============ -->
+  <section id="s-nova">
+    <div class="sec-head"><div class="sec-bar"></div><div class="sec-titles">
+      <h2>Qué de la lluvia de ideas no va</h2>
+      <div class="sec-src">08-que-no-va-y-metricas.md</div>
+    </div></div>
+    <div class="body">
+      <p>De los doce videos propuestos, <strong>siete van tal cual, cuatro se reencuadran y uno no va</strong>.</p>
+      <div class="tw"><table>
+        <tr><th>Idea</th><th>Veredicto</th><th>Qué se hace</th></tr>
+        <tr><td>Motion de presentación</td><td><span class="chip">Va</span></td><td>Es V13. Pero el titular no puede ser «plan personalizado»: es lo que Garmin y Nike regalan</td></tr>
+        <tr><td>Ninro hablando</td><td><span class="chip">Va</span></td><td>Imprescindible. El método es de autor y el autor no aparece por ningún lado</td></tr>
+        <tr><td>Dinámica con las personas</td><td><span class="chip o">Se concreta</span></td><td>«Dinámica» es una intención, no un formato. Pasa a ser «¿Tú te consideras corredor?»</td></tr>
+        <tr><td>Tier list</td><td><span class="chip o">Se reencuadra</span></td><td><b>Una tier list ordena y juzga.</b> Que ordene superficies, condiciones y errores de carga. <b>Nunca gente ni niveles</b></td></tr>
+        <tr><td>Historia de Ninro</td><td><span class="chip o">Solo una mitad</span></td><td>La cruzada sí. Su transformación física no: tema vetado</td></tr>
+        <tr><td>Lista de ejercicios</td><td><span class="chip o">Se reencuadra</span></td><td>Kenia es de running, no de gimnasio. Pasa a «los tipos de sesión y para qué sirve cada una»</td></tr>
+        <tr><td>Fake podcast</td><td><span class="chip">Va</span></td><td>Formato, no parodia. El tono es serio 4: el set da el código, el contenido va en serio</td></tr>
+        <tr><td>Sesión de entrenamiento</td><td><span class="chip">Va</span></td><td>B-roll de todo el trimestre</td></tr>
+        <tr><td>POV</td><td><span class="chip">Va</span></td><td>De lo más barato y lo más diferencial que hay</td></tr>
+        <tr><td>Selfie a cámara</td><td><span class="chip">Va</span></td><td>El registro que mejor funciona y el que más humaniza</td></tr>
+        <tr><td><b>Comparaciones «antes y ahora»</b></td><td><span class="chip o">No va</span></td><td>Ver abajo</td></tr>
+        <tr><td>«No hagas esto, haz esto»</td><td><span class="chip o">Se reencuadra</span></td><td>«No hagas esto» pone el sujeto en la persona. Pasa a «esto te rompe, y por qué»</td></tr>
+      </table></div>
+      <div class="note warn"><span class="lbl">La única idea en rojo, y la intención era buena</span>
+        <strong>«Estilo de vida antes y ahora» es antes/después con otra ropa.</strong> Aunque no se vea el
+        cuerpo, la estructura es la misma y el mensaje que deja también: que había una versión peor de ti.
+        La política de cuerpo de Kenia es una regla dura.<br><br>
+        <strong>Lo que sí se puede:</strong> antes y después <b>de proceso y de marcas</b>, nunca de físico.
+        Y lo que funciona igual de bien: <b>la comparación entre dos planes, no entre dos personas</b>.
+        Es V11, y ataca al enemigo A sin tocar a nadie.</div>
+      <h3>Y el pilar «Reto»</h3>
+      <p>Tira directo a <em>«te desafío a que salgas»</em>, que es «sin excusas» con otra cara. Lo bueno de
+        la idea —las ligas, el ranking, las carreras con fecha— <strong>cabe en los pilares 4 y 5 sin el
+        marco de desafío</strong>.</p>
+    </div>
+  </section>
+
+  <!-- ============ 12 ============ -->
+  <section id="s-metricas">
+    <div class="sec-head"><div class="sec-bar"></div><div class="sec-titles">
+      <h2>Métricas y gobierno</h2>
+      <div class="sec-src">08-que-no-va-y-metricas.md §3–4</div>
+    </div></div>
+    <div class="body">
+      <div class="tw"><table>
+        <tr><th>Indicador</th><th class="num">Meta</th><th class="num">Corte</th><th>De dónde sale</th></tr>
+        <tr><td><b>Lista de espera</b></td><td class="num">400</td><td class="num">mié 14 oct</td><td>Ver el desglose abajo</td></tr>
+        <tr><td>Seguidores nuevos</td><td class="num">+700</td><td class="num">dom 18 oct</td><td>⚠️ horizonte por cerrar</td></tr>
+        <tr><td><b>Descargas el día 1</b></td><td class="num">150</td><td class="num">jue 15 oct</td><td>37,5% de la lista. Conservador</td></tr>
+        <tr><td>Descargas a 4 días</td><td class="num">250</td><td class="num">dom 18 oct</td><td></td></tr>
+        <tr><td><b>Reseñas el día 1</b></td><td class="num">10</td><td class="num">jue 15 oct</td><td>Se piden 20 para conseguir 10</td></tr>
+        <tr><td>Coste por contacto (pauta)</td><td class="num">≤$2,50</td><td class="num">14 oct</td><td>≈$220 ÷ 95 contactos</td></tr>
+      </table></div>
+      <h4>De dónde salen los 400</h4>
+      <div class="tw"><table>
+        <tr><td>Grupo del box y red de Ninro</td><td class="num"><b>60</b></td><td>Lo más seguro de la lista</td></tr>
+        <tr><td>Los 12 entrevistados y sus grupos</td><td class="num"><b>25</b></td><td>Dieron su tiempo; los más fáciles</td></tr>
+        <tr><td><b>Caracas Rock</b></td><td class="num"><b>120</b></td><td><b>El número más frágil: no sabemos cuántos inscritos hay</b></td></tr>
+        <tr><td>Contenido orgánico</td><td class="num"><b>100</b></td><td>≈5 contactos por pieza</td></tr>
+        <tr><td>Pauta</td><td class="num"><b>95</b></td><td>Del 22 sep al 14 oct, ≈$220</td></tr>
+      </table></div>
+      <div class="note warn"><span class="lbl">Dónde está el riesgo</span>
+        <strong>120 de 400 dependen de Caracas Rock y no sabemos cuántos inscritos tiene.</strong> Si rinde
+        la mitad, la lista se queda en 340 y el día uno pierde ~20 descargas. No es catastrófico, pero
+        conviene que Ninro consiga el dato antes del 25 de septiembre para poder compensar con pauta.</div>
+
+      <h3>Cómo se decide qué matar</h3>
+      <p><strong>Ningún formato se juzga por una pieza.</strong> Tres publicaciones: la primera es una prueba,
+        la segunda una lectura, la tercera un veredicto. Y tres decisiones posibles — serializar,
+        reencuadrar el gancho (no cuenta como oportunidad), o matar.</p>
+      <div class="note warn"><span class="lbl">Los umbrales son provisionales, y a propósito</span>
+        Los números de referencia —retención a 3 s, guardados, alcance de no seguidores— son de
+        categoría, no de esta cuenta, <strong>que arranca de cero el 15 de septiembre</strong>. Sirven tres
+        semanas y se tiran: <strong>el 5 de octubre el umbral pasa a ser la mediana de lo que hayamos
+        publicado</strong>, que es el único punto de comparación honesto.</div>
+      <div class="tw"><table>
+        <tr><th class="num">Fecha</th><th>Qué se revisa</th><th>Qué se decide</th></tr>
+        <tr><td class="num">5 oct</td><td>Las primeras 11 piezas</td><td>Recalibrar umbrales · qué formato se refuerza · dónde va la pauta del lanzamiento</td></tr>
+        <tr><td class="num">19 oct</td><td>El lanzamiento completo</td><td>El plan de noviembre entero y el reparto de pilares del régimen</td></tr>
+        <tr><td class="num">30 nov</td><td>El trimestre</td><td>Si el 40/40/20 es correcto · si el precio se revisa con datos reales</td></tr>
+      </table></div>
+      <div class="note"><span class="lbl">La aritmética que conviene tener delante</span>
+        $900 de pauta a 90 días ÷ 40 suscriptores = <b>$22,5 de CAC</b>, contra una meta de &lt;$25.
+        <strong>No hay margen: si la conversión cae del 3% al 2%, el CAC se va a $33 y se rompe el
+        compromiso.</strong> Con honorarios de agencia cargados, el CAC real por suscriptor es de ~$107.
+        No se arregla con contenido, pero tiene que estar escrito donde están las metas.</div>
+    </div>
+  </section>
+
+  <!-- ============ 13 · CHECKLIST ============ -->
+  <section id="s-falta" class="falta">
+    <div class="sec-head"><div class="sec-bar"></div><div class="sec-titles">
+      <h2>Lo que falta</h2>
+      <div class="sec-src">Lista viva · lo que marques aquí lo ve el otro</div>
+    </div></div>
+    <div class="body" style="margin-bottom:8px">
+      <p class="lede" style="margin-top:0">Veinticuatro cosas abiertas, agrupadas por quién las debe.
+        Las de arriba bloquean el rodaje del domingo.</p>
+    </div>
+    <div class="ck-status" id="ck-status"><span class="ck-dot"></span><span>Conectando…</span></div>
+    <div id="ck-root"></div>
+  </section>
+
+  <!-- ============ 14 ============ -->
+  <section id="s-auditoria">
+    <div class="sec-head"><div class="sec-bar"></div><div class="sec-titles">
+      <h2>Cómo se auditó</h2>
+      <div class="sec-src">AUDITORIA.md</div>
+    </div></div>
+    <div class="body">
+      <p>La versión 1 de esta estrategia se revisó entera contra las fuentes antes de darla por buena.
+        <strong>Salieron 17 errores</strong>, todos corregidos. Se deja escrito por la misma razón por la que
+        la marca escribe sus propias correcciones: para no repetirlas.</p>
+      <div class="two">
+        <div><h4>Salió limpio</h4><div class="yn">
+          <span class="y">✓</span> 24 de 24 fechas del calendario<br>
+          <span class="y">✓</span> 26 referencias cruzadas<br>
+          <span class="y">✓</span> Cifras de entrevistas y PESTEL<br>
+          <span class="y">✓</span> Precios y planes<br>
+          <span class="y">✓</span> Palabras vetadas</div></div>
+        <div><h4>Falló</h4><div class="yn">
+          <span class="n">✕</span> 5 de dato y de verificación<br>
+          <span class="n">✕</span> 5 de aritmética<br>
+          <span class="n">✕</span> 4 de estrategia<br>
+          <span class="n">✕</span> 3 de alcance</div></div>
+      </div>
+      <h3>Los cuatro que más habrían costado</h3>
+      <div class="tw"><table>
+        <tr><td><b>Pantalla en 2 piezas de 19</b></td><td>Cuando el análisis de competencia dice literal que las capturas de la app son «lo primero que hay que producir» — y es el formato que no depende de nadie</td></tr>
+        <tr><td><b>La hora azul a las 8 de la mañana</b></td><td>Es a las 5:30. El documento se contradecía consigo mismo en la misma página, sobre el único día de rodaje del mes</td></tr>
+        <tr><td><b>Seis umbrales dados como criterio</b></td><td>Sin marcarlos como hipótesis. Es el error nº 1 del proyecto disfrazado de rigor</td></tr>
+        <tr><td><b>Gabriel contado como usuario de Instagram</b></td><td>Su ficha dice literal «Instagram lo usa poco para informarse». Es la persona que compra Elite todo el año</td></tr>
+      </table></div>
+      <p class="pull">Los errores de cifra se ven leyendo. Los de estrategia se leen bien, suenan seguros
+        y solo aparecen cuando se cuenta.</p>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <b>Kenia · Estrategia de contenido</b> — versión 1.1, 10 de septiembre de 2026<br>
+    Organic Club · Liam Libre y Alonzo García<br><br>
+    El detalle completo vive en el repositorio, en <code>estrategia-contenido/</code>:
+    nueve documentos numerados más el registro de auditoría. Esta página es el resumen operativo,
+    no lo sustituye.<br><br>
+    Documento interno. No es la presentación al cliente.
+  </footer>
+
+  </main>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- cuenta atrás ---------- */
+  var hoy = new Date();
+  hoy.setHours(0,0,0,0);
+  function dias(y,m,d){
+    var t = new Date(y, m-1, d); t.setHours(0,0,0,0);
+    return Math.round((t - hoy)/86400000);
+  }
+  function pinta(id, n, etiqueta){
+    var el = document.getElementById(id); if(!el) return;
+    if(n > 1) el.textContent = n + " días";
+    else if(n === 1) el.textContent = "mañana";
+    else if(n === 0) el.textContent = "hoy";
+    else if(n === -1) el.textContent = "ayer";
+    else el.textContent = "hace " + Math.abs(n) + " d";
+  }
+  pinta("c-rodaje", dias(2026,9,13));
+  pinta("c-rock",   dias(2026,10,4));
+  pinta("c-lanza",  dias(2026,10,15));
+
+  /* ---------- navegación ---------- */
+  var SECS = [
+    ["s-situacion","Dónde estamos",0],
+    ["s-urgente","Lo urgente",1],
+    ["s-relato","El relato",0],
+    ["s-emocion","Jerarquía emocional",0],
+    ["s-embudo","El embudo",0],
+    ["s-pilares","Los cinco pilares",0],
+    ["s-formatos","Formatos y canales",0],
+    ["s-calendario","El calendario",0],
+    ["s-lanzamiento","El lanzamiento",0],
+    ["s-copy","Tagline y frases",1],
+    ["s-nova","Qué no va",0],
+    ["s-metricas","Métricas",0],
+    ["s-falta","Lo que falta",1],
+    ["s-auditoria","Cómo se auditó",0]
+  ];
+  var railNav = document.getElementById("rail-nav");
+  var tbNav = document.getElementById("tb-nav");
+  SECS.forEach(function(s,i){
+    var a = document.createElement("a");
+    a.href = "#" + s[0];
+    a.className = s[2] ? "falta" : "";
+    a.innerHTML = '<span class="n">' + String(i+1).padStart(2,"0") + '</span><span>' + s[1] + '</span>';
+    railNav.appendChild(a);
+    var b = document.createElement("a");
+    b.href = "#" + s[0];
+    b.className = s[2] ? "falta" : "";
+    b.textContent = s[1];
+    tbNav.appendChild(b);
+  });
+  var railLinks = railNav.querySelectorAll("a");
+  var tbLinks = tbNav.querySelectorAll("a");
+  if("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(!e.isIntersecting) return;
+        var idx = SECS.findIndex(function(s){ return s[0] === e.target.id; });
+        if(idx < 0) return;
+        railLinks.forEach(function(l,i){ l.classList.toggle("on", i === idx); });
+        tbLinks.forEach(function(l,i){ l.classList.toggle("on", i === idx); });
+      });
+    }, {rootMargin:"-15% 0px -70% 0px"});
+    SECS.forEach(function(s){
+      var el = document.getElementById(s[0]); if(el) io.observe(el);
+    });
+  }
+
+  /* ---------- lo que falta ---------- */
+  var GRUPOS = [
+    {id:"semana", titulo:"Bloqueantes de esta semana", quien:"antes del domingo 13", items:[
+      {id:"box",      t:"Confirmar los 8–10 del box, con nombre y hora", w:"Ninro", d:"jue 11",
+       n:"Sin gente no hay testimonios, y sin testimonios la app lanza sin una sola reseña"},
+      {id:"reel",     t:"Describir el reel de referencia que pasó Kurt", w:"Kurt · Liam", d:"jue 11",
+       n:"Instagram está bloqueado desde el entorno de trabajo. Hacen falta tres respuestas: qué formato, cómo arrancan los 2 primeros segundos, y qué gustó"},
+      {id:"tagline",  t:"Aprobar el tagline «El plan que decide contigo»", w:"Ninro", d:"vie 12",
+       n:"Se graba a cámara el 13"},
+      {id:"frases",   t:"Aprobar las cuatro frases de campaña", w:"Ninro", d:"vie 12",
+       n:"Se graban sueltas, tres versiones cada una"},
+      {id:"comunidad",t:"Aprobar «Gente que corre» como nombre de comunidad", w:"Ninro", d:"vie 12",
+       n:"Y comprobar que el handle está libre"},
+      {id:"ropa",     t:"Ropa sin logos de terceros visibles", w:"Ninro", d:"vie 12",
+       n:"El manual visual actual ya tiene adidas y Nike en portada. Es un error documentado"},
+      {id:"guion",    t:"Guion cerrado, shot list impresa, tarjetas y baterías", w:"Nosotros", d:"vie 12",
+       n:"Si no está el viernes, el domingo se improvisa"}
+    ]},
+    {id:"kurt", titulo:"Los huecos de producto", quien:"Kurt", items:[
+      {id:"cobro",    t:"¿Cómo paga exactamente un venezolano?", w:"Kurt", d:"30 sep",
+       n:"Es el riesgo nº 1 del PESTEL. Si no se resuelve, se cae el BOFU entero y el contenido pasa a construir audiencia para un lanzamiento posterior"},
+      {id:"prueba",   t:"¿Hay prueba gratuita y de cuántos días?", w:"Kurt", d:"30 sep",
+       n:"Decide el CTA de todo el contenido. Si no contesta, se ejecuta la rama sin prueba: es reversible, anunciar una prueba que no existe no lo es"},
+      {id:"fallo",    t:"¿Qué hace el plan el día después de un fallo?", w:"Kurt", d:"25 sep",
+       n:"Sin esto no se puede publicar «Tu plan te esperó», que es la frase 3 y el beneficio emocional central"},
+      {id:"fecha",    t:"Fecha exacta del lanzamiento", w:"Kurt", d:"25 sep",
+       n:"El calendario asume jueves 15 de octubre. Está en semanas relativas: si se mueve, se desplaza la S5 entera"},
+      {id:"pantallas",t:"Confirmar que las pantallas que grabamos salen en la v1 de octubre", w:"Kurt", d:"18 sep",
+       n:"Grabar una función que no se publique es prometer lo que no se sostiene"},
+      {id:"reloj",    t:"¿Se integra con reloj o con Strava?", w:"Kurt", d:"30 sep",
+       n:"11 de 12 ya miden con reloj. Es la objeción de Daniel y no se puede responder sin esto"},
+      {id:"planes",   t:"Qué de los tres planes entra en la v1 de octubre", w:"Kurt", d:"30 sep",
+       n:"Condiciona el carrusel de precios"}
+    ]},
+    {id:"ninro", titulo:"Datos y decisiones", quien:"Ninro", items:[
+      {id:"rock",     t:"Inscritos reales de Caracas Rock", w:"Ninro", d:"25 sep",
+       n:"120 de los 400 contactos de la lista dependen de esa carrera. Sin el dato no se puede dimensionar ni compensar con pauta"},
+      {id:"cuentas",  t:"Qué cuentas de running venezolanas tienen audiencia", w:"Ninro", d:"25 sep",
+       n:"Nombres exactos. Hoy no hay ninguno y condiciona colaboraciones y pauta"},
+      {id:"local",    t:"Competencia local: entrenadores con marca personal en Instagram", w:"Ninro", d:"30 sep",
+       n:"El rival real verificado es un amigo por WhatsApp, no otra app. Falta el mapa local"},
+      {id:"horizonte",t:"Cerrar el horizonte de los 2.500 de audiencia", w:"Ninro", d:"30 sep",
+       n:"La propuesta dice «90 días» (833/mes) y los objetivos SMART van del 8 sep al 8 ene (615/mes). Entre uno y otro la meta cambia un 35%"},
+      {id:"handles",  t:"Registro de marca, dominio y handles", w:"Ninro", d:"—",
+       n:"«Kenia» es un topónimo. Conviene verificarlo con abogado antes de invertir en identidad"}
+    ]},
+    {id:"nosotros", titulo:"Producción", quien:"Organic Club", items:[
+      {id:"canal",    t:"Crear el canal de WhatsApp y el club de Strava", w:"Nosotros", d:"lun 14 sep",
+       n:"El canal es toda la captación del mes. No puede esperar a la primera pieza que lo pide"},
+      {id:"portadas", t:"Sistema de portadas por serie", w:"Nosotros", d:"18 sep",
+       n:"Es lo que hace que la cuadrícula del perfil se lea como un índice"},
+      {id:"lote",     t:"Grabar todas las pantallas del mes de una vez", w:"Nosotros", d:"lun 21 sep",
+       n:"V5, V8 y V11 en una sesión. No depende de nadie"},
+      {id:"moodboard",t:"Moodboard con los siete territorios visuales", w:"Nosotros", d:"25 sep",
+       n:"El criterio está escrito en branding/08. Falta armarlo"},
+      {id:"umbrales", t:"Recalibrar los umbrales con datos propios", w:"Nosotros", d:"5 oct",
+       n:"Los actuales son referencias de categoría y caducan a las tres semanas"}
+    ]},
+    {id:"analisis", titulo:"Lo que sigue abierto en el análisis de marketing", quien:"afecta a esta estrategia", items:[
+      {id:"foda",     t:"Tendencias, FODA, pricing formal, benchmark y socios estratégicos", w:"Nosotros", d:"—",
+       n:"El PESTEL está cerrado. Esto se puede ejecutar sin lo demás, pero puede mover los pesos"},
+      {id:"rebeca",   t:"Decidir si Rebeca entra en pauta", w:"Ninro", d:"19 oct",
+       n:"El PESTEL vio 47% de participación femenina en el Maratón CAF. Hoy la campaña la lideran Daniel y Patricia"},
+      {id:"nuevos",   t:"Decidir si el 42% de corredores nuevos entra en el target", w:"Ninro", d:"diciembre",
+       n:"Enero es exactamente cuando ese público aparece, y hoy el target lo excluye a propósito"}
+    ]}
+  ];
+
+  var root = document.getElementById("ck-root");
+  var statusEl = document.getElementById("ck-status");
+  var tbCount = document.getElementById("tb-count");
+  var estado = {};
+  var db = null;
+
+  function total(){ var n=0; GRUPOS.forEach(function(g){ n += g.items.length; }); return n; }
+  function hechos(){
+    var n=0; GRUPOS.forEach(function(g){ g.items.forEach(function(it){
+      if(estado[it.id] && estado[it.id].hecho) n++; }); });
+    return n;
+  }
+  function fecha(iso){
+    if(!iso) return "";
+    var d = new Date(iso);
+    if(isNaN(d)) return "";
+    var M = ["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
+    return "marcado el " + d.getDate() + " " + M[d.getMonth()];
+  }
+  function contadores(){
+    var h = hechos(), t = total();
+    if(tbCount) tbCount.textContent = (t-h) + " abiertas";
+    GRUPOS.forEach(function(g){
+      var el = document.getElementById("cnt-"+g.id); if(!el) return;
+      var d = g.items.filter(function(it){ return estado[it.id] && estado[it.id].hecho; }).length;
+      el.textContent = d + " de " + g.items.length;
+    });
+  }
+
+  function construir(){
+    root.textContent = "";
+    GRUPOS.forEach(function(g){
+      var wrap = document.createElement("div");
+      wrap.className = "ck-group";
+      var h = document.createElement("div");
+      h.className = "ck-group-h";
+      h.innerHTML = '<h3>'+g.titulo+'</h3><span class="who">'+g.quien+'</span>'+
+                    '<span class="cnt" id="cnt-'+g.id+'"></span>';
+      wrap.appendChild(h);
+      g.items.forEach(function(it){
+        var lab = document.createElement("label");
+        lab.className = "ck";
+        lab.setAttribute("for", "ck-"+it.id);
+        var box = document.createElement("input");
+        box.type = "checkbox"; box.id = "ck-"+it.id;
+        var b = document.createElement("div");
+        b.className = "ck-b";
+        b.innerHTML = '<div class="ck-t"></div><div class="ck-w"></div>'+
+                      '<div class="ck-m"><span>'+it.w+'</span><span>'+it.d+'</span>'+
+                      '<span class="ck-when" id="when-'+it.id+'"></span></div>';
+        b.querySelector(".ck-t").textContent = it.t;
+        b.querySelector(".ck-w").textContent = it.n;
+        lab.appendChild(box); lab.appendChild(b);
+        wrap.appendChild(lab);
+        box.addEventListener("change", function(){ marcar(it.id, box.checked); });
+      });
+      root.appendChild(wrap);
+    });
+    pintarEstado();
+  }
+
+  function pintarEstado(){
+    GRUPOS.forEach(function(g){ g.items.forEach(function(it){
+      var box = document.getElementById("ck-"+it.id);
+      var when = document.getElementById("when-"+it.id);
+      if(!box) return;
+      var st = estado[it.id] || {};
+      box.checked = !!st.hecho;
+      box.closest(".ck").classList.toggle("done", !!st.hecho);
+      if(when) when.textContent = st.hecho ? fecha(st.cuando) : "";
+    }); });
+    contadores();
+  }
+
+  function marcar(id, hecho){
+    estado[id] = {hecho: hecho, cuando: new Date().toISOString()};
+    pintarEstado();
+    if(!db) return;
+    db.doc("pendientes/"+id).set(estado[id]).catch(function(){
+      estadoTexto(false, "No se pudo guardar. La marca es solo tuya en este navegador.");
+    });
+  }
+
+  function estadoTexto(vivo, txt){
+    statusEl.innerHTML = "";
+    var d = document.createElement("span");
+    d.className = "ck-dot" + (vivo ? " live" : "");
+    var s = document.createElement("span");
+    s.textContent = txt;
+    statusEl.appendChild(d); statusEl.appendChild(s);
+  }
+
+  construir();
+  estadoTexto(false, "Lista local — todavía sin sincronizar");
+
+  if(window.claude && typeof window.claude.use === "function"){
+    window.claude.use("db").then(function(x){
+      if(!x){ estadoTexto(false, "Lista de solo lectura en esta vista. Lo que marques no se comparte."); return; }
+      db = x;
+      db.collection("pendientes").onSnapshot(function(snap){
+        var nuevo = {};
+        snap.docs.forEach(function(d){ nuevo[d.id] = d.data() || {}; });
+        estado = nuevo;
+        pintarEstado();
+        estadoTexto(true, "Sincronizada. Lo que marques aquí lo ve Alonzo, y al revés.");
+      }, function(){
+        estadoTexto(false, "Sin conexión con la lista compartida. Las marcas son locales.");
+      });
+    }).catch(function(){
+      estadoTexto(false, "Lista local — no se pudo conectar.");
+    });
+  } else {
+    estadoTexto(false, "Lista local — abre la página publicada para compartirla.");
+  }
+})();
+</script>

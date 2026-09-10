@@ -26,6 +26,7 @@
 | **08** | [`08-que-no-va-y-metricas.md`](08-que-no-va-y-metricas.md) | **Qué de la lluvia de ideas no va y por qué**, criterios de matar formatos, métricas y gobierno |
 | **09** | [`09-storytelling-y-narrativa.md`](09-storytelling-y-narrativa.md) | **Relato maestro, jerarquía emocional, arcos por persona y las siete estructuras de guion** |
 | — | [`AUDITORIA.md`](AUDITORIA.md) | **Registro de la auditoría del 10 de septiembre:** qué se encontró mal en la versión 1 y qué se corrigió |
+| — | [`presentacion/`](presentacion/) | **La estrategia entera como página web navegable**, con la lista viva de lo que falta. Es el documento que se comparte — [claude.ai/code/artifact/2695241e](https://claude.ai/code/artifact/2695241e-02f3-4e0d-915e-706875c947d4) |
 
 ---
 
