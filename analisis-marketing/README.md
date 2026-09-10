@@ -68,3 +68,4 @@ Son inputs, no preguntas abiertas.
 | `00-registro-de-entrevistas.md` | Retro de las reuniones con Ninro y Kurt, bajada por sección |
 | `01-cuestionario-maestro.md` | Todas las preguntas abiertas, organizadas por quién las contesta |
 | `02-pestel.md` | Análisis de entorno en seis dimensiones, con fuentes y con las oportunidades y amenazas que entran al FODA |
+| `03-contexto-para-estrategia-de-contenido.md` | **Traspaso autocontenido para la conversación de estrategia de contenido** |
