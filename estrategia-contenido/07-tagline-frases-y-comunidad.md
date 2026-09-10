@@ -143,21 +143,21 @@ ninguno juzga, ninguno pide un título.
 
 - *«Este plan es buenísimo. Y no sabe que anoche dormiste cuatro horas.»* ⭐
 - *«Mira lo que pasa cuando le dices que te duele el gemelo.»*
-- *«Tu plan actual hace cuatro de estas nueve cosas.»*
+- *«Tu plan actual hace algunas de estas cosas. Mira cuáles le faltan.»* ⚠️ *los números salen de la lista real, no al revés*
 - *«Esta es la misma semana, dos veces. La diferencia son tres horas de sueño.»*
 
 ### Ganchos de educación (pilar 3)
 
 - *«Caracas está a 900 metros. Por eso tu ritmo no coincide con las tablas.»* ⭐
-- *«Existen seis tipos de sesión. Casi todo el mundo hace dos.»*
+- *«Casi todo el mundo entrena con dos tipos de sesión. Hay bastantes más.»* ⚠️ *el número exacto lo fija Ninro en el rodaje, no nosotros*
 - *«Correr y levantar la misma semana no es el problema. Subir los dos a la vez, sí.»*
 - *«Un entrenador de running en Caracas cuesta entre 30 y 80 dólares al mes.»*
-- *«Tres cosas que la gente hace la noche antes de una carrera y le cuestan la carrera.»*
+- *«Lo que la gente hace la noche antes de una carrera y le cuesta la carrera.»*
 
 ### Ganchos de territorio (pilar 4)
 
 - *«Son las 5:30 y la ciudad todavía no existe.»*
-- *«En octubre en Caracas llueve 30 de 31 días. Vamos a hablar de eso ahora, no en octubre.»*
+- *«En octubre en Caracas llueve casi todos los días. Vamos a hablar de eso ahora, no en octubre.»*
 - *«Esta sesión es bajo lluvia. A propósito.»* ⭐
 - *«El Maratón CAF pasó de 5.077 inscritos a 6.000, con lista de espera.»*
 
@@ -189,3 +189,19 @@ Cada uno está prohibido por una razón concreta de la plataforma, no por gusto:
 > **La prueba rápida para cualquier gancho nuevo:** léelo en voz alta y pregunta *¿quién es el
 > sujeto de esta frase?* Si el sujeto es la persona y el verbo es una exigencia, no sale. **La
 > exigencia se le pone al plan, nunca a la persona.**
+
+---
+
+## 6 · Una nota sobre los números en los ganchos
+
+**Ningún gancho lleva una cifra que no venga de una fuente.** Los datos de las entrevistas y del
+PESTEL sí se pueden usar tal cual —*11 de 12*, *$30–80*, *900 metros*, *5.077 → 6.000 inscritos*—
+porque están verificados y tienen fuente escrita.
+
+Lo que no se hace es **inventar el número para que el gancho suene mejor**: «las seis sesiones que
+existen», «nueve cosas que tu plan no hace», «los tres errores de la noche antes». Suenan bien y
+no los sostiene nadie. **Si el número tiene que estar, sale de la lista real después de escribirla
+— nunca antes.**
+
+Es el valor 4 de la marca —*prometemos solo lo que sostenemos*— aplicado a algo tan pequeño como
+un titular. Y es donde más fácil se rompe, porque nadie lo revisa.

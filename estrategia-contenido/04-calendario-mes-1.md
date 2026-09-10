@@ -42,25 +42,33 @@ Contado pieza por pieza, asignando a cada una **un solo tramo dominante**:
 
 ### Reparto por pilar
 
-| Pilar | Piezas | % | Peso objetivo | Desvío |
-|---|---|---|---|---|
-| **1 · Ya estás dentro** | V1 · C1 · V10 | 16 % | 25 % | **−9** |
-| **2 · Decide contigo** | V5 · V11 · C4 · V13 · C5 · C6 | 32 % | 25 % | +7 |
-| **3 · El porqué** | V2 · V4 · V6 · V7 · V8 | 26 % | 20 % | +6 |
-| **4 · Aquí se corre así** | V3 · C2 · C3 · V9 | 21 % | 20 % | +1 |
-| **5 · La gente de Kenia** | V12 | 5 % | 10 % | −5 |
+**Se mide sobre S1–S4, no sobre el mes entero.** La semana de lanzamiento es una ráfaga de
+campaña —cuatro piezas empujando a descargar— y meterla en la media distorsiona el reparto
+editorial hasta volverlo ilegible.
 
-> **El desvío está reconocido y es deliberado, pero hay que corregirlo en noviembre.**
+| Pilar | Piezas de S1–S4 | % | Peso objetivo | Desvío |
+|---|---|---|---|---|
+| **1 · Ya estás dentro** | V1 · C1 · V10 | 20 % | 25 % | −5 |
+| **2 · Decide contigo** | V5 · V8 · V11 | 20 % | 25 % | −5 |
+| **3 · El porqué** | V2 · V4 · V6 · V7 | 27 % | 20 % | +7 |
+| **4 · Aquí se corre así** | V3 · C2 · C3 · V9 | 27 % | 20 % | +7 |
+| **5 · La gente de Kenia** | V12 | 7 % | 10 % | −3 |
+| | **15 piezas** | | | |
+
+**La semana 5, aparte:** las cuatro piezas son de pilar 2, con apoyo de 1, 3 y 4 dentro del video
+de lanzamiento. Es lo que tiene que ser una semana de apertura.
+
+> **Dónde está el desvío y por qué se acepta.** El mes 1 pesa de más en **educación** (pilar 3) y
+> en **territorio** (pilar 4), y de menos en **comunidad** (pilar 5). Las dos cosas tienen la
+> misma causa: **en un mes sin usuarios, la autoridad y el lugar son lo único que se puede
+> construir de verdad.** El pilar 5 no tiene material propio porque todavía no hay a quién mostrar.
 >
-> El mes 1 pesa más en **educación** (pilar 3) y en **producto** (pilar 2) de lo que dice el
-> reparto objetivo, por dos razones reales: en un mes sin usuarios **la autoridad es lo único que
-> se puede construir**, y el pilar 5 no tiene material propio porque todavía no hay a quién
-> mostrar. El pilar 1 se queda corto en piezas de feed, pero **es el que carga los dos momentos
-> más visibles del mes** — V1, que abre la marca, y el bloque de caras del video de lanzamiento.
+> Y el pilar 1, que en número de piezas se queda en el 20 %, **carga los dos momentos de más
+> atención del mes** — V1, que abre la marca, y el bloque de caras del video de lanzamiento.
 >
-> **Los pesos de `02` son un objetivo de trimestre, no una cuota semanal.** La corrección se hace
-> en la revisión del 19 de octubre: **pilar 5 sube a 20 %** con usuarios reales, y **pilar 1
-> recupera su 25 %** con la segunda tanda de micro-entrevistas.
+> **Los pesos de `02` son objetivo de trimestre, no cuota semanal.** Se corrigen en la revisión
+> del 19 de octubre: **pilar 5 sube a 20 %** con usuarios reales, y **pilar 1 recupera su 25 %**
+> con la segunda tanda de micro-entrevistas de Caracas Rock.
 
 ---
 
@@ -95,7 +103,7 @@ Contado pieza por pieza, asignando a cada una **un solo tramo dominante**:
 |---|---|---|---|---|---|---|---|---|
 | **mar 22** | **V4 · La carga combinada** | Ninro 2.2 fake podcast | 3 | MOFU | **Educación** | Andrés · Patricia | *«Correr y levantar la misma semana no es el problema. Subir los dos a la vez, sí.»* | Seguir |
 | **jue 24** | **V5 · La pregunta de la mañana** ⭐ | Pantalla 1.1 | 2 | MOFU→BOFU | **Conversión** | Daniel · Patricia | Pantalla: *«¿Cómo amaneciste hoy?»* — sin voz | **Canal** |
-| **sáb 26** | **V6 · Los tipos de sesión** | Ninro 2.5 tier list | 3 | TOFU | **Educación** | Gabriel · Daniel | *«Estas son las seis sesiones que existen. Casi todo el mundo hace dos.»* | Seguir |
+| **sáb 26** | **V6 · Los tipos de sesión** | Ninro 2.5 tier list | 3 | TOFU | **Educación** | Gabriel · Daniel | *«Casi todo el mundo entrena con dos tipos de sesión. Hay bastantes más.»* ⚠️ | Seguir |
 | **dom 27** | **C2 · Por qué tus ritmos no cuadran** | Carrusel 5.2 | 3 · 4 | MOFU | **Educación** | Daniel · Gabriel | Lámina 1: *«Caracas está a 900 metros. Por eso tu ritmo no coincide con las tablas.»* | **Canal** |
 
 **Notas de ejecución**
@@ -104,8 +112,12 @@ Contado pieza por pieza, asignando a cada una **un solo tramo dominante**:
   encima y sonido de interfaz. ⚠️ Verificar con Kurt que la pantalla que se graba es la que sale.
 - **C2 es la pieza con más potencial de guardado del mes.** Es utilidad pura, es local y **ninguna
   app global lo explica**. Si funciona, se serializa: el calor, la humedad, el viento.
-- **22 de septiembre: arranca la pauta.** $300/mes, empezando por reamplificar V1 y C1 —
-  las dos piezas de legitimación, que son las que traen público nuevo barato.
+- **22 de septiembre: arranca la pauta.** Empezando por reamplificar V1 y C1 — las dos piezas de
+  legitimación, que son las que traen público nuevo barato. ⚠️ **Ojo con el presupuesto real:**
+  son $300/mes, y del 22 de septiembre al 14 de octubre hay 22 días, así que la fase 1 dispone de
+  **≈$220, no de $300.**
+- ⚠️ **Los ganchos marcados con ⚠️ llevan un número que todavía no existe.** No se publica una
+  cifra que no salga de la lista real o de una fuente. Ver `07` §6.
 
 ---
 
@@ -118,15 +130,21 @@ Contado pieza por pieza, asignando a cada una **un solo tramo dominante**:
 |---|---|---|---|---|---|---|---|---|
 | **mar 29** | **V7 · La semana antes** | Ninro 2.1 | 3 | MOFU | **Educación** | Daniel | *«Faltan cinco días para tu carrera. Lo que hagas ahora ya no te va a hacer más rápido.»* | **Canal** |
 | **jue 1 oct** | **C3 · Guía de Caracas Rock** ⭐ | Carrusel 5.3 | 4 | MOFU | **Atracción** | Daniel · Rebeca | Lámina 1: *«Caracas Rock, domingo. La semana previa, el día, y el lunes de después.»* | **Canal** |
-| **sáb 3** | **V8 · Lo que se hace la noche antes** | Ninro 2.1 / Pantalla | 3 · 2 | MOFU | **Educación** | Daniel · Andrés | *«Tres cosas que la gente hace la noche antes y le cuestan la carrera.»* | **Canal** |
+| **sáb 3** | **V8 · Una semana, ordenada** | Pantalla 1.3 | 2 | MOFU | **Conversión** | Daniel · Rebeca | Scroll del plan, sin voz: *«Esto es una semana cuando alguien la pensó por ti.»* | **Canal** |
 | **dom 4** | 🏁 **Caracas Rock** — solo stories en vivo | — | 4 · 5 | TOFU | Atracción | Todas | — | **QR presencial** |
 
 **Notas de ejecución**
 - **C3 es la jugada de RunMotion a escala local**, y hoy está sin usar por nadie aquí. Es la
   pieza que más se va a compartir en grupos de WhatsApp de running — que es exactamente el canal
   donde vive Daniel ✅.
-- **V8 reencuadra el «no hagas esto / haz esto»** de la lluvia de ideas: el sujeto de la
-  corrección es **lo que se hace**, nunca quien lo hace. Ver `08` §1.
+- **V8 cambió en la auditoría del 10 de septiembre.** Era una segunda pieza de Ninro en la misma
+  semana que V7 —redundante— y dejaba el formato *Pantalla* en 2 piezas de 19. El análisis de
+  competencia dice literal que las capturas de la app son **«lo primero que hay que producir»** y
+  que tenemos acceso completo para grabarlas. Ahora V8 enseña **el plan ordenado, en scroll y sin
+  voz**, que es lo que Runna hace mejor que nadie, y cae en la semana de la carrera como contraste
+  con improvisar. Ver [`AUDITORIA.md`](AUDITORIA.md) §C1.
+- **El «no hagas esto / haz esto» reencuadrado no se pierde:** vive en V7 y en la biblioteca de
+  ganchos de `07`. El sujeto de la corrección es **lo que se hace**, nunca quien lo hace.
 - **El domingo 4 no hay pieza de feed.** Es día de operación, no de publicación: se graba, se
   capta y se sube a stories en vivo. El reel sale el lunes. Ver el plan completo en `05` §2.
 
@@ -166,7 +184,7 @@ Contado pieza por pieza, asignando a cada una **un solo tramo dominante**:
 |---|---|---|---|---|---|---|---|
 | **lun 12** | **C4 · El jueves abre** | Carrusel 5.5 | 2 | BOFU | Conversión | *«El jueves. Esto es lo que va a estar disponible.»* | **Canal — los del canal entran primero** |
 | **jue 15** | 🚀 **V13 · VIDEO DE LANZAMIENTO** ⭐ | Motion 6.4 | 1 · 2 · 4 | BOFU | Conversión | *«Nadie deja de correr por falta de voluntad.»* | **Descargar** |
-| **vie 16** | **C5 · Qué hace Kenia que tu plan no hace** | Carrusel 5.2 | 2 | BOFU | Conversión | *«Tu plan actual hace cuatro de estas nueve cosas.»* | **Descargar** |
+| **vie 16** | **C5 · Qué hace Kenia que tu plan no hace** | Carrusel 5.2 | 2 | BOFU | Conversión | *«Tu plan actual hace algunas de estas cosas. Mira cuáles le faltan.»* ⚠️ | **Descargar** |
 | **dom 18** | **C6 · Lo que cuesta** | Carrusel 5.4 | 3 · 2 | BOFU | Conversión | *«Un entrenador de running en Caracas cuesta entre 30 y 80 dólares al mes.»* | **Descargar** |
 
 **Notas de ejecución**

@@ -31,16 +31,21 @@
 
 | Bloque | Hora | Qué | Prioridad |
 |---|---|---|---|
+| **E‑1** | **5:30 – 6:00** | **B-roll de hora azul.** Faroles, ciudad vacía, luz baja, primeras pisadas | 🟡 Alta |
 | **C** | **6:00 – 7:30** | **Testimonios del box** — la gente llega primero, cuando aún tiene energía | 🔴 **Máxima** |
 | **D** | 7:30 – 8:00 | Micro-entrevistas del enemigo B, a la misma gente | 🔴 Máxima |
-| **E** | 8:00 – 9:00 | B-roll: sesión de entrenamiento, calle, Caracas | 🟡 Alta |
+| **E‑2** | 8:00 – 9:00 | **El resto del b-roll:** sesión de entrenamiento, calle, Caracas de día | 🟡 Alta |
 | **A** | 9:00 – 10:30 | **Ninro, set fijo** — las ocho tomas de autoridad | 🔴 Máxima |
 | **B** | 10:30 – 11:00 | Ninro, selfie y calle | 🟡 Alta |
 | **F** | 11:00 – 11:30 | **Las diez reseñas de tienda** | 🔴 Máxima |
 
-> **Por qué la gente se graba primero y Ninro después.** Porque la gente se va y Ninro no.
-> Si el día se cae, lo último que se pierde es lo que se puede repetir. **Y porque a las 6:00 hay
-> hora azul de verdad**, que es el territorio visual 2 y no se puede fingir a las once.
+> ⚠️ **El bloque E va partido, y esto se corrigió en la auditoría.** La hora azul es **5:30**, no
+> las ocho: es el territorio visual 2 y **no se puede fingir con luz de media mañana**. Si el
+> equipo llega a las seis con todo el mundo, esa toma ya se perdió y hay que volver otro día a por
+> ella. **Media hora de madrugada ahorra una salida entera.**
+
+> **Por qué la gente se graba antes que Ninro.** Porque la gente se va y Ninro no. Si el día se
+> cae, lo último que se pierde tiene que ser lo que se puede repetir.
 
 ---
 
@@ -94,14 +99,18 @@ Alguien que ya corrió una media maratón diciendo que no es corredora es el mej
 
 ## Bloque E · B-roll 🟡
 
-**Una hora. Sonido real. Sin música.**
+**Hora y media, partida en dos: 5:30–6:00 y 8:00–9:00. Sonido real. Sin música.**
+
+> **Los diez planos cubren los siete territorios visuales** del brief de moodboard
+> (`branding/08-brief-moodboard.md`); la columna «Territorio» dice cuál. **Si el día se corta, se
+> sacrifica por el final de la lista, no por el principio.**
 
 | # | Plano | Territorio | Alimenta |
 |---|---|---|---|
 | **E1** | Pisadas, cerca, sobre asfalto y sobre tierra | 01 esfuerzo real | Todos los cierres |
 | **E2** | **Cara de trabajo en el kilómetro 15** — mandíbula suelta, mirada al frente. **No cara de grito** | 01 | V13 |
-| **E3** | Hora azul: faroles, ciudad vacía, luz baja | 02 | V3 |
-| **E4** | **Caracas reconocible**: el Ávila al fondo, la Cota Mil, el Parque del Este | 03 | V3 · V13 |
+| **E3** ⏰ | Hora azul: faroles, ciudad vacía, luz baja. **Bloque E‑1, 5:30** | 02 | V3 |
+| **E4** ⏰ | **Caracas reconocible**: el Ávila al fondo, la Cota Mil, el Parque del Este. **Los mejores planos salen de E‑1** | 03 | V3 · V13 |
 | **E5** | Reloj en muñeca, splits, pantalla de reloj | 04 el dato | V5 · V13 |
 | **E6** | **Atarse los cordones.** Plano cerrado, sin cara | 05 el regreso | **V12** ⭐ |
 | **E7** | Estiramiento, piernas en alto, el día libre | 05 | V12 |
@@ -206,6 +215,7 @@ sería peor que no tener ninguna reseña.
 - [ ] **Las ocho tomas de Ninro** del bloque A
 - [ ] **Las cuatro frases de campaña**, tres versiones cada una
 - [ ] **Los diez planos de b-roll**, E6 incluido *(los cordones — es el video del regreso)*
+- [ ] **E3 y E4 grabados con luz de las 5:30**, no de media mañana
 - [ ] **El compromiso de reseñas** hablado con todos
 - [ ] **Mensaje de cesión de imagen** mandado a cada persona grabada, con su nombre
 - [ ] **Copia de seguridad de las tarjetas en dos sitios distintos, antes de dormir**

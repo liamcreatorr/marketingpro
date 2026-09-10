@@ -24,6 +24,8 @@
 | **06** | [`06-guion-grabacion-13-sep.md`](06-guion-grabacion-13-sep.md) | **Guion y shot list del 13 de septiembre**, la única ventana de grabación |
 | **07** | [`07-tagline-frases-y-comunidad.md`](07-tagline-frases-y-comunidad.md) | Tagline, **las 4 frases de campaña**, nombre de comunidad y biblioteca de ganchos |
 | **08** | [`08-que-no-va-y-metricas.md`](08-que-no-va-y-metricas.md) | **Qué de la lluvia de ideas no va y por qué**, criterios de matar formatos, métricas y gobierno |
+| **09** | [`09-storytelling-y-narrativa.md`](09-storytelling-y-narrativa.md) | **Relato maestro, jerarquía emocional, arcos por persona y las siete estructuras de guion** |
+| — | [`AUDITORIA.md`](AUDITORIA.md) | **Registro de la auditoría del 10 de septiembre:** qué se encontró mal en la versión 1 y qué se corrigió |
 
 ---
 
@@ -41,8 +43,8 @@ llegar al día del lanzamiento con **400 personas esperando**. Todo lo demás es
 
 > **Ninro se graba una sola vez: el 13 de septiembre.**
 
-Viaja del 15 al 20 y después el calendario aprieta. Todo lo que lleve su cara —**7 de las 13
-piezas de video del mes**— sale de ese día. Por eso el guion del 13 (`06`) no es un anexo:
+Viaja del 15 al 20 y después el calendario aprieta. Todo lo que lleve su cara —**7 de los 13
+videos del mes**— sale de ese día. Por eso el guion del 13 (`06`) no es un anexo:
 es el documento que decide si el mes se puede ejecutar o no.
 
 ### Lo que se produce
@@ -53,6 +55,17 @@ es el documento que decide si el mes se puede ejecutar o no.
 | **Carruseles** | **6** — 3 del mes + 3 del pack de lanzamiento | `04` |
 | **Stories** | 3–5 diarias, con caja de preguntas fija los martes | `03` |
 | **Piezas de captación presencial** | Caracas Rock, 4 de octubre | `05` |
+
+### El relato, en una frase
+
+> **Nadie deja de correr por falta de voluntad. Deja de correr porque sigue un plan que no sabe
+> nada de su vida.**
+
+El usuario es el héroe y Kenia el mentor — eso ya estaba decidido. Lo que `09` añade es **el
+problema interno**, que es donde se gana o se pierde este mercado: *once de doce creen que les
+falta algo para tener derecho a llamarse corredores*. **Quien resuelve el problema interno se
+queda con el cliente; quien resuelve solo el externo compite en precio contra Garmin, que es
+gratis.**
 
 ### Los cinco pilares
 

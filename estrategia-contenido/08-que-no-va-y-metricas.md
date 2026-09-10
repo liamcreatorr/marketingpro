@@ -82,15 +82,28 @@ hace falta cometerlos otra vez en contenido.**
 
 ### Lo que se compromete
 
-| Indicador | Meta al 18 de octubre | De dónde sale |
-|---|---|---|
-| **Lista de espera (canal de WhatsApp)** | **400 contactos** | Ver cálculo abajo |
-| **Seguidores nuevos en Instagram** | **+800** | 2.500 en 90 días ≈ 830/mes. El mes 1 va justo en la media |
-| **Descargas el día 1** | **150** | 37,5 % de la lista. Conservador: la lista es gente que dijo que sí |
-| **Descargas a 4 días (15–18 oct)** | **250** | |
-| **Reseñas en tienda el día 1** | **10** | Bloque F del rodaje. **Se piden 20 para conseguir 10** |
-| **Guardados por carrusel** | **≥ 3 % del alcance** | Es el indicador de utilidad, y es el que decide qué se serializa |
-| **Coste por contacto de lista (con pauta)** | **≤ $0,75** | $300 de pauta ÷ 400 contactos, asumiendo que la mitad llega por orgánico |
+| Indicador | Meta | Fecha de corte | De dónde sale |
+|---|---|---|---|
+| **Lista de espera (canal de WhatsApp)** | **400 contactos** | **mié 14 oct** *(la víspera)* | Ver cálculo abajo |
+| **Seguidores nuevos en Instagram** | **+700** | dom 18 oct | ⚠️ Ver la nota de horizonte, abajo |
+| **Descargas el día 1** | **150** | jue 15 oct | 37,5 % de la lista. Conservador: la lista es gente que ya dijo que sí |
+| **Descargas a 4 días** | **250** | dom 18 oct | |
+| **Reseñas en tienda el día 1** | **10** | jue 15 oct | Bloque F del rodaje. **Se piden 20 para conseguir 10** |
+| **Guardados por carrusel** | **≥ 3 % del alcance** ⚠️ | continuo | Indicador de utilidad. Decide qué se serializa |
+| **Coste mezclado por contacto** | **≤ $0,75** | 14 oct | ≈$220 de pauta ÷ 400 contactos. **Es coste mezclado, no coste de pauta** |
+| **Coste por contacto solo de pauta** | **≤ $2,50** | 14 oct | ≈$220 ÷ 95 contactos atribuidos a pauta = **$2,32** |
+
+> ⚠️ **Dos avisos sobre esta tabla, y los dos importan.**
+>
+> **El presupuesto de pauta de la fase 1 no son $300.** La pauta arranca el 22 de septiembre y la
+> lista se cierra el 14 de octubre: son **22 días, ≈$220** del presupuesto mensual. El resto del
+> mes de pauta se gasta ya en la semana de lanzamiento.
+>
+> **El horizonte de los 2.500 de audiencia es ambiguo en las fuentes.** Las métricas de la
+> propuesta dicen «a 90 días» *(≈833/mes)* y los objetivos SMART del análisis de marketing van del
+> 8 de septiembre al 8 de enero, 122 días *(≈615/mes)*. **Aquí se toma el horizonte largo y se
+> pone la meta del mes 1 en +700**, que queda entre los dos. **Conviene que Ninro cierre cuál de
+> los dos horizontes es el que se va a medir**, porque con el otro la meta cambia un 35 %.
 
 ### El cálculo de los 400
 
@@ -100,7 +113,7 @@ hace falta cometerlos otra vez en contenido.**
 | **Los 12 entrevistados + sus grupos** | 25 | Dieron su tiempo; son los más fáciles de convertir |
 | **Caracas Rock** *(retiro de kits + meta)* | **120** | ❌ **El número más frágil: no sabemos cuántos inscritos hay** |
 | **Contenido orgánico** *(19 piezas, 5 semanas)* | 100 | ~5 contactos por pieza. Conservador |
-| **Pauta** *(desde el 22 sep)* | 95 | ~$3 de coste por contacto en pauta pura |
+| **Pauta** *(22 sep → 14 oct, ≈$220)* | 95 | ≈$2,32 de coste por contacto en pauta pura |
 | **Total** | **400** | |
 
 ⚠️ **Dónde está el riesgo.** 120 de 400 dependen de Caracas Rock, y no sabemos cuántos inscritos
@@ -130,7 +143,17 @@ tome una decisión. La primera es una prueba, la segunda es una lectura, la terc
 
 ### Los umbrales
 
-| Señal | Umbral de supervivencia | Qué significa si no lo pasa |
+> ⚠️ **Los seis números de abajo son referencias de categoría, no datos de esta cuenta.** No hay
+> histórico: la cuenta arranca de cero el 15 de septiembre. **Sirven para las tres primeras
+> semanas y después se tiran.** El 5 de octubre se recalibran con los percentiles propios: el
+> umbral pasa a ser **la mediana de las piezas publicadas**, que es el único punto de comparación
+> honesto.
+>
+> Esto no es una cautela de trámite. **El error número uno documentado de este proyecto es
+> predecir el comportamiento del público sin datos**, y una tabla de umbrales inventados es
+> exactamente esa trampa con aspecto de rigor.
+
+| Señal | Umbral provisional ⚠️ | Qué significa si no lo pasa |
 |---|---|---|
 | **Retención a los 3 segundos** | **≥ 55 %** | El gancho no funciona. **Se cambia el gancho, no el formato** |
 | **Retención al final** | ≥ 25 % en TOFU · ≥ 40 % en MOFU | La pieza es más larga de lo que aguanta su idea |
@@ -151,7 +174,7 @@ tome una decisión. La primera es una prueba, la segunda es una lectura, la terc
 
 | Fecha | Qué se revisa | Qué se decide |
 |---|---|---|
-| **5 de octubre** | Las primeras 11 piezas | **Qué formato se refuerza en la recta final** y dónde se pone la pauta del lanzamiento |
+| **5 de octubre** | Las primeras 11 piezas | **Recalibrar los umbrales con datos propios** · qué formato se refuerza en la recta final · dónde se pone la pauta del lanzamiento |
 | **19 de octubre** | El lanzamiento completo | El plan de noviembre entero, y **el reparto de pilares del régimen** |
 | **30 de noviembre** | El trimestre | Si el 40/40/20 es el reparto correcto, y **si el precio se revisa con datos reales de conversión** |
 

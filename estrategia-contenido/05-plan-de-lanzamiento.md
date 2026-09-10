@@ -153,8 +153,14 @@ justo con las 400 personas que más confían en ella.
 | **0:03–0:10** | Tres cortes rápidos, sonido real: lluvia sobre asfalto · despertador a las 4:58 · una mano en el gemelo | Sin voz. Texto: *«Deja de correr porque sigue un plan que no sabe nada de su vida.»* |
 | **0:10–0:17** | **Ninro, set fijo, a cámara** | *«Todos los planes te dicen qué hacer. Ninguno te pregunta cómo amaneciste.»* |
 | **0:17–0:30** | **Pantalla de la app**, limpia y grande. La pregunta. La respuesta. **La sesión cambiando delante del ojo**, con su explicación | Voz de Ninro encima: *«Kenia te pregunta cómo dormiste, cómo tienes las piernas y cuánto tiempo tienes. Y con eso decide tu día. Y te dice por qué.»* |
-| **0:30–0:38** | **Cuatro caras del box**, cortes de un segundo. La última se queda | *«Yo no me considero corredora.»* · *«Corredor en formación.»* · *«Me falta estructura.»* → Ninro, en off: **«Si corres, ya estás dentro.»** |
+| **0:30–0:38** | **Cuatro caras del box**, cortes de un segundo. La última se queda | Cuatro negativas del bloque D → Ninro, en off: **«Si corres, ya estás dentro.»** |
 | **0:38–0:45** | Logo + descriptor + tagline. Debajo, los badges de tienda | **Kenia · Entrenamiento de running**<br>**El plan que decide contigo**<br>*Ya disponible* |
+
+> ⚠️ **Las frases del bloque de caras salen del rodaje, no de este documento.** En el guion van
+> como marcador de posición. Las citas verificadas que sirven de referencia de altura son
+> *«Por ahora no me siento runner»*, *«Corredor en formación»*, *«Me falta estructura y el espacio
+> para entrenar»* y *«No llevo suficiente tiempo corriendo»* — pero **se usan las que digan las
+> personas que estén delante de la cámara el 13**, no estas.
 
 ### Las reglas de este video
 
@@ -193,6 +199,32 @@ que es el error que este proyecto ya cometió tres veces.
 | **2–8 nov** | **Cuenta atrás a la media** | Guía de preparación · qué hacer las dos últimas semanas · el plan de carrera |
 | **9–15 nov** | **La media de Hipereventos** | Cobertura · los que la corrieron con Kenia · **la primera prueba social de resultado real** |
 | **16–22 nov** | **El regreso** ⭐ | *«Tu plan te esperó»*, esta vez con usuarios reales. **La pieza de retención más importante del trimestre**, en el momento exacto en que la gente se cae |
+
+### Y de diciembre a enero — el mapa, no el calendario
+
+El traspaso pedía el calendario editorial **hasta enero**. Bajarlo a piezas ahora sería predecir
+sin datos, que es el error nº 1 de este proyecto. Lo que sí se puede fijar hoy son **los hitos y
+el trabajo de cada tramo**; el calendario de piezas se escribe el 19 de octubre y el 30 de
+noviembre, con números en la mano.
+
+| Tramo | Hito del contexto | Trabajo del contenido | Riesgo que atiende |
+|---|---|---|---|
+| **23 nov – 6 dic** | Fin de la temporada de lluvias; la ciudad entra en seco | **La cosecha del trimestre:** los primeros casos reales de gente que sostuvo 8–10 semanas. Es la primera vez que se puede hablar de resultado sin inventar nada | El lanzamiento ya no es noticia y la cuenta necesita argumento nuevo |
+| **7 – 20 dic** | Diciembre venezolano: la peor ventana de constancia del año | **El contenido del que falla en diciembre.** Es el mes en que la promesa central —volver sin castigo— se puede demostrar en vez de prometerla | **La retención a 60 días.** Diciembre es cuando se cae la cohorte de octubre |
+| **21 dic – 3 ene** | Fiestas. Alcance bajo y coste de pauta alto | **Frecuencia mínima, coste mínimo.** Comunidad y stories; nada de estrenar formatos ni de quemar pauta | Gastar en la peor ventana del año |
+| **4 – 18 ene** | Enero: el pico anual de intención de entrenar | **La segunda campaña de captación**, y la más barata del año en intención. Aquí sí entra el contenido de entrada — *«llevo tiempo diciendo que voy a empezar»* | Es la única ventana del semestre comparable a un lanzamiento |
+
+> **Dos decisiones que hay que tomar antes de enero, y ninguna es de contenido.**
+>
+> **1. Si el 42 % de corredores nuevos entra o no en el target.** Enero es exactamente cuando ese
+> público aparece, y hoy el target lo excluye a propósito. **Es una decisión de Ninro**, y hay que
+> tomarla en diciembre, no en enero.
+>
+> **2. Si el precio se revisa.** La mediana de disposición a pagar fue ≈40 $ y Kenia Coach cuesta
+> 19,99. La revisión se hace **con datos de conversión reales a los 90 días**, que caen justo en
+> enero.
+
+---
 
 ### Las tres cosas que hay que tener listas antes del 19 de octubre
 

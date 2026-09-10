@@ -32,7 +32,7 @@ Runna con las capturas de plan.
 | **Pilar** | 2 (dominante) · 3 |
 | **Embudo** | MOFU → BOFU |
 | **Produce** | **Organic Club solo.** No necesita a Ninro, no necesita salir |
-| **Frecuencia** | **1 por semana, fijo.** Es la columna vertebral operativa |
+| **Frecuencia** | **1 por semana desde la semana 2.** 3 piezas en el mes 1, y sube a semanal fijo en noviembre. Es la columna vertebral operativa: es el formato que se puede producir cualquier día sin depender de nadie |
 
 | Subformato | Qué muestra |
 |---|---|
@@ -83,7 +83,7 @@ El relato es su cruzada —*«el que hace CrossFit no corre»*— y el método. 
 | **Pilar** | 4 (dominante) · 1 |
 | **Embudo** | TOFU puro |
 | **Produce** | Organic Club, en salidas de una mañana. **Se graba en lote: una salida = 3 piezas** |
-| **Frecuencia** | 1 por semana |
+| **Frecuencia** | **1 pieza propia al mes.** Su trabajo real es surtir de b-roll a los otros cinco formatos |
 
 | Subformato | Qué es |
 |---|---|
@@ -127,7 +127,7 @@ atajo más rápido a la voz del héroe.
 | **Pilar** | 3 (dominante) · 1 · 4 |
 | **Embudo** | MOFU, y el único que aguanta BOFU sin sonar a anuncio |
 | **Produce** | **Organic Club solo, desde el escritorio.** El segundo formato sin dependencias |
-| **Frecuencia** | 1 cada 7–10 días |
+| **Frecuencia** | **1–2 por semana.** 6 en el mes 1 |
 
 | Subformato | Qué es |
 |---|---|
@@ -151,7 +151,7 @@ atajo más rápido a la voz del héroe.
 | **Pilar** | 2 · 4 |
 | **Embudo** | TOFU (marca) y BOFU (anuncio) |
 | **Produce** | Organic Club. **El más caro por pieza** — se reserva para lo que lo merece |
-| **Frecuencia** | 2 en todo el mes: la presentación y el video de lanzamiento |
+| **Frecuencia** | **1 pieza de feed en todo el mes** — el video de lanzamiento. De ese mismo montaje salen la versión de 15 s para pauta y la de tienda |
 
 | Subformato | Qué es |
 |---|---|
@@ -166,18 +166,26 @@ atajo más rápido a la voz del héroe.
 
 Esta es la tabla que decide si el mes se ejecuta o no.
 
-| Formato | Piezas del mes | ¿Ninro? | ¿Salir a grabar? | ¿Se puede producir en octubre si algo falla? |
-|---|---|---|---|---|
-| **Pantalla** | 3 | No | No | **Sí, en cualquier momento** |
-| **Carrusel** | 6 | No | No | **Sí, en cualquier momento** |
-| **Motion** | 2 | No | No | Sí, con tiempo de diseño |
-| **Calle** | 3 | No | Sí | Sí — una salida de mañana |
-| **Ninro** | 4 | **Sí** | Sí | ❌ **No. O se graba el 13, o no existe** |
-| **La gente** | 3 | Parcial | Sí | ⚠️ Solo con una segunda convocatoria del box |
+| Formato | Piezas del mes | Cuáles | ¿Ninro? | ¿Salir a grabar? | ¿Se puede producir en octubre si algo falla? |
+|---|---|---|---|---|---|
+| **Carrusel** | **6** | C1 · C2 · C3 · C4 · C5 · C6 | No | No | **Sí, en cualquier momento** |
+| **Ninro** | **5** | V2 · V4 · V6 · V7 · V10 | **Sí** | Sí | ❌ **No. O se graba el 13, o no existe** |
+| **Pantalla** | **3** | V5 · V8 · V11 | No | No | **Sí, en cualquier momento** |
+| **La gente** | **3** | V1 · V9 · V12 | Parcial | Sí | ⚠️ Solo con una segunda convocatoria del box |
+| **Calle** | **1** *(+ b-roll para todo lo demás)* | V3 | No | Sí | Sí — una salida de mañana |
+| **Motion** | **1** *(+ sus 2 versiones derivadas)* | V13 | No | No | Sí, con tiempo de diseño |
+| | **19** | | | | |
 
-> **Lo que esto significa:** **9 de 19 piezas (47 %) no dependen de nadie más que del equipo.**
-> Ese es el colchón. Si el 13 sale mal, el mes se sostiene igual — más pobre, pero se sostiene.
-> **Lo que no se recupera es la cara de Ninro y los testimonios.**
+> **Lo que esto significa:** **10 de 19 piezas (53 %) no dependen de nadie más que del equipo** —
+> los seis carruseles, las tres de pantalla y el motion. Ese es el colchón: si el 13 sale mal, el
+> mes se sostiene igual, más pobre pero en pie.
+>
+> **Lo que no se recupera es la cara de Ninro y los testimonios.** Cinco piezas llevan su formato,
+> y con V1 y V13 son **siete de los trece videos del mes** los que muestran su cara.
+>
+> **Y una lectura menos obvia:** *Calle* solo tiene **una pieza propia**, y no es un descuido. Una
+> salida de una mañana produce el b-roll de todo el mes — cierres, transiciones, el video de
+> lanzamiento. **El formato rinde más como cantera que como pieza.**
 
 ---
 
@@ -190,13 +198,19 @@ Esta es la tabla que decide si el mes se ejecuta o no.
 Con dos personas no se sostienen cinco plataformas nativas. Lo que se sostiene es **producir para
 una y adaptar**, con un canal —WhatsApp— que no es de contenido sino de conversión.
 
+> ⚠️ **Leer antes de usar esta tabla.** La ficha de buyer personas marca los medios de **Daniel,
+> Patricia y Gabriel como hipótesis sin verificar**, y los de Rebeca y Andrés como verificados solo
+> en parte. Lo que las entrevistas confirman es que **Instagram, WhatsApp y Strava aparecen** —
+> no con qué frecuencia ni con qué cuentas. **Este plan de canales es la mejor apuesta disponible,
+> no un hecho**, y es exactamente lo que la caja de preguntas de los martes va a corregir.
+
 | Canal | Rol | Qué va | Qué **no** va | Personas | Frecuencia |
 |---|---|---|---|---|---|
-| **Instagram** | **Principal** ⭐ | Reels, carruseles, stories diarias, collabs | Nada de contenido largo | **Las 5.** Es el único canal donde aparecen todas ✅ | 4–5 feed/sem + stories diarias |
-| **WhatsApp** | **Conversión** ⭐ | **Canal de difusión** = la lista de espera. Aviso de lanzamiento. Mensajes de Ninro a su grupo del box | Contenido de marca diario. **No se satura: 2 mensajes por semana como techo** | Patricia y Andrés (canal principal ✅) · Daniel y Rebeca (grupos de running ✅) | 2/sem |
-| **TikTok** | **Espejo** | Reels de los formatos Calle, La gente y Ninro, **sin marca de agua** | Carruseles. Piezas de precio | Rebeca (TikTok de rutinas ✅) · Andrés (técnica ✅) | Lo mismo que IG, con 24 h de retraso |
-| **Strava** | **Presencia** | **Club de Kenia**, creado ya. Rutas de las salidas de grabación | Contenido publicitario. **Strava no se usa para vender** | Daniel y Gabriel (a diario ✅) | Club activo, sin calendario |
-| **YouTube** | **Aplazado** | Solo Shorts espejo en fase 1. **El largo entra en noviembre** | Video largo en fase 1: no hay tiempo ni retorno | Daniel y Gabriel (análisis, reviews ✅) | Shorts automáticos |
+| **Instagram** | **Principal** ⭐ | Reels, carruseles, stories diarias, collabs | Nada de contenido largo | **Las 5, pero solo el de Rebeca está verificado** ✅. ⚠️ **Gabriel es la excepción declarada: «Instagram lo usa poco para informarse»** — a él se le llega por contenido técnico, no por aquí | 4–5 feed/sem + stories diarias |
+| **WhatsApp** | **Conversión** ⭐ | **Canal de difusión** = la lista de espera. Aviso de lanzamiento. Mensajes de Ninro a su grupo del box | Contenido de marca diario. **No se satura: 2 mensajes por semana como techo** | **Andrés ✅** *(el grupo del box, verificado)* · Patricia ⚠️ · Daniel y Rebeca ⚠️ *(grupos de running)* | 2/sem |
+| **TikTok** | **Espejo** | Reels de los formatos Calle, La gente y Ninro, **sin marca de agua** | Carruseles. Piezas de precio | Rebeca ⚠️ · Andrés ⚠️ | Lo mismo que IG, con 24 h de retraso |
+| **Strava** | **Presencia** | **Club de Kenia**, creado ya. Rutas de las salidas de grabación | Contenido publicitario. **Strava no se usa para vender** | Daniel ⚠️ · Gabriel ⚠️ | Club activo, sin calendario |
+| **YouTube** | **Aplazado** | Solo Shorts espejo en fase 1. **El largo entra en noviembre** | Video largo en fase 1: no hay tiempo ni retorno | Daniel ⚠️ · Gabriel ⚠️ | Shorts automáticos |
 | **Web / landing** | **Respaldo** | Una página simple con el canal y la ficha de tienda | **Nunca ser el único punto de captación** ⚠️ | — | Estática |
 | **Facebook** | **No** | Solo como ubicación de pauta | Contenido orgánico | Ninguna persona lo menciona | — |
 
