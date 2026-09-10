@@ -19,6 +19,16 @@ Crea mi contexto de producto (product-marketing)
 
 Esto genera `.agents/product-marketing.md`, el documento de posicionamiento/audiencia que el resto de los skills leen automáticamente para no repetir contexto en cada tarea.
 
+## Trabajo en curso — Kenia
+
+Proyecto de **Organic Club** para **Kenia · Entrenamiento de running** (Ninro Libre).
+
+| Carpeta | Estado | Qué contiene |
+|---|---|---|
+| [`branding/`](branding/) | ✅ cerrado | Plataforma de marca completa, 12 bloques + las 12 entrevistas |
+| [`analisis-marketing/`](analisis-marketing/) | 🟡 parcial | PESTEL cerrado; faltan tendencias, FODA, pricing y benchmark formal |
+| [`estrategia-contenido/`](estrategia-contenido/) | ✅ v1 | **Embudo, pilares, formatos, calendario del mes 1, plan de lanzamiento y guion del rodaje del 13 de septiembre** |
+
 ## Licencia
 
 Los skills se distribuyen bajo licencia MIT — ver `.claude/skills-LICENSE`. © Corey Haines.
