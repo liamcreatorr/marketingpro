@@ -20,7 +20,8 @@ const salida = process.argv[2] || path.join(dir,
 
 const RAYA = '____________________';
 const v = (x, raya = RAYA) => (x === undefined || x === null || String(x).trim() === '') ? raya : String(x);
-const cli = D.cliente, ag = D.agencia, kt = D.contacto_tecnico, K = D.condiciones;
+const cli = D.cliente, ag = D.agencia, K = D.condiciones;
+const rl = cli.representante_legal, kt = cli.representante_autorizado;
 const [liam, alonzo] = ag.socios;
 
 const NUM = ['', 'un (1)', 'dos (2)', 'tres (3)', 'cuatro (4)', 'cinco (5)', 'seis (6)', 'siete (7)',
@@ -152,15 +153,16 @@ const brk = () => new Paragraph({ children: [new PageBreak()] });
 
 /* ---------------- comparecencia ---------------- */
 function persona(s) {
-  return `**${s.nombre.toUpperCase()}**, de nacionalidad ${v(s.nacionalidad, '__________')}, mayor de edad, ` +
-    `${s.estado_civil ? s.estado_civil + ', ' : ''}titular de la cédula de identidad N.º ${v(s.cedula)}, ` +
-    `con domicilio en ${v(s.domicilio, '________________________________')}, ` +
-    `teléfono ${v(s.telefono)} y correo electrónico ${v(s.correo)}`;
+  return `**${s.nombre.toUpperCase()}**, ${s.nacionalidad ? 'de nacionalidad ' + s.nacionalidad + ', ' : ''}mayor de edad, ` +
+    `titular de la cédula de identidad N.º ${v(s.cedula)}, ` +
+    `con domicilio en ${v(s.domicilio, '________________________________')}` +
+    (s.telefono ? `, teléfono ${s.telefono}` : '') +
+    (s.correo ? `, correo electrónico ${s.correo}` : '');
 }
 
-const actuaCliente = cli.empresa
-  ? `, quien actúa en su propio nombre y en su carácter de representante de **${cli.empresa}**, inscrita en el Registro de Información Fiscal bajo el N.º ${v(cli.rif_empresa)}, titular del proyecto y de la aplicación móvil denominada **«Kenia»**`
-  : `, quien actúa en su propio nombre y en su carácter de fundador y titular del proyecto y de la aplicación móvil denominada **«Kenia»**`;
+const empresa = `**${cli.razon_social.toUpperCase()}**, sociedad de responsabilidad limitada constituida conforme a las leyes del ${v(cli.jurisdiccion)}, ` +
+  `identificada con el ${cli.tipo_id_fiscal} N.º ${v(cli.id_fiscal)}, con domicilio en ${v(cli.domicilio, '________________________________')}` +
+  `${cli.correo ? ' y correo electrónico ' + cli.correo : ''}, titular de la aplicación móvil denominada **«Kenia»**`;
 
 /* ---------------- calendario de pagos ---------------- */
 const dl = K.dia_limite_pago;
@@ -184,23 +186,25 @@ add(
   new Paragraph({ spacing: { after: 240 }, children: [new TextRun({ text: "de servicios profesionales", font: SERIF, size: 56, bold: true, color: NEGRO })] }),
   new Paragraph({ spacing: { after: 420 }, children: [new TextRun({ text: "Estrategia de marca, contenido y lanzamiento de la aplicación Kenia", font: SERIF, size: 28, color: GRIS })] }),
   table(["", ""], [
-    ["**El cliente**", `${cli.nombre} — fundador y CEO de Kenia${cli.empresa ? ' · ' + cli.empresa : ''}`],
+    ["**El cliente**", `${cli.razon_social} — titular de la aplicación Kenia`],
+    ["**Representante legal**", `${rl.nombre} — fundador y CEO de Kenia`],
+    ["**Representante autorizado**", `${kt.nombre} — desarrollador y contacto técnico`],
     ["**La agencia**", `${ag.nombre_comercial} — ${liam.nombre} y ${alonzo.nombre}`],
-    ["**Contacto técnico del cliente**", `${kt.nombre} — desarrollador de la aplicación`],
     ["**Inicio de los servicios**", K.inicio_servicios],
+    ["**Inicio de la publicación**", K.inicio_publicacion],
     ["**Plazo inicial**", `Hasta el ${K.fin_plazo_inicial}, renovable mes a mes`],
     ["**Honorarios**", "US$ 1.000 el primer mes · US$ 1.200 mensuales desde el segundo"],
     ["**Lugar y fecha de firma**", `${K.ciudad_firma}, ${K.fecha_firma}`],
   ], [3000, 6648]),
   gap(360),
-  p("Este contrato formaliza la relación de trabajo que comenzó con la **Propuesta de Estrategia y Gestión de Contenido del 30 de agosto de 2026**, recoge el cronograma real del proyecto y fija el alcance, los plazos, los honorarios y las condiciones de pago que regirán a partir de su firma.", { color: GRIS }),
+  p("Este contrato formaliza la relación de trabajo que comenzó con la **Propuesta de Estrategia y Gestión de Contenido del 30 de agosto de 2026**, recoge el cronograma real del proyecto y fija el alcance, los entregables, los honorarios y las condiciones de pago que regirán a partir de su firma.", { color: GRIS }),
   brk(),
 );
 
 /* ---------- COMPARECENCIA ---------- */
 add(
   ...titulo("Contrato de prestación de servicios profesionales"),
-  p(`Entre, por una parte, ${persona(cli)}${actuaCliente}, quien en lo sucesivo y a los efectos de este contrato se denominará **EL CLIENTE**;`),
+  p(`Entre, por una parte, ${empresa}, representada en este acto por su representante legal, ${persona(rl)}, y por su representante autorizado, ${persona(kt)}; sociedad que en lo sucesivo y a los efectos de este contrato se denominará **EL CLIENTE**;`),
   p(`y por la otra, ${persona(liam)}; y ${persona(alonzo)}; quienes actúan conjuntamente bajo la denominación comercial **${ag.nombre_comercial.toUpperCase()}**${ag.rif ? ', RIF N.º ' + ag.rif : ''}, y que en lo sucesivo se denominarán **LA AGENCIA**;`),
   p("ambas partes, reconociéndose mutuamente la capacidad legal necesaria para contratar y obligarse, han convenido celebrar el presente **Contrato de Prestación de Servicios Profesionales**, que se regirá por las cláusulas siguientes:"),
 );
@@ -213,7 +217,7 @@ add(clausula("Objeto"),
 /* SEGUNDA */
 add(clausula("Antecedentes y documentos que integran el contrato"),
   item("2.1", "Las partes reconocen que LA AGENCIA viene prestando los servicios objeto de este contrato desde el **" + K.inicio_servicios + "**, sobre la base de la propuesta comercial del 30 de agosto de 2026, y que el presente documento formaliza esa relación con efectos desde dicha fecha."),
-  item("2.2", "Forman parte integrante de este contrato: el **Anexo A** (entregables y plazos), el **Anexo B** (calendario de pagos), el **Anexo C** (metas de referencia) y el **Anexo D** (directorio del proyecto)."),
+  item("2.2", "Forman parte integrante de este contrato: el **Anexo A** (entregables), el **Anexo B** (calendario de pagos), el **Anexo C** (metas de referencia) y el **Anexo D** (directorio del proyecto)."),
   item("2.3", "En caso de contradicción entre la propuesta del 30 de agosto de 2026 y este contrato, **prevalece este contrato**. En particular, quedan sin efecto el cronograma de la propuesta que situaba el lanzamiento el 14 de septiembre y la inclusión del ASO en su Fase 1, por las razones recogidas en las cláusulas cuarta y quinta."),
 );
 
@@ -223,7 +227,7 @@ add(clausula("Alcance de los servicios"),
   item("3.1", "**Plataforma de marca:** propósito, misión, visión, valores, público objetivo, buyer personas, beneficios, arquetipo, personalidad, tono de voz, brief de moodboard, significado del nombre y descriptor fijo de la marca."),
   item("3.2", "**Análisis de marketing:** PESTEL, tendencias, análisis del servicio, socios estratégicos, pricing, benchmark de competencia, matriz FODA con estrategias cruzadas y objetivos SMART."),
   item("3.3", "**Estrategia de contenido:** embudo, pilares, formatos, plan de canales, calendario editorial, relato de marca, guiones de grabación, tagline, frases de campaña y nombre de comunidad."),
-  item("3.4", "**Campaña de lanzamiento:** plan de pre-lanzamiento y lista de espera, video de lanzamiento, piezas de la semana de lanzamiento y acciones de captación en eventos presenciales acordados."),
+  item("3.4", "**Campaña de lanzamiento:** plan de pre-lanzamiento y lista de espera, video de lanzamiento, piezas de la semana de lanzamiento y las acciones de captación que las partes acuerden."),
   item("3.5", `**Gestión mensual de contenido:** planificación, guionización, dirección de grabación, edición y publicación en los canales definidos en la estrategia de contenido, con un volumen de **${K.volumen_mensual}**. El volumen podrá redistribuirse entre formatos de mutuo acuerdo sin alterar los honorarios.`),
   item("3.6", "**Gestión de campañas pagadas en Meta** (Instagram y Facebook): configuración, segmentación, creatividades y optimización, con el presupuesto de pauta que EL CLIENTE paga directamente a la plataforma."),
   item("3.7", "**Informe mensual** de resultados y una **reunión mensual** de seguimiento con EL CLIENTE."),
@@ -245,7 +249,8 @@ add(clausula("Servicios excluidos"),
 add(clausula("Vigencia y cronograma"),
   item("5.1", `Este contrato tiene un **plazo inicial desde el ${K.inicio_servicios} hasta el ${K.fin_plazo_inicial}**. Vencido ese plazo, se renovará automáticamente por períodos sucesivos de un (1) mes, salvo que cualquiera de las partes notifique su voluntad de no renovarlo con al menos ${n(K.dias_preaviso_terminacion)} días de anticipación.`),
   item("5.2", "Las partes reconocen que la fecha de lanzamiento de la aplicación en tiendas es **mediados de octubre de 2026**, y que la fija EL CLIENTE en función del desarrollo técnico. La campaña de lanzamiento se ejecutará sobre la fecha que EL CLIENTE confirme por escrito."),
-  item("5.3", "Los entregables y sus fechas límite se detallan en el **Anexo A**. Las fechas que dependen de insumos de EL CLIENTE se rigen además por la cláusula décima tercera."),
+  item("5.3", `La **publicación de contenido** en los canales de la marca comienza el **${K.inicio_publicacion}**. Desde esa fecha se presta la gestión mensual de contenido descrita en la cláusula 3.5.`),
+  item("5.4", "Los entregables y su periodicidad se detallan en el **Anexo A**. Los plazos que dependen de insumos de EL CLIENTE se rigen además por la cláusula décima tercera."),
 );
 
 /* SEXTA */
@@ -294,7 +299,7 @@ add(clausula("Obligaciones de EL CLIENTE"),
   item("11.1", "Pagar los honorarios en la forma y fechas convenidas."),
   item("11.2", "Entregar oportunamente la información, los materiales, las aprobaciones y los accesos necesarios para la prestación de los servicios, incluidos los accesos de administración a las cuentas de redes sociales y al administrador comercial de Meta."),
   item("11.3", "Estar disponible para las grabaciones acordadas y facilitar el acceso a las personas y lugares que participen en ellas."),
-  item("11.4", `Garantizar que su contacto técnico, **${kt.nombre}**, responda las consultas técnicas que condicionen el contenido —entre ellas, la fecha exacta de lanzamiento, la existencia y duración de la prueba gratuita, los métodos de pago disponibles para el usuario venezolano y el funcionamiento del plan tras una sesión no realizada— en los plazos del Anexo A.`),
+  item("11.4", `Garantizar que su representante autorizado, **${kt.nombre}**, responda las consultas técnicas que condicionen el contenido —entre ellas, la fecha exacta de lanzamiento, la existencia y duración de la prueba gratuita, los métodos de pago disponibles para el usuario venezolano y el funcionamiento del plan tras una sesión no realizada— en un plazo máximo de **cinco (5) días hábiles** desde que LA AGENCIA las solicite por escrito.`),
   item("11.5", "Pagar directamente a Meta u otras plataformas el presupuesto de pauta acordado."),
   item("11.6", "Responder por la **veracidad de las características, funciones y beneficios de la aplicación** que comunique a LA AGENCIA para su difusión, en especial los relacionados con salud, adaptación del plan y prevención de lesiones."),
 );
@@ -308,7 +313,7 @@ add(clausula("Aprobaciones y rondas de revisión"),
 
 /* DÉCIMA TERCERA */
 add(clausula("Dependencias y desplazamiento de plazos"),
-  item("13.1", "Cuando un entregable de LA AGENCIA dependa de un insumo, una aprobación o una respuesta de EL CLIENTE o de su contacto técnico, y estos lleguen después de la fecha prevista en el Anexo A, **el plazo del entregable se desplazará por el mismo número de días del retraso**, sin que ello constituya incumplimiento de LA AGENCIA."),
+  item("13.1", "Cuando un entregable de LA AGENCIA dependa de un insumo, una aprobación o una respuesta de EL CLIENTE o de su contacto técnico, y estos lleguen fuera del plazo de la cláusula 11.4 o del que las partes hayan acordado, **el plazo del entregable se desplazará por el mismo número de días del retraso**, sin que ello constituya incumplimiento de LA AGENCIA."),
   item("13.2", "Los retrasos atribuibles a EL CLIENTE no suspenden ni reducen la obligación de pago de los honorarios."),
   item("13.3", "LA AGENCIA notificará por escrito cada dependencia vencida en cuanto se produzca, indicando el entregable afectado."),
 );
@@ -330,7 +335,7 @@ add(clausula("Propiedad intelectual"),
 
 /* DÉCIMA SEXTA */
 add(clausula("Derechos de imagen y testimonios"),
-  item("16.1", "EL CLIENTE autoriza el uso de su nombre, imagen y voz en las piezas de comunicación de Kenia producidas bajo este contrato, durante su vigencia y mientras esas piezas permanezcan publicadas en los canales de la marca."),
+  item("16.1", "EL CLIENTE autoriza, y su representante legal consiente a título personal, el uso del nombre, la imagen y la voz de este último en las piezas de comunicación de Kenia producidas bajo este contrato, durante su vigencia y mientras esas piezas permanezcan publicadas en los canales de la marca."),
   item("16.2", "Para cada tercero que aparezca en las piezas —miembros del box, entrevistados, asistentes a eventos— LA AGENCIA recabará una **autorización escrita de uso de imagen** antes de la publicación. EL CLIENTE colaborará en obtenerlas."),
   item("16.3", "Las reseñas en tiendas de aplicaciones se solicitarán **sin pago, sin contraprestación y sin dictar su contenido**, conforme a las políticas de Apple y Google."),
 );
@@ -344,13 +349,13 @@ add(clausula("Confidencialidad y datos personales"),
 
 /* DÉCIMA OCTAVA */
 add(clausula("Cuentas, accesos y activos digitales"),
-  item("18.1", "Las cuentas de redes sociales, el administrador comercial de Meta, el canal de WhatsApp de la lista de espera, los dominios y los demás activos digitales de Kenia son **propiedad de EL CLIENTE** y deben estar registrados a su nombre."),
+  item("18.1", "Las cuentas de redes sociales, el administrador comercial de Meta, el canal de WhatsApp de la lista de espera, los dominios y los demás activos digitales de Kenia son **propiedad de EL CLIENTE** y deben estar registrados a su nombre o al de su representante legal."),
   item("18.2", "Al terminar el contrato, LA AGENCIA entregará la lista de accesos que haya administrado y retirará los suyos dentro de los cinco (5) días hábiles siguientes, previa confirmación de que no hay pagos pendientes."),
 );
 
 /* DÉCIMA NOVENA */
 add(clausula("Comunicación, interlocutores e informes"),
-  item("19.1", `Los interlocutores del proyecto son: por EL CLIENTE, **${cli.nombre}**; como contacto técnico, **${kt.nombre}**; y por LA AGENCIA, **${liam.nombre}** y **${alonzo.nombre}**, indistintamente. Sus datos de contacto constan en el **Anexo D**.`),
+  item("19.1", `Los interlocutores del proyecto son: por EL CLIENTE, su representante legal, **${rl.nombre}**, y su representante autorizado y contacto técnico, **${kt.nombre}**; y por LA AGENCIA, **${liam.nombre}** y **${alonzo.nombre}**, indistintamente. Sus datos de contacto constan en el **Anexo D**.`),
   item("19.2", "El canal ordinario de comunicación es el grupo de WhatsApp del proyecto; los asuntos contractuales —pagos, cambios de alcance, terminación— se confirmarán además por correo electrónico."),
   item("19.3", "LA AGENCIA entregará el **informe mensual** dentro de los cinco (5) primeros días hábiles del mes siguiente, y las partes celebrarán una reunión mensual de seguimiento en la fecha que acuerden."),
 );
@@ -386,7 +391,7 @@ add(clausula("Notificaciones"),
 
 /* VIGÉSIMA QUINTA */
 add(clausula("Ley aplicable, controversias y domicilio"),
-  item("25.1", "Este contrato se rige por las leyes de la República Bolivariana de Venezuela."),
+  item("25.1", "Este contrato se rige por las leyes de la República Bolivariana de Venezuela, lugar donde se prestan los servicios y donde tienen su domicilio los representantes de ambas partes."),
   item("25.2", "Las partes procurarán resolver de buena fe y por vía amistosa cualquier controversia, en una reunión que se celebrará dentro de los diez (10) días siguientes a la solicitud de cualquiera de ellas."),
   item("25.3", `De no alcanzarse un acuerdo, las partes eligen como domicilio especial la ciudad de **${K.ciudad_firma}**, a cuya jurisdicción declaran someterse.`),
 );
@@ -408,59 +413,52 @@ function firma(rol, nombre, cedula) {
 }
 add(
   gap(240),
-  p(`Se hacen tres (3) ejemplares de un mismo tenor y a un solo efecto, uno para cada firmante, en la ciudad de **${K.ciudad_firma}**, el **${K.fecha_firma}**.`),
+  p(`Se hacen dos (2) ejemplares de un mismo tenor y a un solo efecto, uno para cada parte, en la ciudad de **${K.ciudad_firma}**, el **${K.fecha_firma}**.`),
   new Table({
     width: { size: W, type: WidthType.DXA }, columnWidths: [W / 2, W / 2],
     borders: { top: NONE, bottom: NONE, left: NONE, right: NONE, insideHorizontal: NONE, insideVertical: NONE },
     rows: [
-      new TableRow({ cantSplit: true, children: [firma("EL CLIENTE", cli.nombre, cli.cedula), firma("LA AGENCIA · " + ag.nombre_comercial.toUpperCase(), liam.nombre, liam.cedula)] }),
       new TableRow({ cantSplit: true, children: [
-        new TableCell({ width: { size: W / 2, type: WidthType.DXA }, borders: { top: NONE, bottom: NONE, left: NONE, right: NONE }, children: [gap(0)] }),
+        firma("EL CLIENTE · REPRESENTANTE LEGAL", rl.nombre, rl.cedula),
+        firma("LA AGENCIA · " + ag.nombre_comercial.toUpperCase(), liam.nombre, liam.cedula)] }),
+      new TableRow({ cantSplit: true, children: [
+        firma("EL CLIENTE · REPRESENTANTE AUTORIZADO", kt.nombre, kt.cedula),
         firma("LA AGENCIA · " + ag.nombre_comercial.toUpperCase(), alonzo.nombre, alonzo.cedula)] }),
     ],
   }),
+  gap(120),
+  p(`${rl.nombre} y ${kt.nombre} suscriben en nombre y representación de **${cli.razon_social}**.`, { color: GRIS, size: 19 }),
   brk(),
 );
 
 /* ---------- ANEXO A ---------- */
+const subA = t => new Paragraph({ spacing: { before: 60, after: 120 }, children: [new TextRun({ text: t, font: SERIF, size: 24, bold: true, color: PETROLEO })] });
 add(
-  ...titulo("Anexo A · Entregables y plazos", "Estado a la fecha de firma. Las fechas de LA AGENCIA que dependen de insumos de EL CLIENTE se desplazan conforme a la cláusula décima tercera."),
-  new Paragraph({ spacing: { before: 60, after: 120 }, children: [new TextRun({ text: "A.1  Entregados por LA AGENCIA", font: SERIF, size: 24, bold: true, color: PETROLEO })] }),
-  table(["Entregable", "Contenido", "Entregado"], [
-    ["Plataforma de marca", "Doce bloques: núcleo estratégico, target, cinco buyer personas, beneficios, arquetipo y tono, brief de moodboard, naming y descriptor. Documento de Word para EL CLIENTE", "8 sep 2026"],
-    ["Análisis de marketing — PESTEL", "Entorno político, económico, social, tecnológico, ecológico y legal, con fuentes", "8 sep 2026"],
-    ["Estrategia de contenido v1.1", "Embudo, pilares, formatos, canales, calendario del mes 1, plan de lanzamiento, tagline y frases propuestos, relato de marca y métricas", "10 sep 2026"],
-    ["Guion de la grabación del 13 de septiembre", "Guion y shot list de la única ventana de grabación con EL CLIENTE", "10 sep 2026"],
+  ...titulo("Anexo A · Entregables", "Qué entrega LA AGENCIA, en qué forma y con qué periodicidad. Los plazos que dependen de insumos de EL CLIENTE se rigen por la cláusula décima tercera."),
+  subA("A.1  Fase estratégica — entregada"),
+  p("EL CLIENTE declara haber recibido los siguientes entregables, que forman parte de los servicios pagados con la mensualidad de septiembre de 2026:"),
+  table(["Entregable", "Contenido", "Fecha"], [
+    ["Plataforma de marca", "Núcleo estratégico, público objetivo, cinco buyer personas, beneficios, arquetipo, personalidad y tono, brief de moodboard, naming y descriptor", "8 sep 2026"],
+    ["Análisis de entorno (PESTEL)", "Factores políticos, económicos, sociales, tecnológicos, ecológicos y legales, con fuentes", "8 sep 2026"],
+    ["Estrategia de contenido", "Embudo, pilares, formatos, canales, calendario, plan de lanzamiento, propuestas de tagline y frases, y relato de marca", "10 sep 2026"],
+    ["Guion de grabación", "Guion y lista de tomas de la grabación del 13 de septiembre de 2026", "10 sep 2026"],
   ], [2700, 5248, 1700]),
   gap(240),
-  new Paragraph({ spacing: { after: 120 }, children: [new TextRun({ text: "A.2  Pendientes de LA AGENCIA", font: SERIF, size: 24, bold: true, color: PETROLEO })] }),
-  table(["Entregable", "Fecha límite", "Depende de"], [
-    ["Acción de captación en la carrera Caracas Rock", "4 oct 2026", "—"],
-    ["Moodboard con los siete territorios visuales", "9 oct 2026", "—"],
-    ["Análisis de marketing — tendencias, pricing y benchmark formal", "9 oct 2026", "—"],
-    ["Análisis de marketing — análisis del servicio y socios estratégicos", "9 oct 2026", "Insumos de EL CLIENTE (A.3)"],
-    ["Análisis de marketing — FODA con estrategias cruzadas y objetivos SMART", "13 oct 2026", "Las secciones anteriores"],
-    ["Video de lanzamiento y pack de tres carruseles", "Víspera del lanzamiento", "Fecha de lanzamiento confirmada (A.3)"],
-    ["Ejecución de la semana de lanzamiento", "Semana del lanzamiento", "Fecha de lanzamiento confirmada (A.3)"],
-    ["Informe del mes 1 (lista de espera, audiencia, descargas iniciales)", "5 días hábiles tras el cierre de la semana de lanzamiento", "Datos de tienda que facilite EL CLIENTE"],
-    ["Calendario editorial de noviembre", "30 oct 2026", "—"],
-    ["Calendario editorial de diciembre", "27 nov 2026", "—"],
-    ["Informe mensual", "5 primeros días hábiles de cada mes", "—"],
-  ], [5048, 2300, 2300]),
+  subA("A.2  Fase estratégica — por completar"),
+  table(["Entregable", "Plazo"], [
+    ["Análisis de marketing complementario: tendencias, análisis del servicio, socios estratégicos, pricing, benchmark, matriz FODA y objetivos SMART", `Hasta el ${K.fecha_analisis_complementario}`],
+    ["Moodboard de la marca", `Hasta el ${K.fecha_analisis_complementario}`],
+  ], [6648, 3000]),
   gap(240),
-  new Paragraph({ spacing: { after: 120 }, children: [new TextRun({ text: "A.3  Insumos pendientes de EL CLIENTE y de su contacto técnico", font: SERIF, size: 24, bold: true, color: PETROLEO })] }),
-  table(["Insumo", "Responsable", "Fecha límite"], [
-    ["Fecha exacta de lanzamiento en tiendas", kt.nombre, "6 oct 2026"],
-    ["Existencia y duración de la prueba gratuita", kt.nombre, "6 oct 2026"],
-    ["Cómo paga el usuario venezolano (métodos disponibles en tienda)", kt.nombre, "6 oct 2026"],
-    ["Qué hace el plan el día después de una sesión no realizada", kt.nombre, "6 oct 2026"],
-    ["Qué planes entran en la versión de octubre y si la app emite eventos de analítica", kt.nombre, "6 oct 2026"],
-    ["Aprobación del tagline, las cuatro frases de campaña y el nombre de comunidad", cli.nombre, "6 oct 2026"],
-    ["Accesos de administración a redes sociales y al administrador comercial de Meta", cli.nombre, "6 oct 2026"],
-    ["Socios estratégicos y competencia local (cuentas y entrenadores de referencia)", cli.nombre, "6 oct 2026"],
-    ["Registro de marca, dominio y nombres de usuario en redes", cli.nombre, "Antes del lanzamiento"],
-    ["Meta de negocio a tres años", cli.nombre, "31 oct 2026"],
-  ], [5648, 1900, 2100]),
+  subA("A.3  Gestión mensual — desde el " + K.inicio_publicacion),
+  table(["Entregable", "Periodicidad o plazo"], [
+    ["Calendario editorial del mes, para aprobación de EL CLIENTE", "Antes del día 25 del mes anterior"],
+    [`Producción y publicación de contenido: ${K.volumen_mensual}`, "Mensual, según el calendario aprobado"],
+    ["Gestión de campañas pagadas en Meta", "Continua, con el presupuesto de EL CLIENTE"],
+    ["Campaña de lanzamiento de la aplicación", "En la fecha de lanzamiento que EL CLIENTE confirme por escrito"],
+    ["Informe mensual de resultados", "Cinco primeros días hábiles del mes siguiente"],
+    ["Reunión mensual de seguimiento", "Una al mes, en la fecha que acuerden las partes"],
+  ], [6648, 3000]),
   brk(),
 );
 
@@ -495,13 +493,6 @@ add(
     ["Recuperación de la inversión en pauta", "Menos de 2 meses", "Precio, conversión y retención"],
   ], [3600, 2300, 3748]),
   gap(220),
-  new Paragraph({ spacing: { after: 120 }, children: [new TextRun({ text: "Metas del pre-lanzamiento", font: SERIF, size: 24, bold: true, color: PETROLEO })] }),
-  table(["Indicador", "Meta", "Fecha de corte"], [
-    ["Lista de espera (canal de WhatsApp)", "400 contactos", "Víspera del lanzamiento"],
-    ["Descargas el día del lanzamiento", "150", "Día del lanzamiento"],
-    ["Reseñas en tienda el día del lanzamiento", "10", "Día del lanzamiento"],
-  ], [4400, 2300, 2948]),
-  gap(220),
   p("La medición de conversión, suscriptores y retención requiere que la aplicación emita eventos de analítica o que EL CLIENTE facilite los datos de las consolas de App Store y Google Play. Sin esos datos, LA AGENCIA informará solo de los indicadores que pueda medir en redes y en pauta.", { color: GRIS }),
   brk(),
 );
@@ -510,16 +501,18 @@ add(
 add(
   ...titulo("Anexo D · Directorio del proyecto", "Datos de contacto para comunicaciones y notificaciones (cláusulas décima novena y vigésima cuarta)."),
   table(["Nombre", "Rol", "C.I.", "Teléfono", "Correo"], [
-    [cli.nombre, "Cliente · fundador y CEO de Kenia", v(cli.cedula, '__________'), v(cli.telefono, '__________'), v(cli.correo, '__________')],
+    [cli.razon_social, "Cliente · titular de Kenia", cli.tipo_id_fiscal + " " + v(cli.id_fiscal, '__________'), "—", v(cli.correo, '__________')],
+    [rl.nombre, "Cliente · representante legal", v(rl.cedula, '__________'), v(rl.telefono, '__________'), v(rl.correo, '__________')],
+    [kt.nombre, "Cliente · representante autorizado y contacto técnico", v(kt.cedula, '__________'), v(kt.telefono, '__________'), v(kt.correo, '__________')],
     [liam.nombre, "Agencia · Organic Club", v(liam.cedula, '__________'), v(liam.telefono, '__________'), v(liam.correo, '__________')],
     [alonzo.nombre, "Agencia · Organic Club", v(alonzo.cedula, '__________'), v(alonzo.telefono, '__________'), v(alonzo.correo, '__________')],
-    [kt.nombre, "Contacto técnico del cliente · desarrollador", "—", v(kt.telefono, '__________'), v(kt.correo, '__________')],
-  ], [1800, 2348, 1700, 1800, 2000]),
+  ], [2048, 2300, 1500, 1500, 2300]),
   gap(400),
   p("Las partes firman en señal de conformidad con los cuatro anexos.", { color: GRIS }),
   gap(300),
   table(["", "Iniciales"], [
-    [cli.nombre + " — EL CLIENTE", ""],
+    [rl.nombre + " — EL CLIENTE", ""],
+    [kt.nombre + " — EL CLIENTE", ""],
     [liam.nombre + " — LA AGENCIA", ""],
     [alonzo.nombre + " — LA AGENCIA", ""],
   ], [6648, 3000]),
@@ -539,7 +532,7 @@ const doc = new Document({
       spacing: { before: 120 },
       border: { top: { style: BorderStyle.SINGLE, size: 4, color: LINEA, space: 8 } },
       children: [
-        new TextRun({ text: "Contrato Organic Club × Kenia  ·  Iniciales: ______  ______  ______  ·  Página ", font: SANS, size: 15, color: GRIS_CLARO }),
+        new TextRun({ text: "Contrato Organic Club × Kenia  ·  Iniciales: _____  _____  _____  _____  ·  Página ", font: SANS, size: 15, color: GRIS_CLARO }),
         new TextRun({ children: [PageNumber.CURRENT], font: SANS, size: 15, color: GRIS_CLARO }),
         new TextRun({ text: " de ", font: SANS, size: 15, color: GRIS_CLARO }),
         new TextRun({ children: [PageNumber.TOTAL_PAGES], font: SANS, size: 15, color: GRIS_CLARO }),
