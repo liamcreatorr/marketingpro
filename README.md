@@ -28,6 +28,7 @@ Proyecto de **Organic Club** para **Kenia · Entrenamiento de running** (Ninro L
 | [`branding/`](branding/) | ✅ cerrado | Plataforma de marca completa, 12 bloques + las 12 entrevistas |
 | [`analisis-marketing/`](analisis-marketing/) | 🟡 parcial | PESTEL cerrado; faltan tendencias, FODA, pricing y benchmark formal |
 | [`estrategia-contenido/`](estrategia-contenido/) | ✅ v1 | **Embudo, pilares, formatos, calendario del mes 1, plan de lanzamiento y guion del rodaje del 13 de septiembre** |
+| [`contrato/`](contrato/) | 🟡 para firmar el 4 oct | **Contrato formal Organic Club × Ninro**: alcance, honorarios, días de pago, plazos y anexos. Los datos personales no se suben |
 
 ## Licencia
 
