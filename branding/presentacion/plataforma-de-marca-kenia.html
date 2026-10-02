@@ -1,0 +1,1087 @@
+<title>Plataforma de Marca Kenia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..800&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&display=swap">
+<style>
+  :root{
+    --paper:#F4F4F4;
+    --surface:#FFFFFF;
+    --surface-2:#E7EFF1;
+    --ink:#1B1B1B;
+    --ink-2:#57696C;
+    --ink-3:#7C8D90;
+    --line:#D3E0E3;
+    --line-strong:#B4C8CC;
+    --cian:#079CB5;
+    --petroleo:#00677E;
+    --naranja:#FF5A00;
+    --ok:#1F7A5C;
+    --shadow:0 1px 2px rgba(0,45,55,.05), 0 8px 28px rgba(0,45,55,.06);
+    --maxw:70ch;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#101718;
+      --surface:#161F21;
+      --surface-2:#1C282A;
+      --ink:#EDF3F4;
+      --ink-2:#9BADB0;
+      --ink-3:#7A8C8F;
+      --line:#28373A;
+      --line-strong:#3A4C50;
+      --cian:#35B9D0;
+      --petroleo:#0E93AF;
+      --naranja:#FF7A33;
+      --ok:#4FC49B;
+      --shadow:0 1px 2px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.28);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#101718;
+    --surface:#161F21;
+    --surface-2:#1C282A;
+    --ink:#EDF3F4;
+    --ink-2:#9BADB0;
+    --ink-3:#7A8C8F;
+    --line:#28373A;
+    --line-strong:#3A4C50;
+    --cian:#35B9D0;
+    --petroleo:#0E93AF;
+    --naranja:#FF7A33;
+    --ok:#4FC49B;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.28);
+  }
+
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Archivo","Helvetica Neue",Arial,sans-serif;
+    font-size:16px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  ::selection{background:var(--cian);color:#fff}
+  a{color:var(--petroleo)}
+  :focus-visible{outline:2px solid var(--cian);outline-offset:3px;border-radius:2px}
+
+  /* ---------- shell ---------- */
+  .shell{
+    display:grid;
+    grid-template-columns:minmax(0,1fr);
+    max-width:1220px;
+    margin:0 auto;
+    padding:0 20px 96px;
+  }
+  @media (min-width:1000px){
+    .shell{grid-template-columns:232px minmax(0,1fr);gap:56px;padding:0 32px 120px}
+  }
+
+  /* ---------- nav ---------- */
+  nav.toc{display:none}
+  @media (min-width:1000px){
+    nav.toc{
+      display:block;
+      position:sticky;
+      top:0;
+      align-self:start;
+      max-height:100vh;
+      overflow-y:auto;
+      padding:44px 0 40px;
+      border-right:1px solid var(--line);
+      margin-right:-24px;
+    }
+    nav.toc .toc-title{
+      font-family:"IBM Plex Mono",ui-monospace,monospace;
+      font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;
+      color:var(--ink-3);margin:0 0 14px;
+    }
+    nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1px}
+    nav.toc a{
+      display:grid;grid-template-columns:24px 1fr;gap:8px;
+      padding:5px 14px 5px 0;
+      text-decoration:none;color:var(--ink-2);
+      font-size:13.5px;line-height:1.35;
+      border-radius:3px;
+    }
+    nav.toc a .n{
+      font-family:"IBM Plex Mono",ui-monospace,monospace;
+      font-size:10.5px;color:var(--ink-3);padding-top:3px;
+      font-variant-numeric:tabular-nums;
+    }
+    nav.toc a:hover{color:var(--cian)}
+    nav.toc a:hover .n{color:var(--cian)}
+    nav.toc li.sep{height:12px}
+  }
+
+  main{min-width:0;padding-top:44px}
+
+  /* ---------- cover ---------- */
+  .cover{padding:20px 0 40px;border-bottom:2px solid var(--ink)}
+  .kicker{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--cian);margin:0 0 22px;
+  }
+  h1.title{
+    font-family:"Archivo",sans-serif;
+    font-variation-settings:"wdth" 112;
+    font-weight:800;
+    font-size:clamp(2.5rem,7vw,4.4rem);
+    line-height:.96;
+    letter-spacing:-.025em;
+    margin:0 0 6px;
+    text-wrap:balance;
+  }
+  h1.title .light{
+    display:block;font-weight:500;color:var(--ink-2);
+    font-variation-settings:"wdth" 100;
+    font-size:clamp(1.15rem,2.6vw,1.7rem);
+    line-height:1.15;letter-spacing:-.01em;margin-top:14px;
+  }
+  .rule-orange{height:5px;width:88px;background:var(--naranja);margin:28px 0 26px;border-radius:1px}
+  .meta{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));
+    gap:20px 28px;margin-top:8px;
+  }
+  .meta div{display:flex;flex-direction:column;gap:3px}
+  .meta dt,.meta .lbl{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);
+  }
+  .meta .val{font-size:14.5px;font-weight:600;color:var(--ink)}
+
+  /* ---------- sections ---------- */
+  section{padding-top:60px;scroll-margin-top:24px}
+  .sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:8px}
+  .sec-n{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:11px;color:var(--cian);letter-spacing:.1em;
+    font-variant-numeric:tabular-nums;flex:none;padding-top:2px;
+  }
+  h2{
+    font-family:"Archivo",sans-serif;
+    font-variation-settings:"wdth" 108;
+    font-weight:700;
+    font-size:clamp(1.5rem,3.4vw,2.05rem);
+    line-height:1.12;letter-spacing:-.02em;
+    margin:0;text-wrap:balance;
+  }
+  .sec-sub{color:var(--ink-2);font-size:15.5px;margin:10px 0 0;max-width:var(--maxw)}
+  .divider{height:1px;background:var(--line);margin-top:22px}
+
+  h3{
+    font-family:"Archivo",sans-serif;font-weight:700;
+    font-size:1.06rem;letter-spacing:-.005em;
+    margin:34px 0 8px;text-wrap:balance;
+  }
+  h4{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--ink-3);font-weight:500;margin:26px 0 10px;
+  }
+  p{margin:0 0 14px;max-width:var(--maxw)}
+  strong{font-weight:700}
+  em{font-style:italic}
+  ul,ol{max-width:var(--maxw);padding-left:20px;margin:0 0 16px}
+  li{margin-bottom:7px}
+  li::marker{color:var(--cian)}
+
+  /* ---------- brand voice blocks ---------- */
+  .say{
+    font-family:"Newsreader",Georgia,serif;
+    font-size:clamp(1.28rem,2.7vw,1.62rem);
+    line-height:1.34;font-weight:400;letter-spacing:-.008em;
+    color:var(--ink);
+    max-width:26ch;
+    margin:24px 0;
+    padding-left:20px;
+    border-left:3px solid var(--cian);
+  }
+  .say.wide{max-width:38ch}
+  .say .attr{
+    display:block;margin-top:12px;
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);
+  }
+  blockquote{
+    margin:18px 0;padding:0 0 0 18px;border-left:2px solid var(--line-strong);
+    font-family:"Newsreader",Georgia,serif;font-size:1.02rem;font-style:italic;
+    color:var(--ink-2);max-width:var(--maxw);
+  }
+  blockquote p{margin-bottom:8px}
+
+  /* ---------- panels ---------- */
+  .panel{
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:6px;padding:22px 24px;margin:22px 0;
+  }
+  .panel.flat{background:var(--surface-2);border-color:transparent}
+  .panel > :last-child{margin-bottom:0}
+  .panel p, .panel ul, .panel ol{max-width:none}
+  .panel-title{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--cian);margin:0 0 12px;
+  }
+  .flag{border-left:3px solid var(--naranja)}
+  .flag .panel-title{color:var(--naranja)}
+
+  /* ---------- grids ---------- */
+  .grid{display:grid;gap:14px;margin:22px 0}
+  .g2{grid-template-columns:repeat(auto-fit,minmax(238px,1fr))}
+  .g3{grid-template-columns:repeat(auto-fit,minmax(196px,1fr))}
+  .card{
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:6px;padding:18px 19px;
+  }
+  .card > :last-child{margin-bottom:0}
+  .card p{max-width:none;font-size:14.5px;color:var(--ink-2);margin-bottom:0}
+  .card .ct{
+    font-family:"Archivo",sans-serif;font-weight:700;font-size:15.5px;
+    margin:0 0 6px;color:var(--ink);letter-spacing:-.005em;
+  }
+  .card .cn{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--cian);
+    display:block;margin-bottom:9px;
+  }
+
+  /* ---------- tables ---------- */
+  .tw{overflow-x:auto;margin:22px 0;border:1px solid var(--line);border-radius:6px;background:var(--surface)}
+  table{border-collapse:collapse;width:100%;font-size:14px;min-width:520px}
+  th,td{text-align:left;padding:11px 15px;border-bottom:1px solid var(--line);vertical-align:top}
+  thead th{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:10px;letter-spacing:.13em;text-transform:uppercase;
+    color:var(--ink-3);font-weight:500;background:var(--surface-2);
+    border-bottom:1px solid var(--line-strong);white-space:nowrap;
+  }
+  tbody tr:last-child td{border-bottom:none}
+  td strong{color:var(--ink)}
+  .num{font-variant-numeric:tabular-nums;white-space:nowrap}
+
+  /* ---------- pills & misc ---------- */
+  .pills{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0 18px}
+  .pill{
+    font-size:13px;font-weight:600;padding:5px 11px;border-radius:20px;
+    background:var(--surface-2);color:var(--ink);border:1px solid var(--line);
+  }
+  .pill.no{color:var(--ink-3);text-decoration:line-through;text-decoration-thickness:1px}
+  .pill.yes{border-color:var(--cian);color:var(--petroleo)}
+
+  .swatches{display:grid;grid-template-columns:repeat(auto-fit,minmax(124px,1fr));gap:10px;margin:22px 0}
+  .sw{border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--surface)}
+  .sw .chip{height:62px;display:block}
+  .sw .info{padding:9px 11px 11px}
+  .sw .nm{font-size:13px;font-weight:700;display:block}
+  .sw .hx{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11px;color:var(--ink-3)}
+  .sw .fn{font-size:11.5px;color:var(--ink-2);display:block;margin-top:4px;line-height:1.35}
+
+  /* Nielsen axes */
+  .axes{display:flex;flex-direction:column;gap:14px;margin:22px 0}
+  .axis{display:grid;grid-template-columns:112px 1fr 112px;align-items:center;gap:12px}
+  .axis .end{font-size:12.5px;color:var(--ink-2)}
+  .axis .end.r{text-align:right}
+  .axis .track{display:grid;grid-template-columns:repeat(5,1fr);gap:5px;align-items:center}
+  .axis .dot{height:7px;border-radius:4px;background:var(--line-strong)}
+  .axis .dot.on{background:var(--cian);height:11px}
+  @media (max-width:560px){
+    .axis{grid-template-columns:1fr 1fr;grid-template-areas:"l r" "t t";gap:6px 10px}
+    .axis .end{grid-area:l}.axis .end.r{grid-area:r}.axis .track{grid-area:t}
+  }
+
+  /* persona cards */
+  .persona{
+    background:var(--surface);border:1px solid var(--line);border-radius:6px;
+    padding:20px 22px;margin:14px 0;
+  }
+  .persona .ph{display:flex;flex-wrap:wrap;align-items:baseline;gap:9px;margin-bottom:4px}
+  .persona .rank{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11px;
+    color:#fff;background:var(--cian);border-radius:3px;padding:2px 6px;
+    font-variant-numeric:tabular-nums;
+  }
+  .persona .pn{font-weight:800;font-size:17px;letter-spacing:-.01em}
+  .persona .pt{color:var(--ink-2);font-size:15px;font-style:italic;font-family:"Newsreader",Georgia,serif}
+  .persona .plede{font-size:14.5px;color:var(--ink-2);margin:6px 0 14px;max-width:none}
+  .persona dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px 22px;margin:0}
+  .persona dt{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);margin-bottom:3px;
+  }
+  .persona dd{margin:0 0 2px;font-size:14px;line-height:1.5}
+  .persona .help{
+    margin-top:15px;padding-top:14px;border-top:1px solid var(--line);
+    font-size:14px;
+  }
+  .persona .help b{color:var(--petroleo)}
+
+  .footer{
+    margin-top:76px;padding-top:26px;border-top:2px solid var(--ink);
+    display:flex;flex-wrap:wrap;gap:16px 40px;align-items:baseline;
+    font-size:13px;color:var(--ink-2);
+  }
+  .footer .bg{font-weight:800;font-size:15px;color:var(--ink);letter-spacing:-.01em}
+
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<div class="shell">
+
+<nav class="toc" aria-label="Índice">
+  <p class="toc-title">Índice</p>
+  <ol>
+    <li><a href="#resumen"><span class="n">01</span><span>La marca en una página</span></a></li>
+    <li><a href="#metodo"><span class="n">02</span><span>De dónde sale esto</span></a></li>
+    <li><a href="#nombre"><span class="n">03</span><span>El nombre</span></a></li>
+    <li><a href="#circulo"><span class="n">04</span><span>Círculo dorado</span></a></li>
+    <li><a href="#mision"><span class="n">05</span><span>Misión y visión</span></a></li>
+    <li><a href="#valores"><span class="n">06</span><span>Valores</span></a></li>
+    <li><a href="#posicion"><span class="n">07</span><span>Posicionamiento</span></a></li>
+    <li><a href="#publico"><span class="n">08</span><span>Público y personas</span></a></li>
+    <li><a href="#beneficios"><span class="n">09</span><span>Beneficios</span></a></li>
+    <li><a href="#arquetipo"><span class="n">10</span><span>Arquetipo</span></a></li>
+    <li><a href="#tono"><span class="n">11</span><span>Tono de voz</span></a></li>
+    <li><a href="#visual"><span class="n">12</span><span>Identidad visual</span></a></li>
+    <li><a href="#moodboard"><span class="n">13</span><span>Brief de moodboard</span></a></li>
+    <li class="sep"></li>
+    <li><a href="#reforzar"><span class="n">14</span><span>Lo que proponemos reforzar</span></a></li>
+    <li><a href="#decisiones"><span class="n">15</span><span>Decisiones pendientes</span></a></li>
+    <li><a href="#calendario"><span class="n">16</span><span>Calendario</span></a></li>
+  </ol>
+</nav>
+
+<main>
+
+  <header class="cover">
+    <p class="kicker">Organic Club · Documento de marca</p>
+    <h1 class="title">Kenia
+      <span class="light">Plataforma de marca completa</span>
+    </h1>
+    <div class="rule-orange"></div>
+    <div class="meta">
+      <div><span class="lbl">Cliente</span><span class="val">Ninro Libre</span></div>
+      <div><span class="lbl">Preparado por</span><span class="val">Liam Libre · Alonzo García</span></div>
+      <div><span class="lbl">Fecha</span><span class="val">8 de septiembre de 2026</span></div>
+      <div><span class="lbl">Versión</span><span class="val">1.0 · para aprobación</span></div>
+    </div>
+  </header>
+
+  <section id="intro" style="padding-top:44px">
+    <p>Este documento es la base sobre la que se escribe todo lo demás: la campaña de lanzamiento, el contenido de redes, los textos de la tienda y cualquier pieza que lleve el nombre de Kenia. No es un manual de estilo gráfico. Es lo que la marca dice, a quién se lo dice y cómo lo dice.</p>
+    <p>Todo lo que hay aquí está cerrado salvo lo que aparece marcado en la sección 15. Si algo no encaja con cómo ves la marca, dilo sobre este documento: es más barato cambiarlo ahora que después de grabar.</p>
+    <div class="panel flat">
+      <p class="panel-title">Cómo leerlo</p>
+      <p>Las secciones 1 a 13 son la plataforma terminada. La 14 son ocho cosas que proponemos sumar y que hoy no existen. La 15 es lo que necesitamos que decidas tú, Kurt o el diseñador para poder cerrar. La 16 es el calendario real.</p>
+    </div>
+  </section>
+
+  <!-- 01 -->
+  <section id="resumen">
+    <div class="sec-head"><span class="sec-n">01</span><h2>La marca en una página</h2></div>
+    <p class="sec-sub">Si alguien solo lee esta sección, tiene que poder escribir un anuncio correcto.</p>
+    <div class="divider"></div>
+
+    <div class="say wide">El plan se adapta a ti, no tú al plan.<span class="attr">La bisagra de toda la marca</span></div>
+
+    <div class="grid g2">
+      <div class="card"><span class="cn">Qué es</span><p class="ct">Kenia lleva tus marcas y te entrena con ellas</p><p>Registra tu historial, tus ritmos y tu carga, y sobre eso arma un plan que se recalcula cada día. El registro es lo que hace posible el coach. El coach es lo que se vende.</p></div>
+      <div class="card"><span class="cn">Por qué existe</span><p class="ct">Nadie deja de correr por falta de voluntad</p><p>Deja de correr porque sigue un plan que no sabe nada de su vida, y cuando ese plan se rompe lo hace sentir a él como el que falló.</p></div>
+      <div class="card"><span class="cn">Para quién</span><p class="ct">Quien ya corre y no tiene quien le diga qué hacer mañana</p><p>El nivel no define el público. Cabe desde quien corre 5 km tres veces por semana hasta quien persigue un maratón por debajo de tres horas.</p></div>
+      <div class="card"><span class="cn">Contra qué</span><p class="ct">El plan que te pasó un conocido</p><p>Cuatro de doce corredores entrevistados siguen un plan que les mandó un amigo por WhatsApp. Ese es el rival real, no otra app.</p></div>
+    </div>
+
+    <div class="tw">
+      <table>
+        <thead><tr><th>Pieza</th><th>Definición</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Misión</strong></td><td>Ayudamos a cualquier persona que quiera correr a sostener el entrenamiento dentro de su vida real, con un plan que decide con ella cada día, para que llegue a su meta sin abandonar en el intento.</td></tr>
+          <tr><td><strong>Visión</strong></td><td>Que en Latinoamérica correr deje de ser cosa de corredores.</td></tr>
+          <tr><td><strong>Valores</strong></td><td>Nunca con culpa · Explicamos siempre el porqué · El plan se adapta a ti · Prometemos solo lo que sostenemos</td></tr>
+          <tr><td><strong>Arquetipo</strong></td><td>El usuario es el héroe. Kenia es su mentor: Sabio dominante, Cuidador de apoyo.</td></tr>
+          <tr><td><strong>Personalidad</strong></td><td>Atento · Claro · Firme · Honesto · Cercano</td></tr>
+          <tr><td><strong>Descriptor</strong></td><td>Kenia · Entrenamiento de running</td></tr>
+          <tr><td><strong>Color</strong></td><td>El azul es la marca. El naranja es el momento.</td></tr>
+          <tr><td><strong>Lo que nunca se dice</strong></td><td>«Para corredores» y «sin excusas», en cualquiera de sus formas.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 02 -->
+  <section id="metodo">
+    <div class="sec-head"><span class="sec-n">02</span><h2>De dónde sale esto</h2></div>
+    <p class="sec-sub">Nada de este documento es opinión nuestra sin respaldo. Estas son las tres fuentes.</p>
+    <div class="divider"></div>
+
+    <div class="grid g3">
+      <div class="card"><span class="cn">Fuente 1</span><p class="ct">12 entrevistas</p><p>Corredores de Caracas de la red del box y del entorno de Ninro, entrevistados en septiembre con un cuestionario de nueve preguntas. Es la base de casi todo lo que sigue.</p></div>
+      <div class="card"><span class="cn">Fuente 2</span><p class="ct">El manual visual</p><p>Auditamos las diecisiete piezas del manual existente contra la estrategia del producto. Doce hallazgos, repartidos entre lo que resolvemos nosotros y lo que le toca al diseñador.</p></div>
+      <div class="card"><span class="cn">Fuente 3</span><p class="ct">Las sesiones contigo y con Kurt</p><p>Producto, precios, modelo de negocio, qué hace y qué no hace la app, y las correcciones que fuiste haciendo sobre cada versión de este documento.</p></div>
+    </div>
+
+    <h3>Los cuatro hallazgos que más cambiaron la estrategia</h3>
+    <div class="tw">
+      <table>
+        <thead><tr><th style="width:34%">Hallazgo</th><th>Qué cambió</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Solo 1 de 12 se llama «corredor»</strong> sin ponerle un adjetivo o un pero</td><td>La marca no puede pedir ese título para entrar. Ni el descriptor, ni el tagline, ni la campaña pueden decir «para corredores»: le estarían diciendo a once de cada doce que esto no es para ellos.</td></tr>
+          <tr><td><strong>10 de 12 descansan sin culpa</strong></td><td>Creíamos que el permiso para descansar era el gran diferencial emocional. No lo es: ya se lo saben. La culpa aparece cuando la vida gana, y sobre todo en lo que cuesta retomar. El mensaje central pasó a ser <em>volver sin castigo</em>.</td></tr>
+          <tr><td><strong>Nadie nombró a Runna ni a RunMotion</strong></td><td>El competidor real es el plan informal de un conocido, y detrás asoma la IA generalista: alguien ya arma sus planes con Gemini. Cambia el argumento de venta completo.</td></tr>
+          <tr><td><strong>El clima es la causa nº 1 de sesión perdida</strong> — 4 de 12</td><td>Y en la reunión del 8 le diste la vuelta: el problema no es que llueva, es no estar preparado para correr cuando llueve. Eso abrió un territorio de producto y de contenido que ninguna app global va a ocupar aquí.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="panel flat">
+      <p class="panel-title">Un dato de precio que vale dinero</p>
+      <p>Preguntamos cuánto cobra un entrenador de running en Caracas. Los cuatro que lo sabían dieron un rango de <strong>30 a 80 dólares al mes</strong>, y las asesorías personalizadas desde 100. Kenia Coach cuesta 19,99. La comparación ya se puede publicar con dato propio.</p>
+      <p>Con una advertencia de la misma investigación: <strong>ocho de doce no sabían ese precio</strong>. La comparación no se puede dar por sabida. Hay que enseñarla, no insinuarla.</p>
+    </div>
+  </section>
+
+  <!-- 03 -->
+  <section id="nombre">
+    <div class="sec-head"><span class="sec-n">03</span><h2>El nombre</h2></div>
+    <p class="sec-sub">El nombre está cerrado. Lo que hacía falta era decidir qué significa y cómo se sostiene.</p>
+    <div class="divider"></div>
+
+    <h3>El país aporta el método, no la estética</h3>
+    <p>Kenia se abraza como referencia, con una condición: hablamos del <strong>método</strong>, no de la geografía. El vínculo es real —entrenaste con método keniano— y eso es sustento, no decoración.</p>
+    <div class="pills">
+      <span class="pill yes">Método</span>
+      <span class="pill yes">Cultura de volumen y paciencia</span>
+      <span class="pill yes">Correr como oficio</span>
+      <span class="pill no">Bandera</span>
+      <span class="pill no">Colores panafricanos</span>
+      <span class="pill no">Mapas y siluetas</span>
+      <span class="pill no">Un keniano corriendo como recurso gráfico</span>
+    </div>
+
+    <h3>La respuesta oficial cuando alguien pregunte «¿por qué Kenia?»</h3>
+    <div class="say wide">Kenia es el país donde correr es un oficio. De ahí viene el método con el que entrenamos.</div>
+    <p>Corta, honesta y verificable. No promete origen africano ni presencia allá. Dice de dónde viene el método, que es lo cierto.</p>
+
+    <h3>El nombre necesita ayuda, y hay que dársela</h3>
+    <p>En español «Kenia» no evoca running. Lo probaron ustedes mismos: hubo quien leyó una app para mujeres y quien leyó una app de citas. Además es un nombre propio femenino común en la región. La conclusión no es cambiar el nombre. Es que el nombre <strong>no puede cargar el significado solo</strong>.</p>
+
+    <div class="grid g2">
+      <div class="card"><span class="cn">Descriptor fijo</span><p class="ct">Kenia · Entrenamiento de running</p><p>Va en la bio de Instagram, el header de la web, la firma de campaña, la portada del brandbook y la ficha de tienda. Describe la actividad, no la identidad: no obliga a nadie a llamarse corredor.</p></div>
+      <div class="card"><span class="cn">Ficha de tienda</span><p class="ct">Nombre y subtítulo</p><p><strong>Kenia: Entrenamiento Running</strong> (28 de 30 caracteres) y <strong>Tu plan se adapta a tu semana</strong> (29 de 30). Kurt confirma los límites reales antes de subirla.</p></div>
+    </div>
+
+    <div class="panel">
+      <p class="panel-title">Escritura de la marca</p>
+      <p><strong>Kenia</strong>, con mayúscula inicial y el resto en minúscula. Ni KENIA ni kenia. Los planes, en consecuencia, son <strong>Kenia Starter</strong>, <strong>Kenia Coach</strong> y <strong>Kenia Elite</strong>. Hoy están en la app en mayúsculas: hay que unificarlo antes de subir a tienda.</p>
+    </div>
+  </section>
+
+  <!-- 04 -->
+  <section id="circulo">
+    <div class="sec-head"><span class="sec-n">04</span><h2>Círculo dorado</h2></div>
+    <p class="sec-sub">Por qué existe la marca, cómo trabaja y qué vende. En ese orden, porque en ese orden se comunica.</p>
+    <div class="divider"></div>
+
+    <h4>Por qué — la creencia</h4>
+    <div class="say wide">Nadie deja de correr por falta de voluntad. Deja de correr porque sigue un plan que no sabe nada de su vida, y cuando ese plan se rompe, lo hace sentir a él como el que falló.</div>
+    <p>Kenia existe porque correr no es de un tipo de cuerpo ni de un tipo de persona. Es de cualquiera que tenga un plan que se adapte a él, en vez de exigirle que él se adapte al plan.</p>
+
+    <h4>Cómo — las cinco formas de trabajar</h4>
+    <div class="tw">
+      <table>
+        <thead><tr><th style="width:38%">Forma</th><th>Qué significa en la práctica</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Pregunta antes de mandar</strong></td><td>Sueño, molestias, estado de las piernas, estrés, tiempo real disponible. Y entonces decide: mantener, bajar intensidad, modificar o descansar.</td></tr>
+          <tr><td><strong>Explica el porqué de cada sesión</strong></td><td>No «hoy 6 × 3 min», sino «hoy 6 × 3 min porque tu objetivo es el 10K, y como dormiste mal quitamos una repetición».</td></tr>
+          <tr><td><strong>Aprende de ti</strong></td><td>Cómo respondes a la carga, cuánto tardas en recuperar, cuándo te sobrecargas, qué días te saltas.</td></tr>
+          <tr><td><strong>Optimiza que sigas</strong>, no que el plan sea perfecto</td><td>El mejor plan es inútil si abandonas a las cuatro semanas.</td></tr>
+          <tr><td><strong>Método de autor, vigilancia de equipo, ejecución de máquina</strong></td><td>La fórmula la diseñas tú. La IA la aplica persona a persona. El equipo vigila el conjunto desde el dashboard. Nadie de Kenia habla con un usuario sobre su plan, pero nadie deja los planes sin mirar.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="panel flag">
+      <p class="panel-title">Advertencia de caducidad</p>
+      <p>«Monitoreamos todos los planes» es cierto con 40 suscriptores y deja de serlo con 1.200. Sirve como prueba de rigor hoy. No se construye la marca encima de esa frase.</p>
+    </div>
+
+    <h4>Qué — el producto</h4>
+    <p>App de suscripción que lleva tus marcas y te entrena con ellas. Registra historial, ritmos, distancias y carga, y sobre eso arma un plan que se recalcula a diario. Más comunidad, ligas, ranking y rutas compartidas.</p>
+
+    <div class="tw">
+      <table>
+        <thead><tr><th>Plan</th><th class="num">Mes</th><th class="num">Año (−15 %)</th><th>Qué transformación vende</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Kenia Starter</strong></td><td class="num">9,99 $</td><td class="num">101,90 $</td><td><strong>Te da dirección.</strong> Plan personalizado, entrenamientos diarios, seguimiento, explicación básica, comunidad.</td></tr>
+          <tr><td><strong>Kenia Coach</strong> ★</td><td class="num">19,99 $</td><td class="num">203,90 $</td><td><strong>Te acompaña.</strong> Adaptación diaria, perfil adaptativo, coach conversacional, explicación avanzada, prevención.</td></tr>
+          <tr><td><strong>Kenia Elite</strong></td><td class="num">29,99 $</td><td class="num">305,90 $</td><td><strong>Te conoce y anticipa.</strong> Cuerpo digital, planificación predictiva, estrategia de competición, recuperación post-carrera.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong>Kenia Coach es el plan estrella</strong> y el que hay que vender a la mayoría: es el que encarna la promesa de la marca. Starter baja la barrera de entrada. Elite ancla el precio y ya tiene comprador definido, como se ve en la sección 8.</p>
+
+    <div class="panel flag">
+      <p class="panel-title">Regla que no se rompe</p>
+      <p>Ningún plan, Elite incluido, puede prometer supervisión ni revisión humana. Kenia es un coach virtual y no interviene ninguna persona en el plan de un usuario. Cualquier pieza que insinúe lo contrario rompe el cuarto valor de la marca y termina en reembolsos.</p>
+    </div>
+  </section>
+
+  <!-- 05 -->
+  <section id="mision">
+    <div class="sec-head"><span class="sec-n">05</span><h2>Misión y visión</h2></div>
+    <p class="sec-sub">La misión es lo que hacemos hoy. La visión es el mundo que queremos dejar.</p>
+    <div class="divider"></div>
+
+    <h4>Misión</h4>
+    <div class="say wide">Ayudamos a cualquier persona que quiera correr a sostener el entrenamiento dentro de su vida real, con un plan que decide con ella cada día, para que llegue a su meta sin abandonar en el intento.</div>
+    <p>La prueba que le hicimos: si tapás la palabra Kenia, ¿serviría para cualquier app? No. «Un plan que decide con ella cada día» es específico de este producto y de ningún otro.</p>
+    <p>Versión corta para uso interno: <em>que entrenar para correr sea sostenible en la vida real.</em></p>
+
+    <h4>Visión</h4>
+    <div class="say wide">Que en Latinoamérica correr deje de ser cosa de corredores.</div>
+    <p>Que cualquiera, sin importar su cuerpo, su horario o su punto de partida, pueda decir «yo entreno» y sostenerlo, porque tuvo un entrenador que se adaptaba a su vida y no al revés.</p>
+
+    <div class="panel">
+      <p class="panel-title">La métrica que prueba la visión</p>
+      <p>No son descargas ni facturación. Es <strong>cuánta gente sigue entrenando a los seis meses</strong>. Es la métrica de «no abandonó», y es la única que demuestra que la marca cumple lo que dice.</p>
+    </div>
+  </section>
+
+  <!-- 06 -->
+  <section id="valores">
+    <div class="sec-head"><span class="sec-n">06</span><h2>Valores</h2></div>
+    <p class="sec-sub">Cuatro. Cada uno con lo que cuesta, porque un valor que no cuesta nada no es un valor.</p>
+    <div class="divider"></div>
+
+    <h3>1 · Nunca con culpa</h3>
+    <p>Kenia no usa la vergüenza como motor. Ni en una notificación, ni en un post, ni en una campaña.</p>
+    <p><strong>Lo que cuesta:</strong> renunciamos a la palanca emocional más barata y más eficaz del fitness. La frase «donde termina tu excusa, empieza tu carrera» se retira aunque funcione en engagement.</p>
+    <p><strong>El momento crítico de este valor no es el día de descanso: es el primer día después del fallo.</strong> Ahí es donde las entrevistas encontraron la culpa. «Tardé bastante en retomar la rutina.» «Me siento muy incómoda cuando no hago lo que está pautado ese día.»</p>
+
+    <h3>2 · Explicamos siempre el porqué</h3>
+    <p>Ninguna instrucción sin su razón.</p>
+    <p><strong>Lo que cuesta:</strong> es más caro de construir y más lento de comunicar que un simple «haz esto». En marketing significa contenido que enseña, no que arenga.</p>
+
+    <h3>3 · El plan se adapta a ti, tú no al plan</h3>
+    <p>Descansar es parte del plan, no una falla del plan.</p>
+    <p><strong>Lo que cuesta:</strong> aceptamos que alguien entrene menos si su cuerpo lo pide, aunque «menos uso» se vea peor en las métricas de engagement.</p>
+    <div class="panel">
+      <p class="panel-title">Adaptarse no es esquivar</p>
+      <p>Tu planteamiento del 8 de septiembre entra aquí y no contradice el valor, porque son dos cosas distintas:</p>
+      <ul>
+        <li><strong>La condición climática se entrena</strong>, a propósito y con su porqué, porque el día de la carrera no se elige el clima.</li>
+        <li><strong>La vida real se adapta.</strong> Fiebre, un hijo enfermo, cuatro horas de sueño, una tormenta con rayos: ahí el plan se mueve.</li>
+      </ul>
+      <p style="margin-top:12px"><strong>El clima se entrena, el riesgo se esquiva, y a la persona no se la juzga nunca.</strong></p>
+    </div>
+
+    <h3>4 · Prometemos solo lo que sostenemos</h3>
+    <p>No vendemos un entrenador humano si lo que hay es un coach virtual. No inflamos lo que hace la IA.</p>
+    <p><strong>Lo que cuesta:</strong> Kenia Elite se vende con menos épica de la que podríamos. Este valor salió del propio equipo técnico, que avisó que no prometería un entrenador humano personal por treinta dólares salvo que se pueda sostener. Ese aviso se convirtió en valor de marca.</p>
+
+    <h3>Política de cuerpo</h3>
+    <p>Consecuencia directa del primer valor. Son reglas duras, no recomendaciones:</p>
+    <ul>
+      <li>No se pide el peso como métrica principal ni se grafica como objetivo por defecto.</li>
+      <li>No hay fotos de antes y después.</li>
+      <li>Las calorías no se comunican como objetivo. Si aparecen, son dato secundario.</li>
+      <li>Los cuerpos en la comunicación son diversos por norma, no atléticos por norma.</li>
+      <li>Si un usuario declara un objetivo que sugiere un trastorno alimentario, la app no lo optimiza: lo deriva. Falta definir cómo, contigo y con Kurt.</li>
+    </ul>
+  </section>
+
+  <!-- 07 -->
+  <section id="posicion">
+    <div class="sec-head"><span class="sec-n">07</span><h2>Posicionamiento</h2></div>
+    <p class="sec-sub">Contra qué compite Kenia de verdad, y con qué frase se defiende.</p>
+    <div class="divider"></div>
+
+    <h3>Los dos enemigos</h3>
+    <div class="tw">
+      <table>
+        <thead><tr><th style="width:12%">&nbsp;</th><th style="width:34%">Enemigo</th><th>Dónde se usa</th></tr></thead>
+        <tbody>
+          <tr><td><strong>A</strong></td><td><strong>El plan genérico</strong> que te exige adaptarte a él</td><td>Contenido de producto, comparativas, demos, pauta de conversión. Ataca el método de la categoría.</td></tr>
+          <tr><td><strong>B</strong></td><td><strong>La creencia de que tú no eres corredor</strong></td><td>Narrativa de marca, comunidad, contenido de captación. Ataca la cabeza del usuario, y está confirmado con datos: once de doce entrevistados no se llaman corredores.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>El mapa competitivo real</h3>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Frente</th><th>Quién</th><th>Cómo se le responde</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Rival de percepción</strong></td><td>Strava</td><td>No se le ataca. Hacen cosas distintas: Strava es el muro donde publicás lo que hiciste, Kenia es la voz que decide contigo lo que vas a hacer.</td></tr>
+          <tr><td><strong>Rival funcional real</strong></td><td>El plan que te pasó un conocido por WhatsApp</td><td>Ese plan no sabe que hoy llovió, que dormiste mal ni que el martes tienes reunión. Y tu amigo no te va a contestar a las 5:30 de la mañana.</td></tr>
+          <tr><td><strong>Rival emergente</strong></td><td>IA generalista: Gemini, ChatGPT</td><td>Kenia no compite contra la idea de un plan hecho por IA. Compite contra una IA que no te conoce.</td></tr>
+          <tr><td><strong>Referente de producto</strong></td><td>Runna, RunMotion Coach</td><td>Son lo que Kenia quiere ser de mayor. Nadie los nombró en las entrevistas: no sirven como argumento de venta aquí.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Declaración de posicionamiento</h3>
+    <p>Esta frase no es para publicar. Es la que resuelve discusiones internas cuando haya que decidir si una pieza sirve o no.</p>
+    <div class="say wide">Para el corredor venezolano que ya entrena y no tiene quien decida con él, Kenia es un entrenador de running que se recalcula cada día. A diferencia del plan genérico, del que te pasó un conocido o de una IA que no te conoce, Kenia pregunta cómo estás antes de mandarte a entrenar, te explica por qué, y ajusta cuando tu semana cambia.</div>
+
+    <div class="panel">
+      <p class="panel-title">La regla comercial que ordena todo</p>
+      <p>Dar un plan es fácil. Lo dijiste tú: «es más como una fórmula». Garmin Coach lo regala, Nike Run Club lo regala, cualquier PDF de internet lo tiene.</p>
+      <p><strong>Entonces el plan no es el producto.</strong> Lo que vende Kenia empieza el martes que dormiste cuatro horas, el jueves que te duele el gemelo, la semana que el trabajo se te comió. Vendemos la adaptación, no la planificación. Cualquier pieza que ponga «plan personalizado» como titular principal está vendiendo la parte que los demás regalan.</p>
+    </div>
+  </section>
+
+  <!-- 08 -->
+  <section id="publico">
+    <div class="sec-head"><span class="sec-n">08</span><h2>Público objetivo y buyer personas</h2></div>
+    <p class="sec-sub">Cinco perfiles, ordenados por lo que aporta cada uno al negocio.</p>
+    <div class="divider"></div>
+
+    <div class="say wide">Kenia es para quien ya corre y no tiene quien le diga qué hacer mañana.</div>
+    <p>De 25 a 45 años, en Caracas y las principales ciudades del país, con ingresos en dólares. Ya tienen el hábito y están en el proceso: preparando una carrera, intentando bajar una marca, volviendo de una lesión, o queriendo dejar de correr siempre lo mismo. Ya pagan por entrenar —box, gimnasio, carreras, reloj— y valoran no lesionarse tanto como mejorar.</p>
+
+    <div class="panel">
+      <p class="panel-title">El criterio que ordena el público</p>
+      <p><strong>El público no se define por nivel. Se define por quién decide tu semana.</strong> Eso permite que quepan en la misma marca una persona que corre 5 km tres veces por semana y otra que hace 85 kilómetros semanales, sin que el mensaje se rompa. Lo que tienen en común no es el ritmo: es que nadie decide con ellos.</p>
+      <p>Queda fuera quien no corre y no tiene el hábito, y quien ya tiene un entrenador humano que lo ve correr y está contento con él.</p>
+    </div>
+
+    <div class="panel flag">
+      <p class="panel-title">La restricción que atraviesa a las cinco</p>
+      <p>Kenia cobra en dólares. El público no es «runners de Venezuela»: es <strong>el runner venezolano con capacidad de pago en divisas</strong> —ingreso remoto o freelance, profesional independiente, negocio propio o remesa estable—. Decirlo explícito no reduce el mercado: evita que la pauta le hable a quien no puede pagar y nos reviente el costo por adquisición.</p>
+    </div>
+
+    <h3>Las cinco, por prioridad</h3>
+
+    <div class="persona">
+      <div class="ph"><span class="rank">01</span><span class="pn">Daniel, 29</span><span class="pt">el que ya se inscribió</span></div>
+      <p class="plede">Tiene una carrera con fecha, un tiempo en la cabeza y miedo de llegar roto. <strong>Siete de doce entrevistados están en esta situación:</strong> es el perfil más numeroso y el único con urgencia propia.</p>
+      <dl>
+        <dt>Ocupación</dt><dd>Profesional independiente o empleado con nómina en dólares. Horario de oficina, entrena antes o después.</dd>
+        <dt>Hábitos</dt><dd>Corre 3 o 4 veces por semana, ya tiene reloj y sube todo a Strava.</dd>
+        <dt>Medios</dt><dd>Instagram y Strava a diario. YouTube para análisis de carreras y reviews de zapatillas. Grupos de WhatsApp de running.</dd>
+        <dt>Compra</dt><dd>Compara antes de comprar. Ya invirtió en reloj y zapatillas. Dijo que pagaría entre 30 y 50 dólares al mes.</dd>
+        <dt>Personalidad</dt><dd>Analítico, competitivo consigo mismo, impaciente. Si no le explicás el porqué, cambia el plan por su cuenta.</dd>
+        <dt>Objeción</dt><dd>«Esto lo tengo gratis en Garmin Coach.»</dd>
+      </dl>
+      <p class="help"><b>Cómo lo ayuda Kenia:</b> la periodización hasta el día de la carrera con la fecha metida en el plan, el aviso de sobrecarga que es justo lo que lo rompe, y la estrategia de competición de Elite. <b>Su riesgo:</b> se va cuando cruza la meta. Hay que engancharlo al siguiente objetivo antes de que termine el primero.</p>
+    </div>
+
+    <div class="persona">
+      <div class="ph"><span class="rank">02</span><span class="pn">Patricia, 42</span><span class="pt">la que vuelve</span></div>
+      <p class="plede">Ya se lesionó una vez y no piensa repetirlo. Es la menos sensible al precio de las cinco y la que más tiempo se queda.</p>
+      <dl>
+        <dt>Ocupación</dt><dd>Profesional con carrera hecha: gerente, abogada, médica, dueña de un negocio. Agenda apretada, sin margen para improvisar.</dd>
+        <dt>Hábitos</dt><dd>Corre temprano porque después ya no puede. Combinó running con gimnasio y ahí fue donde se lesionó. Hace o hizo fisioterapia.</dd>
+        <dt>Medios</dt><dd>Instagram de bienestar y salud, WhatsApp como canal principal. Le hace más caso a su fisio que a cualquier app.</dd>
+        <dt>Compra</dt><dd>Paga por tranquilidad. Ya paga fisio y gimnasio. Decide despacio, pero cuando decide se queda.</dd>
+        <dt>Personalidad</dt><dd>Prudente, responsable, realista. Desconfía de las promesas grandes.</dd>
+        <dt>Objeción</dt><dd>«¿Una app va a saber cómo está mi rodilla?»</dd>
+      </dl>
+      <p class="help"><b>Cómo la ayuda Kenia:</b> progresión conservadora con techo, aviso de sobrecarga antes de que duela, y que le pregunte por la rodilla y por el gimnasio antes de asignarle la sesión. <b>Ojo con el copy:</b> con ella se dice «reducimos el riesgo», nunca «no te vas a lesionar».</p>
+    </div>
+
+    <div class="persona">
+      <div class="ph"><span class="rank">03</span><span class="pn">Rebeca, 34</span><span class="pt">la que lleva años igual</span></div>
+      <p class="plede">Corre desde hace años, no falla nunca, y sus tiempos son los mismos que hace dos años. Es el segmento más grande y el peor atendido.</p>
+      <dl>
+        <dt>Ocupación</dt><dd>Profesional empleada, freelance en divisas o negocio propio pequeño. Rutina fija.</dd>
+        <dt>Hábitos</dt><dd>Tres veces por semana, la misma ruta, la misma distancia, el mismo ritmo. Nunca siguió un plan y nadie le explicó por qué no progresa.</dd>
+        <dt>Medios</dt><dd>Instagram, cuentas de corredoras como ella y no de élite. Confía más en otra corredora que en un experto.</dd>
+        <dt>Compra</dt><dd>Ya gasta en zapatillas e inscripciones. Pagaría unos 30 dólares. Compra por recomendación, no por anuncio.</dd>
+        <dt>Personalidad</dt><dd>Constante, sin ego competitivo. Se aburre con lo complicado. Su frase es «yo solo quiero correr».</dd>
+        <dt>Objeción</dt><dd>«¿No es demasiado complicado?»</dd>
+      </dl>
+      <p class="help"><b>Cómo la ayuda Kenia:</b> explicarle por qué correr siempre igual no mejora nada, meterle variedad con sentido, y mostrarle progresión donde antes solo veía kilómetros. Es la única para quien llevar las marcas sí es argumento de venta: es la primera vez que sus datos significan algo.</p>
+    </div>
+
+    <div class="persona">
+      <div class="ph"><span class="rank">04</span><span class="pn">Andrés, 32</span><span class="pt">el que corre y levanta</span></div>
+      <p class="plede">Es un animal en el box y se ahoga en los 5K, y está subiendo carga por los dos lados a la vez. Es la comunidad semilla y son los primeros usuarios reales.</p>
+      <dl>
+        <dt>Ocupación</dt><dd>Desarrollador remoto, diseñador o freelance. Cobra en dólares, horario flexible.</dd>
+        <dt>Hábitos</dt><dd>Box 4 o 5 días, corre 1 o 2 sin plan. <strong>Es el patrón que lesionó a 3 de los 12 entrevistados:</strong> correr y fuerza subiendo volumen al mismo tiempo.</dd>
+        <dt>Medios</dt><dd>El grupo de WhatsApp del box y el box mismo. Quien lo influye es su coach y sus compañeros, no una marca.</dd>
+        <dt>Compra</dt><dd>Ya paga mensualidad de box, así que no discute suscripciones. Compra por impulso social: si el box lo usa, lo usa.</dd>
+        <dt>Personalidad</dt><dd>Competitivo, orgulloso, con disciplina probada. Le cuesta ser principiante en algo.</dd>
+        <dt>Objeción</dt><dd>«¿Para qué pago si mi coach del box me arma algo?»</dd>
+      </dl>
+      <p class="help"><b>Cómo lo ayuda Kenia:</b> ser la única app que le pregunta por el gimnasio antes de mandarle a correr, y repartirle la semana entre box y running sin que se reviente. Es también la persona que encarna tu cruzada: el que hace CrossFit y sí corre.</p>
+    </div>
+
+    <div class="persona">
+      <div class="ph"><span class="rank">05</span><span class="pn">Gabriel, 36</span><span class="pt">el que va por la marca</span></div>
+      <p class="plede">Hace el volumen, hace el trabajo, y el reloj no baja. Quiere sub-3 en maratón y está haciendo la periodización solo. <strong>Sale del caso que trajiste tú.</strong></p>
+      <dl>
+        <dt>Ocupación</dt><dd>Ingeniero, gerente, consultor o dueño de negocio. Alguien con control sobre su agenda, porque sin eso no se sostienen seis sesiones semanales.</dd>
+        <dt>Hábitos</dt><dd>5 o 6 días, entre 70 y 90 kilómetros semanales. Series en pista, tirada larga el domingo. Duerme y come en función de entrenar.</dd>
+        <dt>Medios</dt><dd>Strava con club, YouTube de análisis de entrenamiento, podcasts, foros. Usa vocabulario técnico correcto: umbral, VO2, zonas.</dd>
+        <dt>Compra</dt><dd>El de mayor disposición a pagar de los cinco. Zapatillas de carbono, reloj de gama alta, viajes a carreras. Compara Kenia con un entrenador de 80 a 100 dólares, no con una app gratis.</dd>
+        <dt>Personalidad</dt><dd>Metódico y exigente. No necesita motivación, necesita criterio. Detecta al instante una sesión mal puesta, y si la detecta pierde la confianza en el sistema entero.</dd>
+        <dt>Objeción</dt><dd>«Una app no me va a dar lo que me da un entrenador que me ve correr.»</dd>
+      </dl>
+      <p class="help"><b>Cómo lo ayuda Kenia:</b> periodización con intención hacia una fecha, control de carga en volumen alto —que es justo donde él se lesiona—, el cuerpo digital y la estrategia de competición. <b>Resuelve un hueco que teníamos:</b> Kenia Elite estaba definida y con precio, pero no tenía comprador sostenido. Daniel lo compra doce semanas y se va. Gabriel es el único que lo sostiene todo el año.</p>
+    </div>
+
+    <div class="panel flag">
+      <p class="panel-title">Tratemos a Gabriel como piloto, no como público de campaña</p>
+      <p>Los otros cuatro perfiles salen de doce entrevistas. Este sale de una conversación de tercera mano sobre una sola persona. Es una hipótesis fuerte, no un segmento verificado.</p>
+      <p><strong>Nuestra propuesta:</strong> que tu conocido use Kenia Elite gratis o a precio de fundador durante su bloque de maratón, a cambio de decir sin filtro qué sesiones no le cuadran. Es la prueba de estrés más barata que va a tener el producto —si el plan aguanta a un corredor de sub-3, aguanta a los otros cuatro con holgura— y si sale bien es la mejor historia de lanzamiento que puede tener la marca.</p>
+      <p><strong>Lo que no haríamos:</strong> poner pauta detrás de este perfil en octubre. Son pocos, caros de alcanzar y los más difíciles de convencer. Su valor es de prueba y reputación, no de volumen.</p>
+    </div>
+  </section>
+
+  <!-- 09 -->
+  <section id="beneficios">
+    <div class="sec-head"><span class="sec-n">09</span><h2>Beneficios</h2></div>
+    <p class="sec-sub">Los racionales justifican la compra. Los emocionales la provocan. Hacen falta los dos, y saber cuál va primero en cada canal.</p>
+    <div class="divider"></div>
+
+    <h3>Racionales</h3>
+    <div class="tw">
+      <table>
+        <thead><tr><th style="width:6%">&nbsp;</th><th style="width:36%">Beneficio</th><th>Prueba</th></tr></thead>
+        <tbody>
+          <tr><td><strong>R1</strong></td><td><strong>El plan se recalcula a diario</strong> según sueño, fatiga, dolor, estrés y tiempo disponible</td><td>Ni Strava, ni Nike Run Club, ni Garmin Coach lo hacen. Runna y RunMotion adaptan, pero por resultado, no por estado previo.</td></tr>
+          <tr><td><strong>R2</strong></td><td><strong>Entiendes por qué</strong> haces cada sesión y por qué cambió</td><td>Explicación en cada entrenamiento.</td></tr>
+          <tr><td><strong>R3</strong></td><td><strong>Aviso temprano de sobrecarga</strong>, con alternativas automáticas</td><td>«Tu carga subió 32 % en dos semanas y tu rendimiento empeora.»</td></tr>
+          <tr><td><strong>R4</strong></td><td><strong>Le hablas al coach</strong> y responde</td><td>Coach conversacional desde Kenia Coach.</td></tr>
+          <tr><td><strong>R5</strong></td><td><strong>Cuesta una fracción de un entrenador</strong></td><td>Dato propio: un entrenador en Caracas cobra de 30 a 80 dólares al mes. Kenia Coach cuesta 19,99.</td></tr>
+          <tr><td><strong>R6</strong></td><td><strong>En español y para tu realidad</strong></td><td>RunMotion está pensado para el público francés; Runna para el anglosajón.</td></tr>
+          <tr><td><strong>R9</strong></td><td><strong>Te prepara para correr en cualquier condición</strong> y te protege cuando la condición es un riesgo</td><td>El clima es la causa nº 1 de sesión perdida en Caracas. Ninguna carrera se suspende por lluvia ni por calor, y ninguna app global modela las condiciones de aquí.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong>Los tres que hacen el trabajo pesado son R1, R2 y R3.</strong> El resto acompaña. R9 todavía no está construido: es la recomendación de producto con mejor relación impacto-esfuerzo que salió de toda la investigación.</p>
+
+    <h3>Emocionales</h3>
+    <div class="grid g3">
+      <div class="card"><span class="cn">E8 · el central</span><p class="ct">Volver sin castigo</p><p>Perder un día, o tres semanas, no significa empezar de cero. El plan se recalcula y sigue. Es donde vive la culpa real.</p></div>
+      <div class="card"><span class="cn">E3</span><p class="ct">Legitimidad</p><p>Poder decir «soy corredor» sin sentirse impostor. Verificado: solo 1 de 12 lo dice sin matizar.</p></div>
+      <div class="card"><span class="cn">E1</span><p class="ct">Alivio</p><p>Dejas de decidir tú cada día si entrenar, cuánto y cómo.</p></div>
+      <div class="card"><span class="cn">E4</span><p class="ct">Seguridad</p><p>El miedo a lesionarse baja. Es todo lo que le importa a Patricia.</p></div>
+      <div class="card"><span class="cn">E5</span><p class="ct">Ser entendido</p><p>Algo sabe cómo fue tu semana. Contra la soledad del que entrena solo.</p></div>
+      <div class="card"><span class="cn">E6 · E7</span><p class="ct">Pertenencia y orgullo</p><p>Una tribu que no te mide contra los demás, y el orgullo de haber sostenido doce semanas.</p></div>
+    </div>
+
+    <h3>Qué va primero en cada canal</h3>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Canal</th><th>Primero</th><th>Después</th><th>Por qué</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Pauta en Meta</strong></td><td>R1 · se recalcula a diario</td><td>E1 · alivio</td><td>Público frío: hay que decir qué es en tres segundos.</td></tr>
+          <tr><td><strong>Orgánico y contenido</strong></td><td>E3 · legitimidad</td><td>R2 · el porqué</td><td>Es donde vive el enemigo B y donde se construye relato.</td></tr>
+          <tr><td><strong>Ficha de tienda</strong></td><td>R1 · R2 · R3</td><td>E8</td><td>Quien llega ahí ya sabe que quiere entrenar. Quiere saber qué hace la app.</td></tr>
+          <tr><td><strong>Comunidad y ligas</strong></td><td>E6 · pertenencia</td><td>E7 · orgullo</td><td>El que ya está adentro no necesita que le vendan.</td></tr>
+          <tr><td><strong>Reactivar inactivos</strong></td><td>E8 · volver sin castigo</td><td>R1</td><td>Lo que frena el regreso no es la falta de permiso: es lo que cuesta retomar.</td></tr>
+          <tr><td><strong>Página de precios</strong></td><td>R5 · fracción de un entrenador</td><td>R1</td><td>Enseñar la comparación, no insinuarla: ocho de doce no sabían el precio de un entrenador.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 10 -->
+  <section id="arquetipo">
+    <div class="sec-head"><span class="sec-n">10</span><h2>Arquetipo y personalidad</h2></div>
+    <p class="sec-sub">Quién es Kenia dentro de la historia del usuario.</p>
+    <div class="divider"></div>
+
+    <div class="say wide">El usuario es el héroe. Kenia es quien lo entrena.<span class="attr">Sabio dominante · Cuidador de apoyo</span></div>
+
+    <p>Esto resuelve una discusión que tuvimos y que valía la pena tener. El instinto del equipo era el arquetipo del Héroe, porque la marca le habla a quien ya corre y se prepara para maratones. Y es correcto, pero hay que separar dos cosas:</p>
+    <div class="tw">
+      <table>
+        <thead><tr><th style="width:28%">&nbsp;</th><th style="width:22%">Quién es el héroe</th><th>Qué implica</th></tr></thead>
+        <tbody>
+          <tr><td><strong>El universo de la marca</strong></td><td><strong>Héroe</strong></td><td>Carreras, kilómetros, meta, madrugada, línea de salida. La estética oscura, intensa y de alto rendimiento es correcta y se conserva.</td></tr>
+          <tr><td><strong>El rol de la marca</strong></td><td><strong>Sabio · mentor</strong></td><td>El que prepara al héroe. La voz explica, adapta y protege. No arenga ni avergüenza.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>En el esquema clásico, el mentor del héroe nunca es otro héroe. Y hay una razón práctica que decide el asunto: <strong>el Héroe nunca te dice que pares.</strong> Su mensaje raíz es «empuja más». Y el comportamiento más distintivo de Kenia, el que ningún competidor tiene, es decirte «hoy no entrenas» cuando tu cuerpo lo pide.</p>
+
+    <h3>Si Kenia fuera una persona</h3>
+    <p>Tiene entre 35 y 40 años y ya no tiene nada que demostrar. Corrió lo suficiente como para saber que la disciplina no es gritar más fuerte. Viste funcional y sin logos gritones. Se levanta temprano y no lo publica. Escucha más de lo que habla. Cuando te ve mal, no te grita: te pregunta.</p>
+    <div class="pills">
+      <span class="pill yes">Atento</span><span class="pill yes">Claro</span><span class="pill yes">Firme</span><span class="pill yes">Honesto</span><span class="pill yes">Cercano</span>
+    </div>
+    <div class="pills">
+      <span class="pill no">Agresivo</span><span class="pill no">Motivacional</span><span class="pill no">Culposo</span><span class="pill no">Épico</span><span class="pill no">Condescendiente</span>
+    </div>
+    <p><em>Motivacional</em> está en la lista negra a propósito. Al corredor que ya está en el proceso no le falta motivación: le falta criterio. Kenia no motiva. Organiza, explica y protege. La motivación es consecuencia, no producto.</p>
+
+    <h3>La frase de posicionamiento frente a Strava</h3>
+    <div class="say wide">Si Strava es el muro donde publicas lo que hiciste, Kenia es la voz que decide contigo lo que vas a hacer.</div>
+  </section>
+
+  <!-- 11 -->
+  <section id="tono">
+    <div class="sec-head"><span class="sec-n">11</span><h2>Tono de voz</h2></div>
+    <p class="sec-sub">Medido en los cuatro ejes del Nielsen Norman Group, que es el estándar que usamos para que esto no dependa del gusto de quien escriba.</p>
+    <div class="divider"></div>
+
+    <div class="axes">
+      <div class="axis"><span class="end">Divertido</span><span class="track"><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot on"></i><i class="dot"></i></span><span class="end r"><strong>Serio · 4</strong></span></div>
+      <div class="axis"><span class="end"><strong>Casual · 2</strong></span><span class="track"><i class="dot"></i><i class="dot on"></i><i class="dot"></i><i class="dot"></i><i class="dot"></i></span><span class="end r">Formal</span></div>
+      <div class="axis"><span class="end">Irreverente</span><span class="track"><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot on"></i><i class="dot"></i></span><span class="end r"><strong>Respetuoso · 4</strong></span></div>
+      <div class="axis"><span class="end">Entusiasta</span><span class="track"><i class="dot"></i><i class="dot"></i><i class="dot on"></i><i class="dot"></i><i class="dot"></i></span><span class="end r">Neutro · <strong>equilibrio 3</strong></span></div>
+    </div>
+
+    <div class="tw">
+      <table>
+        <thead><tr><th style="width:26%">Eje</th><th>Por qué ahí</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Serio</strong></td><td>Kenia habla de tu cuerpo, tu descanso y tu riesgo de lesión. El humor ahí resta autoridad. No es solemne: es seria como un buen fisioterapeuta, que se ríe contigo pero no de lo que te duele.</td></tr>
+          <tr><td><strong>Casual</strong></td><td>Tuteo venezolano. Habla como el compañero de entreno que además sabe. Nada de «estimado usuario».</td></tr>
+          <tr><td><strong>Respetuosa</strong></td><td>No se burla del usuario, ni de la competencia, ni de quien va lento. No puedes legitimar a alguien y burlarte de otro igual.</td></tr>
+          <tr><td><strong>Equilibrio</strong></td><td>Entusiasta con el proceso, neutra con los datos. Nunca eufórica: la euforia envejece mal cuando el usuario falla.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>El tono cambia según el momento</h3>
+    <div class="tw">
+      <table>
+        <thead><tr><th style="width:26%">Momento</th><th style="width:22%">Tono</th><th>Cómo suena</th></tr></thead>
+        <tbody>
+          <tr><td>Onboarding</td><td>Cálido y concreto</td><td>«Antes de armar tu plan necesito saber tres cosas. Toma dos minutos.»</td></tr>
+          <tr><td>Antes de entrenar</td><td>Pregunta, no ordena</td><td>«¿Cómo amaneciste hoy?»</td></tr>
+          <tr><td>Sesión asignada</td><td>Directo, con el porqué</td><td>«Hoy: 6 × 3 min fuerte. Trabajamos tu capacidad de sostener ritmo para el 10K.»</td></tr>
+          <tr><td>Descanso recomendado</td><td>Firme y explicativo</td><td>«Hoy no entrenas. Dormiste cuatro horas y llevas dos semanas subiendo carga. Descansar también entrena.»</td></tr>
+          <tr><td>Sesión bajo lluvia o calor</td><td>Con propósito, nunca desafiante</td><td>«Hoy toca rodaje bajo lluvia. Tu carrera de noviembre puede ser así, y quiero que no sea la primera vez.»</td></tr>
+          <tr><td>Condición de riesgo</td><td>Directa y sin drama</td><td>«Hoy no. Está cayendo con rayos. Movemos la sesión al jueves.»</td></tr>
+          <tr><td><strong>Racha rota o dos semanas sin aparecer</strong><br><span style="color:var(--cian);font-size:12px">el momento más importante de la marca</span></td><td>Sin reproche, con opción</td><td>«Tu plan te esperó. ¿Lo retomamos donde quedó o lo armamos de nuevo con tu semana de ahora?»</td></tr>
+          <tr><td>Cancelación</td><td>Agradecido, sin retención agresiva</td><td>«Listo, cancelado. Tu historial queda guardado por si vuelves.»</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Palabras que no se usan</h3>
+    <div class="tw">
+      <table>
+        <thead><tr><th style="width:38%">Prohibido</th><th>Por qué</th></tr></thead>
+        <tbody>
+          <tr><td>«sin excusas», «excusas»</td><td>Es el enemigo declarado, dicho con la voz de la marca.</td></tr>
+          <tr><td>«fallaste», «perdiste tu racha»</td><td>Culpa explícita.</td></tr>
+          <tr><td>«quemar grasa», «cuerpo perfecto», «verano»</td><td>Política de cuerpo.</td></tr>
+          <tr><td>«bestia», «modo bestia», «guerrero», «máquina»</td><td>No por intensas: por vacías. Son clichés que cualquier box firma, y ponen a la marca a arengar en vez de a entrenar.</td></tr>
+          <tr><td>«deberías» · «solo tú puedes»</td><td>Juicio moral disfrazado de consejo, y toda la carga sobre quien ya se siente culpable.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Cómo exigir sin culpabilizar</h3>
+    <p>Es la pregunta que rompe a casi todas las marcas de fitness. La respuesta de Kenia cabe en una línea:</p>
+    <div class="say wide">La exigencia se le pone al plan, nunca a la persona.</div>
+    <p>El plan es duro cuando toca serlo. Lo que nunca se juzga es a quien lo sigue. Tres reglas operativas: el sujeto de la frase dura es el entrenamiento y no el usuario; cada exigencia viene con su razón; y el descanso se comunica con la misma firmeza que el esfuerzo, porque si «descansa» suena a disculpa el usuario no descansa.</p>
+
+    <div class="panel">
+      <p class="panel-title">Las cuatro frases del manual actual se retiran</p>
+      <p>«El asfalto no miente» · «Tu único rival te mira en el espejo» · «La meta es solo el principio» · «Donde termina tu excusa, empieza tu carrera».</p>
+      <p>No se retiran por intensas: la intensidad es correcta para este público. Se retiran porque <strong>hablan como el héroe en lugar de hablarle al héroe</strong>, y la cuarta además lo avergüenza usando la palabra que la marca declaró enemiga.</p>
+      <p>Las nuevas las escribimos nosotros. Un solo ejemplo para fijar la altura: donde antes decía «donde termina tu excusa, empieza tu carrera», ahora diría <strong>«tu semana cambia, tu plan también»</strong>. La segunda dice lo que el producto hace. La primera decía lo contrario.</p>
+    </div>
+  </section>
+
+  <!-- 12 -->
+  <section id="visual">
+    <div class="sec-head"><span class="sec-n">12</span><h2>Identidad visual</h2></div>
+    <p class="sec-sub">La identidad la hizo el diseñador y nuestro encargo es integrarla, no rehacerla. El diagnóstico es de desalineación con la estrategia, no de calidad.</p>
+    <div class="divider"></div>
+
+    <h3>Lo que funciona y no se toca</h3>
+    <ul>
+      <li><strong>El monograma-flecha.</strong> Tiene carácter, dirección y velocidad. Es el activo más fuerte del paquete.</li>
+      <li><strong>El naranja sobre negro.</strong> Potente y visible.</li>
+      <li><strong>El oficio de las aplicaciones.</strong> Los pósters, el mural, la interfaz de reloj y los mapas de ruta están bien resueltos y muestran un sistema con recorrido.</li>
+    </ul>
+
+    <h3>La jerarquía de color, ya decidida: manda el azul</h3>
+    <p>Ustedes movieron el peso de la paleta hacia el azul porque el naranja acercaba demasiado a Kenia al territorio de Strava. La decisión es buena y además encaja con el arquetipo: el mentor es azul —método, medición, calma, criterio— y el naranja pasa a ser el color del esfuerzo del héroe, el momento de correr.</p>
+
+    <div class="swatches">
+      <div class="sw"><span class="chip" style="background:#079CB5"></span><span class="info"><span class="nm">Cian</span><span class="hx">#079CB5</span><span class="fn">Primario. La marca y el método.</span></span></div>
+      <div class="sw"><span class="chip" style="background:#00677E"></span><span class="info"><span class="nm">Petróleo</span><span class="hx">#00677E</span><span class="fn">Profundidad. Fondos y capas.</span></span></div>
+      <div class="sw"><span class="chip" style="background:#1B1B1B"></span><span class="info"><span class="nm">Negro</span><span class="hx">#1B1B1B</span><span class="fn">El suelo. La madrugada, el asfalto.</span></span></div>
+      <div class="sw"><span class="chip" style="background:#FF5A00"></span><span class="info"><span class="nm">Naranja</span><span class="hx">#FF5A00</span><span class="fn">Acento de acción. Poco y potente.</span></span></div>
+      <div class="sw"><span class="chip" style="background:#F4F4F4;border-bottom:1px solid #D3E0E3"></span><span class="info"><span class="nm">Blanco</span><span class="hx">#F4F4F4</span><span class="fn">Texto y aire.</span></span></div>
+    </div>
+
+    <div class="say wide">El azul es la marca. El naranja es el momento.</div>
+    <p><strong>Proporción:</strong> naranja por debajo del 10 % de la superficie de cualquier pieza. Si una pieza es mayoritariamente naranja, o es el logo aislado o está mal.</p>
+
+    <div class="panel flag">
+      <p class="panel-title">Tres cosas que conviene saber antes de ejecutarlo</p>
+      <ul>
+        <li><strong>No es un ajuste, es un cambio de identidad.</strong> El logotipo hoy es naranja y todo el manual está construido sobre él. Si el azul pasa a primario, cambian el lockup, las aplicaciones y el ícono de tienda. La decisión es tuya y del diseñador, pero conviene saber el tamaño de lo que se aprueba.</li>
+        <li><strong>Alejarse de Strava por el naranja no sirve si se cae en otro cliché.</strong> Azul y naranja es de las combinaciones más repetidas en apps de deporte. Lo que diferencia no es el tono: es la proporción y el tratamiento. Antes de cerrarlo, poner las fichas de Strava, Runna, RunMotion, Nike Run Club y Garmin una al lado de otra y comprobar en qué se distingue Kenia.</li>
+        <li><strong>Donde más se gana es en el ícono de la tienda.</strong> En una pantalla llena de apps de fitness naranjas y rojas, un ícono azul con la K se ve antes. Es el argumento más fuerte a favor del cambio y vale la pena probarlo a 60 píxeles antes de decidir.</li>
+      </ul>
+    </div>
+
+    <h3>Lo que le falta al manual</h3>
+    <p>Esto es feedback para el diseñador, no trabajo nuestro. Son las piezas que hoy no existen y que hacen falta antes de que la app salga:</p>
+    <div class="grid g2">
+      <div class="card"><p class="ct">Tipografía</p><p>Ni familia, ni pesos, ni jerarquía, ni tamaños. Es la ausencia más urgente para una app que sale en octubre. El criterio está en la sección siguiente.</p></div>
+      <div class="card"><p class="ct">Ícono de app</p><p>Versión cuadrada, monograma aislado y prueba a 60 y a 1024 píxeles. La K es una flecha muy abstracta y a tamaño de ícono hay riesgo de que se lea otra cosa.</p></div>
+      <div class="card"><p class="ct">Área de resguardo y usos incorrectos</p><p>Tamaño mínimo del logo y qué no se puede hacer con él.</p></div>
+      <div class="card"><p class="ct">Reglas de contraste</p><p>Accesibilidad de texto sobre cada color de la paleta, sobre todo en la interfaz.</p></div>
+    </div>
+
+    <div class="panel">
+      <p class="panel-title">Dos cosas de fotografía a corregir antes de publicar</p>
+      <p>El póster de la maratón de Melbourne lleva el logo de un tercero: como lámina de portafolio se defiende, publicado sería un problema. Y hay fotografía de banco con ropa de marcas ajenas en la portada. Ninguna de las dos se usa en canales.</p>
+    </div>
+  </section>
+
+  <!-- 13 -->
+  <section id="moodboard">
+    <div class="sec-head"><span class="sec-n">13</span><h2>Brief de moodboard</h2></div>
+    <p class="sec-sub">El moodboard lo armamos nosotros. Esto es el criterio, para poder decir «esto sí, esto no» sin discutir de gustos.</p>
+    <div class="divider"></div>
+
+    <p>El principio es el mismo del arquetipo: el moodboard muestra <strong>el mundo del héroe con la mirada del mentor</strong>. Concentración en vez de furia, método en vez de arenga, cuerpo que trabaja en vez de cuerpo que posa. La prueba rápida para cada imagen: si esta foto la firmaría Nike sin dudar, probablemente es la voz del héroe y no la nuestra.</p>
+
+    <h3>Los siete territorios</h3>
+    <div class="grid g2">
+      <div class="card"><span class="cn">01</span><p class="ct">El esfuerzo real</p><p>Cara de trabajo y concentración: mandíbula suelta, mirada al frente, respiración. El corredor concentrado en el kilómetro 15, no el atleta gritando en cámara lenta.</p></div>
+      <div class="card"><span class="cn">02</span><p class="ct">La hora azul</p><p>5:30 de la mañana, luz baja, ciudad vacía, faroles encendidos. Es el momento real de casi todo corredor con trabajo y tiene menos ruido que el atardecer dorado.</p></div>
+      <div class="card"><span class="cn">03</span><p class="ct">Caracas reconocible</p><p>El Ávila, la Cota Mil, el Parque del Este. Runna se ve como Londres, RunMotion como París, Nike Run Club como ningún lugar. Kenia puede ser la única que se ve como aquí, y eso no lo copia nadie desde afuera.</p></div>
+      <div class="card"><span class="cn">04</span><p class="ct">El dato como material visual</p><p>Trazos de ruta sobre mapa, splits, zonas de ritmo, curvas de carga. Estética de instrumento de medición, no de infografía de redes.</p></div>
+      <div class="card"><span class="cn">05</span><p class="ct">La recuperación y el regreso</p><p>El estiramiento, las piernas en alto, el día libre. Y sobre todo el primer día de vuelta: atarse los cordones otra vez después de una semana perdida. La categoría fotografía el esfuerzo, casi nunca esto.</p></div>
+      <div class="card"><span class="cn">06</span><p class="ct">La comunidad sin ranking</p><p>Grupo corriendo junto, gente esperando en la salida, alguien acompañando en el último kilómetro. Nada de podio ni medallero.</p></div>
+      <div class="card"><span class="cn">07 · nuevo</span><p class="ct">Las condiciones</p><p>Correr bajo la lluvia y bajo el calor de Caracas. Camiseta empapada, vapor del asfalto, sol de mediodía. Entra por tu decisión de que Kenia prepare para cualquier circunstancia.</p></div>
+    </div>
+
+    <div class="panel flag">
+      <p class="panel-title">El riesgo del territorio 7</p>
+      <p>Es el que más fácil se desliza hacia «sin excusas». La categoría fotografía la adversidad como épica: rictus, grito, desafío al cielo, «yo salí y tú no». Kenia la fotografía como preparación: alguien concentrado que ya sabe cómo se siente esto.</p>
+      <p><strong>La prueba para cada imagen:</strong> ¿celebra al que salió, o muestra a alguien preparado? Si celebra, está juzgando al que no salió.</p>
+    </div>
+
+    <h3>Criterio de tipografía para el diseñador</h3>
+    <ol>
+      <li><strong>Números excelentes.</strong> Kenia vive de cifras: 5:53/km, 21,097 km, 6 × 3 min. Una familia con números mal resueltos hunde toda la interfaz. Hay que pedir cifras tabulares.</li>
+      <li><strong>Diálogo con el logo.</strong> La «enia» es geométrica redondeada; la familia de texto tiene que convivir con eso sin imitarlo.</li>
+      <li><strong>Legible a tamaño pequeño, en movimiento, con sol y con sudor.</strong> Es el contexto real de uso.</li>
+      <li><strong>Al menos cuatro pesos.</strong> Una app con planes, datos y explicaciones necesita jerarquía.</li>
+    </ol>
+  </section>
+
+  <!-- 14 -->
+  <section id="reforzar">
+    <div class="sec-head"><span class="sec-n">14</span><h2>Lo que proponemos reforzar</h2></div>
+    <p class="sec-sub">La plataforma está completa. Estas son ocho cosas que hoy no existen y que creemos que suman más de lo que cuestan. Cinco las podemos entregar nosotros; tres dependen de una decisión tuya.</p>
+    <div class="divider"></div>
+
+    <div class="grid g2">
+      <div class="card"><span class="cn">01 · lo hacemos nosotros</span><p class="ct">Pirámide de mensajes</p><p>Un mensaje maestro, tres pilares y las pruebas de cada uno. Es lo que le falta a Organic Club para escribir campaña y contenido sin volver a discutir qué se dice primero. Los pilares serían <em>decide contigo</em>, <em>te explica por qué</em> y <em>te cuida la carga</em>.</p></div>
+
+      <div class="card"><span class="cn">02 · decisión tuya</span><p class="ct">Prueba social desde ya</p><p>La app lanza sin una sola reseña, sin testimonios y sin casos, con un producto que promete adaptarse y prevenir lesiones. Es el activo que más falta y hay una fuente gratis: los doce entrevistados y la gente del box. Proponemos grabar testimonios el 13 y tener diez reseñas el día uno en tienda.</p></div>
+
+      <div class="card"><span class="cn">03 · decisión tuya</span><p class="ct">Tu cara</p><p>El método es de autor y el autor no aparece por ningún lado. Con un mes de contenido sin app por delante, la cara del que diseñó el método es lo más creíble que tenemos. No hace falta que salgas en el producto: basta con una serie corta explicando el método.</p></div>
+
+      <div class="card"><span class="cn">04 · lo hacemos nosotros</span><p class="ct">Matar «Kenia Sport»</p><p>El manual se llama «Marca Oficial Kenia Sport» y el descriptor decidido es «Kenia · Entrenamiento de running». Nadie decidió formalmente que «Kenia Sport» desaparece. Hay que decidirlo antes de que aparezca en un handle, un dominio o la ficha de tienda.</p></div>
+
+      <div class="card"><span class="cn">05 · lo hacemos nosotros</span><p class="ct">Una métrica para la marca</p><p>Tenemos métricas de negocio y una de impacto, pero nada mide si la marca está funcionando. Dos preguntas a los 30 días lo resuelven: <em>¿te sentiste juzgado alguna vez por la app?</em> y <em>¿cómo se lo explicarías a un amigo?</em> La segunda dice, con sus palabras, si el posicionamiento llegó.</p></div>
+
+      <div class="card"><span class="cn">06 · decisión tuya</span><p class="ct">Descargo médico</p><p>Estamos dando planes de entrenamiento a desconocidos y prometiendo prevención de lesiones, en un público donde tres de doce ya se lesionaron. Hace falta un descargo visible y una regla de qué hace la app ante una molestia declarada. Es riesgo real, no formalidad.</p></div>
+
+      <div class="card"><span class="cn">07 · lo hacemos nosotros</span><p class="ct">Salir del box antes de escalar pauta</p><p>Las doce entrevistas son de tu red. No dicen nada sobre alguien que no te conoce, que es exactamente a quien va a llegar la pauta. Ocho conversaciones con desconocidos antes de subir presupuesto.</p></div>
+
+      <div class="card"><span class="cn">08 · lo hacemos nosotros</span><p class="ct">Cerrar los datos de las personas</p><p>Los hábitos, objetivos y precios de las cinco personas están verificados. La edad, la ocupación y sobre todo <strong>qué cuentas siguen</strong> son hipótesis nuestras. Cuatro preguntas en el mismo grupo de WhatsApp lo cierran, y convierten la segmentación de pauta en dato propio en vez de intereses genéricos de Meta.</p></div>
+    </div>
+
+    <div class="panel">
+      <p class="panel-title">Si solo se puede hacer una</p>
+      <p>La número 2. Una marca nueva, en una categoría donde nadie te conoce, con un precio en dólares y una promesa de salud, se juega el primer mes en si alguien más lo dice por ti. Y el 13 de septiembre vamos a tener a la gente del box delante de una cámara.</p>
+    </div>
+  </section>
+
+  <!-- 15 -->
+  <section id="decisiones">
+    <div class="sec-head"><span class="sec-n">15</span><h2>Decisiones pendientes</h2></div>
+    <p class="sec-sub">Todo lo demás está cerrado. Esto es lo que bloquea, ordenado por quién lo desbloquea.</p>
+    <div class="divider"></div>
+
+    <h4>Ninro</h4>
+    <div class="tw">
+      <table>
+        <thead><tr><th style="width:38%">Qué</th><th>Por qué importa</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Registro de marca, dominio y handles</strong></td><td>«Kenia» es un topónimo y conviene verificarlo con un abogado antes de invertir en identidad. Y hay que ver qué handles están libres.</td></tr>
+          <tr><td><strong>Meta de negocio a tres años</strong></td><td>Sin horizonte largo, la visión no es creíble. Tenemos el punto de partida: 40 suscriptores a los 90 días. Falta a dónde va eso.</td></tr>
+          <tr><td><strong>El piloto de Gabriel</strong></td><td>Hablar con tu conocido el del maratón y decidir si entra a probar Elite durante su bloque.</td></tr>
+          <tr><td><strong>Prueba social y tu cara</strong></td><td>Las propuestas 2 y 3 de la sección anterior. Las dos se ejecutan el 13 o no se ejecutan.</td></tr>
+          <tr><td><strong>Protocolo ante trastornos alimentarios</strong></td><td>Está en la política de cuerpo y falta definir el cómo, con Kurt.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>Kurt</h4>
+    <div class="tw">
+      <table>
+        <thead><tr><th style="width:38%">Qué</th><th>Por qué importa</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Qué de los tres planes entra en la v1</strong></td><td>Es la más importante de todas. Si vendemos cuerpo digital en octubre y llega en marzo, la marca se rompe en el primer mes. Y ahora hay un comprador de Elite que lo va a notar en la primera semana.</td></tr>
+          <tr><td><strong>Cómo paga exactamente un venezolano</strong></td><td>Puede tumbar el negocio entero. Si alguien no puede pagar en tres toques, las 1.200 descargas comprometidas no valen nada.</td></tr>
+          <tr><td><strong>Si la app emite eventos de analítica</strong></td><td>Hay comprometida conversión del 3 %, retención a 30 días del 25 % y CAC por debajo de 25 dólares. Sin medición dentro de la app, nada de eso se puede reportar.</td></tr>
+          <tr><td><strong>Qué hace el plan el día después de un fallo</strong></td><td>Es la promesa central de la marca. Si la app no recalcula sola, hay que cambiar la promesa o construirlo.</td></tr>
+          <tr><td><strong>Si el plan puede programar clima, no solo esquivarlo</strong></td><td>Es tu planteamiento del 8, convertido en pregunta técnica.</td></tr>
+          <tr><td><strong>A qué volumen semanal aguanta el generador</strong></td><td>Si se diseñó para 30 o 40 kilómetros semanales, un corredor de 85 ve el techo enseguida.</td></tr>
+          <tr><td><strong>Unificar los nombres de plan</strong></td><td>De KENIA STARTER a Kenia Starter, dentro de la app y en la ficha.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>Diseñador</h4>
+    <ul>
+      <li>Tipografía, área de resguardo, usos incorrectos e ícono de app, con prueba a 60 píxeles.</li>
+      <li>Aplicar la jerarquía de color azul-primero al logotipo y al ícono.</li>
+      <li>Sustituir la fotografía que lleva marcas de terceros.</li>
+    </ul>
+
+    <h4>Organic Club</h4>
+    <ul>
+      <li>Las cuatro frases de campaña que reemplazan a las retiradas.</li>
+      <li>El tagline. «Master your pace» se retira: está en inglés, es evocativo y no explica, y cuando el nombre no explica el tagline tiene que hacerlo.</li>
+      <li>El nombre de la comunidad. El criterio ya está fijado: tiene que ser algo a lo que te unes, no un título que haya que ganarse.</li>
+      <li>El moodboard, con los siete territorios de la sección 13.</li>
+    </ul>
+  </section>
+
+  <!-- 16 -->
+  <section id="calendario">
+    <div class="sec-head"><span class="sec-n">16</span><h2>Calendario</h2></div>
+    <div class="divider"></div>
+
+    <div class="tw">
+      <table>
+        <thead><tr><th style="width:24%">Cuándo</th><th>Qué</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Antes del 13 de septiembre</strong></td><td>Entrega de branding, análisis de marketing y estrategia de contenido.</td></tr>
+          <tr><td><strong>13 de septiembre</strong></td><td>Primera grabación con Ninro. Es también la única ventana para grabar testimonios de la gente del box.</td></tr>
+          <tr><td><strong>15 al 20 de septiembre</strong></td><td>Viaje de Ninro a Buenos Aires.</td></tr>
+          <tr><td><strong>Mediados de octubre</strong></td><td>Lanzamiento de la app en tiendas.</td></tr>
+          <tr><td><strong>Noviembre</strong></td><td>Media Maratón de Hipereventos. Es el ancla de la campaña de lanzamiento.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="panel flag">
+      <p class="panel-title">Dos cosas del calendario que hay que diseñar, no descubrir</p>
+      <p><strong>El mes sin app.</strong> Entre la grabación del 13 y el lanzamiento de mediados de octubre hay un mes en el que se puede publicar contenido pero no se puede descargar nada. Ese mes tiene una función: construir lista de espera y llegar al día uno con gente que descargue, que es lo que decide el arranque en tiendas. El contenido del 13 hay que guionizarlo para las dos fases.</p>
+      <p><strong>Caracas Rock es el 4 de octubre y la app sale después.</strong> Cuatro de los doce entrevistados corren esa carrera y se la pierden. Por eso la campaña se ancla a la media maratón de noviembre, que sí encaja. Caracas Rock igual sirve: es el evento donde está el público, cuatro semanas antes. Es el sitio para grabar, captar contactos y construir la lista.</p>
+    </div>
+  </section>
+
+  <div class="footer">
+    <span class="bg">Organic Club</span>
+    <span>Liam Libre · Alonzo García</span>
+    <span>Plataforma de marca Kenia · v1.0 · 8 de septiembre de 2026</span>
+  </div>
+
+</main>
+</div>

@@ -1,0 +1,6 @@
+node_modules/
+package-lock.json
+
+# Datos personales de las partes (CI, teléfonos, direcciones): nunca al repositorio
+contrato/datos-partes.json
+contrato/*-FIRMA.docx

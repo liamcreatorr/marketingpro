@@ -1,0 +1,66 @@
+{
+  "_instrucciones": "Copia este archivo como datos-partes.json (que NO se sube al repositorio), rellena los campos vacíos y corre: node contrato/generar-contrato.js. Lo que quede vacío sale en el contrato como una línea para completar a mano.",
+  "cliente": {
+    "razon_social": "LIBRE G PLATFORMS LLC",
+    "jurisdiccion": "Estado de Wyoming, Estados Unidos de América",
+    "tipo_id_fiscal": "EIN",
+    "id_fiscal": "",
+    "domicilio": "",
+    "correo": "",
+    "representante_legal": {
+      "nombre": "Ninro Alexander Libre Guerrero",
+      "nacionalidad": "",
+      "cedula": "",
+      "domicilio": "",
+      "telefono": "",
+      "correo": ""
+    },
+    "representante_autorizado": {
+      "nombre": "Kurt A. Libre C.",
+      "nacionalidad": "",
+      "cedula": "",
+      "domicilio": "",
+      "telefono": "",
+      "correo": ""
+    }
+  },
+  "agencia": {
+    "nombre_comercial": "Organic Club",
+    "rif": "",
+    "socios": [
+      {
+        "nombre": "Liam Libre",
+        "nacionalidad": "",
+        "cedula": "",
+        "domicilio": "",
+        "telefono": "",
+        "correo": ""
+      },
+      {
+        "nombre": "Alonzo García",
+        "nacionalidad": "",
+        "cedula": "",
+        "domicilio": "",
+        "telefono": "",
+        "correo": ""
+      }
+    ]
+  },
+  "condiciones": {
+    "ciudad_firma": "Caracas",
+    "fecha_firma": "4 de octubre de 2026",
+    "inicio_servicios": "1 de septiembre de 2026",
+    "inicio_publicacion": "9 de octubre de 2026",
+    "fin_plazo_inicial": "31 de diciembre de 2026",
+    "fecha_analisis_complementario": "31 de octubre de 2026",
+    "dia_limite_pago": 5,
+    "dias_gracia_suspension": 10,
+    "metodo_pago": "",
+    "datos_cuenta_pago": "",
+    "volumen_mensual": "hasta doce (12) videos de formato corto y seis (6) carruseles al mes, más stories de acompañamiento",
+    "rondas_revision": 2,
+    "dias_habiles_aprobacion": 2,
+    "dias_preaviso_terminacion": 30,
+    "estado_pago_septiembre": ""
+  }
+}
